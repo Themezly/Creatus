@@ -1,0 +1,228 @@
+/**
+ * @package      Thz Framework
+ * @author       Themezly
+ * @license      http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ * @websites     http://www.themezly.com | http://www.youjoomla.com | http://www.yjsimplegrid.com
+ 
+
+Theme Name: creatus
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+http://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+/* CSS INFORMATION
+
+	# Body
+	# Menus
+		
+		## Header inline menu right
+		
+	# Page title
+	# Text align
+	# Grid system
+		
+		## Items grid
+		
+	# Content
+	
+		## Main
+		## Post shares
+		## Post navigations
+	
+	# Footer
+	# Overlays
+
+*/
+
+/* ============================================ 
+	# Body
+ ============================================ */
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+/* blockquotes */
+body.rtl blockquote {
+	padding: 15px 30px 15px 0px;
+	border-left: none;
+	border-right: 3px solid #eaeaea;
+}
+body.rtl blockquote.quote-right {
+	padding-left: 30px;
+	padding-right: 0;
+	border: none;
+	border-left: 3px solid #eaeaea;
+}
+body.rtl blockquote.quote-right p,
+body.rtl blockquote.quote-right small {
+	text-align: left;
+}
+/* dropcaps */
+
+body.rtl .thz-dropcap:first-letter {
+	float: right;
+	margin: 0px 0px -8px 8px;
+}
+body.rtl .thz-dropcap.box:first-letter,
+body.rtl .thz-dropcap.rounded:first-letter,
+body.rtl .thz-dropcap.circle:first-letter {
+	margin: 5px 0 0 15px;
+}
+/* ============================================ 
+	# Menus
+ ============================================ */
+/* ============================================ 
+	## Header inline menu right
+ ============================================ */
+body.rtl .header-inline #mainmenu_holder.thz-poz-menu-right {
+	float: left;
+}
+body.rtl .thz-poz-menu-right ul.thz-menu {
+	float: right;
+}
+body.rtl .thz-poz-menu-right ul.thz-menu.thz-secondary-menu {
+	float: left;
+}
+body.rtl .thz-poz-menu-right ul.thz-menu span.child i.childicon {
+	margin-left: 0;
+	margin-right: 8px
+}
+body.rtl ul.thz-menu ul span.child i.childicon {
+	right: auto;
+	left: 15px;
+}
+body.rtl .thz-poz-menu-right ul.thz-menu li.level0.menu-item {
+	float: right;
+}
+.thz-horizontal-header body.rtl .thz-secondary-menu:last-child .thz-menu-addon:last-child,
+.thz-horizontal-header body.rtl .thz-secondary-menu:last-child .thz-menu-addon:last-child a.itemlink {
+	margin-left: 0;
+	padding-left: 0;
+}
+body.rtl ul.thz-menu ul div.ulholder {
+	left: auto;
+	right: 100%;
+}
+/* ============================================ 
+	# Page title
+ ============================================ */
+
+body.rtl .thz-pagetitle-layout-table .thz-pagetitle-holder div:nth-child(1) {
+	text-align: right;
+}
+body.rtl .thz-pagetitle-layout-table .thz-pagetitle-holder div:nth-child(2) {
+	text-align: left;
+}
+/* Page title stack*/
+
+body.rtl .thz-pagetitle-layout-stack.stack-left {
+	text-align: right;
+}
+body.rtl .thz-pagetitle-layout-stack.stack-right {
+	text-align: left;
+}
+/* ============================================ 
+	# Text align
+ ============================================ */
+
+body.rtl .thz-align-left {
+	text-align: right;
+}
+body.rtl .thz-align-right {
+	text-align: left;
+}
+/* ============================================ 
+	# Grid system
+ ============================================ */
+
+body.rtl .thz-column {
+	float: right;
+}
+/* ============================================ 
+	## Items grid
+ ============================================ */
+ 
+body.rtl .thz-grid-item {
+	float: right;
+}
+/* ============================================
+	# Content
+ ============================================ */
+/* ============================================
+	## Main
+ ============================================ */
+
+body.rtl .holders .thz-block {
+	float: right;
+}
+body.rtl #holder2 .thz-block {
+	float: left;
+}
+@media screen and (max-width: 979px) {
+body.rtl div#thz-main-wrap .thz-block {
+	width: 100%;
+	float: none;
+	clear: both
+}
+}
+body.rtl ol.comment-list li.comment .reply {
+	position: static;
+}
+/* ============================================
+	## Post shares
+ ============================================ */
+ 
+body.rtl .thz-shares-separated .thz-post-share-links-in {
+    float: left;
+}
+ 
+/* ============================================ 
+	## Post navigations
+ ============================================ */
+/* Single post nav */
+
+body.rtl .thz-post-navigation .nav-previous {
+	text-align: right;
+}
+body.rtl .thz-post-navigation .nav-next {
+	text-align: left;
+}
+body.rtl .thz-post-navigation .nav-previous .thz-nav-el:not(:last-child){
+	padding-right:0px;
+	padding-left:15px;    
+}
+body.rtl .thz-post-navigation .nav-next .thz-nav-el:not(:first-child){
+	padding-left:0px; 
+	padding-right:15px;
+}
+/* ============================================ 
+	# Footer
+ ============================================ */
+ 
+body.rtl .thz-footer-table .thz-footer-cell.left > div {
+	float: right;
+}
+body.rtl .thz-footer-table .thz-footer-cell.right > div {
+	float: left;
+}
+body.rtl .thz-woo-item-cart-buttons i + span.thz-woo-item-cart-label {
+	margin-left: 0px;
+	margin-right: 10px;
+}
+body.rtl .thz-footer-cell.right .thz-socials-footer a {
+	margin-left: 0;
+	margin-right: 20px;
+}
+/* ============================================ 
+	# Overlays
+ ============================================ */
+ 
+body.rtl .thz-search-overlay-in .thz-search-form:before {
+	right: auto;
+	left: 20px;
+}

@@ -1,0 +1,245 @@
+/**
+ * Prefix (namespace) all css rules with ".fw-option-type-{$option_type}"
+ * This guarantees that there will be no conflicts with other styles.
+ */
+.thz-background-holder {
+	display:block;
+}
+.thz-background-holder:before,
+.thz-background-holder:after{
+	content:'';
+	display:table;
+}
+.fw-backend-option-type-thz-background{
+	display:block;
+}
+.thz-bg-element{
+	display:block;
+	position:relative;
+	padding:0;
+	margin:0 0 10px 0;
+}
+.thz-background-holder .thz-bg-title{
+	display:block;
+	clear:both;
+	padding:0;
+	margin:0 0 10px;
+	font-size: 13px;
+  	font-style: italic;
+  	color:#777;
+}
+.thz-bg-group .thz-bg-element{
+	float:left;
+	display:inline-block;
+	margin:10px 10px 0px 0;
+}
+.thz-bg-group{
+	display:block;
+	overflow:hidden;
+}
+.thz-background-holder .thz-thumb{
+	margin-bottom:15px;
+}
+
+.thz-background-holder .thz-background-size-text input[type="text"]{
+	max-width:220px!important;
+}
+.fw-backend-option-type-thz-background .thz-group-color,
+.fw-backend-option-type-thz-background .thz-group-image,
+.fw-backend-option-type-thz-background .thz-group-video{
+	display:none;
+}
+.thz-bg-video-element{
+	margin-bottom:10px;
+	display:block;
+	overflow:hidden;
+	clear:both;
+}
+.thz-bg-video-element input[type="text"].video-input{
+	max-width:170px!important;
+}
+.thz-bg-video-element .upload-video{
+	margin:0 0 0 20px;
+}
+.thz-bg-video-element .fw-backend-option-descriptor{
+	display:inline-block;
+}
+/* gradient */
+
+.thz-background-gradient{
+	display:block;
+	clear:both;
+	position:relative;
+	padding:0 0 30px 0;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.thz-background-gradient .thz-bg-gradient-element,
+.thz-bg-multi-gradient > div{
+	width: 50%;
+	display:block;
+	margin:0;
+	padding:0;
+	float:left;
+}
+.thz-background-gradient .thz-slider_input{
+	width:30%;
+}
+.thz-background-gradient .thz-slider_range{
+	width:60%;
+	float:left;
+	padding-left:10px;
+}
+.thz-background-gradient-style.thz-bg-gradient-element,
+.thz-background-gradient-size.thz-bg-gradient-element,
+.thz-background-gradient-shape.thz-bg-gradient-element{
+	clear:both;
+	float:none;
+	width:auto;
+	margin-bottom:10px;
+
+}
+.thz-gradient-stopbox{
+	display:block;
+	clear:both;
+	/* position: relative; */
+}
+.thz-background-gradient .fw-option-type-addable-option-add{
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+/*.thz-background-gradient input.fw-option-type-thz-color-picker{
+	margin-top:-4px;
+}*/
+
+
+.thz-gradient-element td.td-move.ui-sortable-handle,
+.thz-gradient-element .fw-option-type-addable-option .fw-option-type-addable-option-option td.td-move{
+	display:none;
+
+}
+.thz-gradient-element .td-option.fw-force-xs{
+	padding:0!important;
+}
+.thz-gradient-element .fw-force-xs .fw-backend-option-design-default{
+	padding:0!important;
+}
+.thz-gradient-element .fw-force-xs .fw-backend-option-design-default .fw-inner.fw-pull-left{
+	float:none!important;
+}
+
+.thz-gradient-element .fw-option-type-addable-option-option{
+	position:relative;
+}
+.thz-gradient-element .fw-option-type-addable-option-option td.td-remove{
+	position:absolute;
+	right: 40px;
+	/* top: 30px; */
+	margin-top: 25px;
+}
+
+.thz-gradient-stopbox .fw-backend-option-label{
+	width:100%!important;
+}
+.thz-gradient-stopbox .fw-backend-option-label label{
+	display:block;
+	clear:both;
+	padding:0;
+	margin:0;
+	font-size: 13px;
+  	font-style: italic;
+  	color:#777;
+	font-weight: 400;
+}
+/* clears */
+.thz-background-gradient:before,
+.thz-background-gradient:after,
+.thz-background-gradient .thz-bg-gradient-element:before,
+.thz-background-gradient .thz-bg-gradient-element:after,
+.thz-gradient-stopbox:before,
+.thz-gradient-stopbox:after{
+	display:table;
+	content:'';
+	clear:both;
+}
+
+
+.thz-bg-gradient-preview-holder,
+.thz-bg-shape-preview-holder{
+	display:block;
+	overflow:hidden;
+  	border:1px dashed #ccc;
+  	margin:20px 0;
+  	padding:10px;
+  	position:relative;
+   
+}
+.thz-bg-gradient-preview-holder:before,
+.thz-bg-shape-preview-holder:before{
+	display:block;
+	content:'';
+	position:absolute;
+	z-index:0;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin:10px;
+	background: url(../images/png_bg.png);
+    -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+.thz-bg-gradient-preview,
+.thz-bg-shape-preview{
+	display:block;
+	overflow:hidden;
+	clear:both;
+	width:100%;
+	height:180px;
+	position:relative;
+	z-index:1;
+
+}
+
+.gradient-group-radial.thz-bg-gradient-element,
+.gradient-group-linear.thz-bg-gradient-element{
+	display:none;
+}
+
+.thz-bg-shape-preview .thz-svg-shape{
+	display:none;
+}
+.thz-bg-shape-preview .thz-svg-shape.current{
+	display:block;
+}
+
+@media screen and (min-width: 1200px) {
+	.media-modal-content .thz-bg-gradient-preview-holder,
+	.media-modal-content .thz-bg-shape-preview-holder{
+		width: 100%;
+	}
+}
+
+
+@media screen and (min-width: 1024px) {
+	.media-modal-content .thz-bg-gradient-preview-holder,
+	.media-modal-content .thz-bg-shape-preview-holder{
+		position:absolute;
+		top: 0;
+		left: 100%;
+		margin: -50px 0 0 50px;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+	.media-modal-content .thz-bg-gradient-preview-holder,
+	.media-modal-content .thz-bg-shape-preview-holder{
+		width: 65%;
+		margin:-50px 0 0 30px;
+	}
+}

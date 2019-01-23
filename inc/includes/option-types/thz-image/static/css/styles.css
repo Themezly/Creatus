@@ -1,0 +1,58 @@
+/**
+ * Prefix (namespace) all css rules with ".fw-option-type-{$option_type}"
+ * This guarantees that there will be no conflicts with other styles.
+ */
+.fw-option-type-thz-image{
+	display:block;
+}
+.fw-option-type-thz-image .thz-thumb{
+	display:block;
+	clear:both;
+	max-width:100px;
+	overflow:hidden;
+}
+.fw-option-type-thz-image .thz-thumb img{
+	width:100%;
+	max-width:100%;
+	cursor:pointer;
+	background: url(../img/trans.png);
+}
+.fw-option-type-thz-image .thz-image-input{
+	display:none;
+}
+
+.fw-option-type-thz-image .thz-remove-image{
+	display:none;
+}
+.fw-option-type-thz-image .thz-remove-image.show_button{
+	display:inline-block;
+	margin-left:15px;
+}
+
+.fw-option-type-thz-image .use-featured-label{
+	display:inline-block;
+	margin:5px 0px 0 15px;
+}
+
+
+.thz-media-frame div.setting,
+.thz-media-frame .media-frame-menu,
+.thz-media-frame .setting.align,
+.thz-media-frame .attachment-display-settings h2{
+	display:none!important;
+}
+.thz-media-frame .media-frame-title,
+.thz-media-frame .media-frame-router,
+.thz-media-frame .media-frame-content,
+.thz-media-frame .media-frame-toolbar,
+.thz-media-frame .media-frame-uploader{
+	left:0;
+}
+
+.thz-media-frame .media-button-insert{
+	font-size:0px;
+}
+.thz-media-frame .media-button-insert:before{
+	content:'Insert image';
+	font-size:14px;
+}

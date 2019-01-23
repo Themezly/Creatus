@@ -1,0 +1,74 @@
+/**
+ * Prefix (namespace) all css rules with ".fw-option-type-{$option_type}"
+ * This guarantees that there will be no conflicts with other styles.
+ */
+.fw-backend-option-type-thz-logo {
+	display: block;
+}
+.fw-backend-option-design-default.fw-backend-option-type-thz-logo {
+	padding: 0;
+}
+.fw-backend-option-type-thz-logo .thz-logo-element {
+	display: block;
+	position: relative;
+	padding: 24px 27px 21px;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.fw-backend-option-type-thz-logo .thz-logo-element:before,
+.fw-backend-option-type-thz-logo .thz-logo-element:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.fw-backend-option-type-thz-logo .thz-logo-title {
+	display: block;
+	padding: 0;
+	float: left;
+	margin-top: 0.1em;
+	font-size: 14px;
+	font-weight: 600;
+	color: #444;
+}
+#fw-option-site_logo-thz-logo-text,
+#fw-option-site_logo-thz-logo-sub-text {
+	width: 100%;
+	max-width: 428px;
+}
+.fw-backend-option-type-thz-logo .thz-logo-element-inline {
+	display: block;
+	float: left;
+	margin: 0 10px 5px 0;
+	min-height: 55px;
+}
+.fw-backend-option-type-thz-logo .thz-group-textual,
+.fw-backend-option-type-thz-logo .thz-group-image {
+	display: none;
+}
+.thz-template-logo-image .thz-thumb.hasImage {
+	width: auto;
+	height: auto;
+	max-width: 200px;
+}
+.thz-logo-inline-title {
+	display: block;
+	clear: both;
+	margin: 0 5px 5px 0;
+	font-weight: 600;
+	font-size: 12px;
+}
+.thz-logo-desc {
+	font-style: italic;
+	color: #666;
+	font-size: 1em;
+	padding-top: 7px;
+	padding-left: 1px;
+}
+
+
+#customize-theme-controls .thz-logo-element{
+	padding:24px 0;
+}
+#customize-theme-controls .thz-logo-title{
+	padding:0 0 15px 0;
+}

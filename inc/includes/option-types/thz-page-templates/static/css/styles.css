@@ -1,0 +1,28 @@
+.thz-page-options-templates-list li {
+	display: block;
+	margin:-1px 0 0 0;
+	background: #fff;
+	border: 1px dashed #ccc;
+	padding: 15px;
+	position: relative;
+}
+.thz-page-options-templates-list li:not(.no-saved-templates){
+	background-color:#f8fdff;
+    border-color: #d8d8d8;
+    color: #01729c;	
+    font-weight:600;
+}
+.thz-page-options-templates-list li:last-child {
+	margin-bottom:30px;
+}
+.thz-page-options-templates-list .no-saved-templates {
+	display: none;
+}
+.thz-page-options-templates-list li:only-child {
+	display: block;
+}
+.thz-page-options-templates-list .template-delete {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}

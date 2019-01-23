@@ -1,0 +1,62 @@
+/**
+ * Prefix (namespace) all css rules with ".fw-option-type-{$option_type}"
+ * This guarantees that there will be no conflicts with other styles.
+ */
+.fw-backend-option-design-default.fw-backend-option-type-thz-hover{
+	padding:0;
+
+}
+.thz-hover-option-holder > div{
+	display:block;
+    position: relative;
+    padding: 24px 27px 21px;
+    border-bottom: 1px solid #eeeeee;
+   
+}
+.thz-hover-option-holder:after,
+.thz-hover-option-holder > div:after{
+	content:'';
+	display:table;
+	clear:both;
+}
+.thz-hover-option-holder:last-of-type > div{
+	border-bottom-color:transparent;
+}
+.thz-hover-label{
+	font-weight: 600;
+    float: left;
+    margin-top: 0.1em;
+    font-size: 14px;
+}
+.thz-hover-group-option{
+	display:block;
+	float:left;
+	margin-right:10px;
+}
+.thz-hover-option-title {
+    display: block;
+    clear: both;
+    margin: 0 5px 5px 0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.thz-hover-desc{
+    font-style: italic;
+    color: #666;
+    display:block;
+    overflow:hidden;
+    clear:both;
+    padding:10px 0 0 0;
+}
+
+@media (min-width: 1200px) {
+	.media-frame-content .thz-hover-label.fw-col-lg-2 {
+		width: 25%;
+	}
+
+	.media-frame-content .thz-hover-option.fw-col-lg-10 {
+		width: 75%;
+	}
+
+}

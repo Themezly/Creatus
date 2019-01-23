@@ -1,0 +1,91 @@
+/* ACCORDIONS */
+.thz-shortcode-accordion {
+	display: block;
+	position: relative;
+	padding: 0;
+	overflow: hidden;
+}
+.thz-accordion-group {
+	display: block;
+	position: relative;
+	padding: 0;
+}
+.thz-accordion-group:not(:first-child) {
+	margin: -1px 0 0 0;
+}
+.thz-accordion-title {
+	display: block;
+	padding: 0;
+}
+.thz-accordion-title a {
+	display: block;
+	padding: 10px 15px;
+}
+.thz-accordion-content {
+	display: none;
+	padding: 30px 15px;
+	overflow: hidden;
+}
+.thz-accordion-title {
+	border: 1px solid #eaeaea;
+}
+.thz-accordion-title {
+	background-color: #f5f5f5;
+}
+.thz-accordion-title.hovered,
+.thz-accordion-title.active{
+	background-color: #fdfdfd;
+}
+.thz-accordion-content{
+	border: 1px solid #eaeaea;
+	border-top:0;
+}
+.thz-shortcode-accordion > .thz-accordion-group > .thz-acc-b-hide{
+	border:none;
+}
+.thz-shortcode-accordion > .thz-accordion-group > .thz-acc-b-hideside{
+	border-left:0;
+	border-right:0;
+}
+.thz-acc-title-icon{
+	margin-right:10px;
+}
+/* toggle */
+.thz-acc-toggle {
+	display: inline-block;
+	margin:0;
+	text-align: center;
+	float:right;
+}
+.thz-acc-toggle:before {
+	font-family: Thzicons;
+	content: "\f105";
+}
+.thz-accordion-title.active .thz-acc-toggle:before {
+	content: "\f107";
+}
+.thz-accordion-toggle .thz-accordion-content {
+	padding: 15px 0;
+}
+
+.thz-accordion-group:first-child,
+.thz-accordion-group:first-child .thz-accordion-title{
+	border-top-left-radius:inherit;
+	border-top-right-radius:inherit;
+}
+
+.thz-accordion-group:last-child,
+.thz-accordion-group:last-child .thz-accordion-title{
+	border-bottom-left-radius:inherit;
+	border-bottom-right-radius:inherit;
+}
+
+/* clears */
+.thz-shortcode-accordion:after,
+.thz-accordion-group:after,
+.thz-accordion-title:after,
+.thz-accordion-content:after {
+	display: table;
+	content: "";
+	clear: both;
+}

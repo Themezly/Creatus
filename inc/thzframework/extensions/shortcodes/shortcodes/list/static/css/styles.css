@@ -1,0 +1,14 @@
+/* List shortcode */
+.thz-icons-list{
+	list-style-type:none;
+	margin-left:0;
+}
+.thz-unstyled-list{
+	list-style-type:none;
+	margin-left:0;
+}
+.thz-list-item i{
+	position:relative;
+	display:inline-block;
+	margin-right: 5px;
+}

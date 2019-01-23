@@ -1,0 +1,234 @@
+/* Controlls */
+#customize-controls.wp-full-overlay-sidebar {
+	background: #fff;
+}
+.expanded .wp-full-overlay-footer {
+	background: #fff;
+}
+.wp-full-overlay-footer .devices {
+	background: #fff;
+	box-shadow: none;
+}
+.wp-full-overlay-main {
+	background: #fff;
+	position: relative;
+}
+.preview-tablet .wp-full-overlay-main{
+	width:768px;
+}
+#customize-controls #customize-notifications-area{
+	z-index:2000;
+}
+/* Preloader */
+#thz-customizer-preloader {
+	background: #ffffff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 10000000;
+	opacity: 1;
+	transition: all 0.4s ease-in-out;
+}
+#thz-customizer-preloader.loaded {
+	opacity: 0;
+}
+#thz-customizer-preloader.finished {
+	opacity: 0;
+	z-index: -1;
+	visibility: hidden;
+}
+.thz-customizer-preloader-in {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#thz-customizer-preloader .thz-customizer-text {
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #b3b3b3;
+	letter-spacing: 1px;
+	max-width: 300px;
+	margin: auto;
+	text-align: center;
+}
+#thz-customizer-preloader .thz-icon {
+	background: #039bf4;
+	width: 60px;
+	height: 60px;
+	display: block;
+	line-height: 65px;
+	font-size: 28px;
+	color: #fff;
+	border-radius: 100%;
+	margin: 0;
+}
+.thz-icon-shape-pulsate {
+	width: 60px;
+	display: block;
+	height: 60px;
+	margin: auto;
+	border-radius: 100%;
+	position: relative;
+	overflow: visible;
+	-webkit-transition: -webkit-transform 0.3s ease-in-out;
+	transition: -webkit-transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.thz-icon-shape-pulsate .thz-icon-shape-effect {
+	border-radius: 100%;
+	box-shadow: 0 0 26px #039bf4;
+	top: 0px;
+	left: 0px;
+	bottom: 0;
+	right: 0;
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+	transform: scale(0.8);
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	display: block;
+}
+.thz-icon-shape-pulsate.effectactive {
+	-webkit-transform: scale(0.93);
+	-moz-transform: scale(0.93);
+	-ms-transform: scale(0.93);
+	transform: scale(0.93);
+}
+.thz-icon-shape-pulsate .thz-icon-shape-effect {
+	-webkit-animation: thzPulsate 1s ease-out infinite;
+	-moz-animation: thzPulsate 1s ease-out infinite;
+	animation: thzPulsate 1s ease-out infinite;
+}
+ @keyframes thzPulsate {
+	 0% {
+	 -webkit-transform: scale(0.8);
+	 transform: scale(0.8);
+	 opacity: 0.2;
+	}
+	 20% {
+	 opacity: 0.3;
+	}
+	 40% {
+	 opacity: 0.4;
+	}
+	 80% {
+	 opacity: 1;
+	}
+	 100% {
+	 -webkit-transform: scale(1.1);
+	 transform: scale(1.1);
+	 opacity: 0.0;
+	}
+}
+ @-webkit-keyframes thzPulsate {
+	 0% {
+	 -webkit-transform: scale(0.8);
+	 opacity: 0.2;
+	}
+	 20% {
+	 opacity: 0.3;
+	}
+	 40% {
+	 opacity: 0.4;
+	}
+	 80% {
+	 opacity: 1;
+	}
+	 100% {
+	 -webkit-transform: scale(1.1);
+	 opacity: 0.0;
+	}
+}
+/* Theme settings link */
+
+#customize-theme-controls #accordion-section-themes h3{
+	margin-bottom:0;
+	border-bottom:none;
+	padding-bottom: 0;
+}
+.thz-customizer-links{
+	display:block;
+	clear:both;
+	overflow:hidden;
+	padding: 5px 15px 15px 15px;
+	border-bottom: 1px solid #ddd;
+}
+.thz-customizer-links .more-options{
+    display: inline-block;
+    background-color: rgb(0, 133, 186);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    padding: 3px 6px;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    clear: both;
+    border-radius:3px;
+    text-decoration:none;
+}
+/* Options adjustments */
+#customize-theme-controls .thz-typography-group {
+	margin-top: 10px;
+}
+#customize-theme-controls #thz-font-selector.thz-fonts-opened {
+	margin: 0;
+}
+#customize-theme-controls #fw-option-headers-picked .thumbnail img {
+	width: 60px;
+}
+
+#customize-theme-controls #sub-accordion-section-creatus_panel{
+	padding-bottom:60px;
+	border-bottom:none;
+}
+#sub-accordion-section-creatus_panel .fw-backend-option-design-customizer{
+	padding:0;
+}
+#sub-accordion-section-creatus_panel .fw-inner{
+	width:100%;
+	max-width:100%;
+}
+#sub-accordion-section-creatus_panel .customize-control{
+	margin: 0 -12px;
+	float: none;
+	width: auto;
+}
+/* Has options notice */
+.thz-page-has-options span{
+	display:block;
+	margin:10px 0 0 0;
+	font-size:16px;
+}
+.has-options-heading{
+	color:#F44336;
+}
+.has-options-info{
+	padding:0 30px 0 30px;
+	line-height:1.6;
+}
+.has-options-title{
+	font-weight:bold;
+	color:#919191;
+}
+.has-options-options{
+	font-weight:bold;
+	color:#F44336;
+}
+.thz-page-has-options .has-options-info{
+	margin-bottom:15px;
+}
+.has-options-disable-notice{
+	display:inline-block;
+	position:absolute;
+	left:15px;
+	bottom:15px;
+}
+.has-options-disable-notice:focus{
+	box-shadow:none;
+}

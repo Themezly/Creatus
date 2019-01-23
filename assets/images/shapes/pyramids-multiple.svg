@@ -1,0 +1,6 @@
+<svg class="thz-svg-shape thz-svg-pyramids-multiple" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 250" preserveAspectRatio="none">
+    <path d="M635.9,125l-237,115l-73-52.5l-79,52.5l-155-115L0,187.5V250h1000v-62.5L789,232L635.9,125z" />
+    <polygon style="opacity:0.4;" points="91.9,125 246.9,240 278.7,218.6 " />
+    <polygon style="opacity:0.4;" points="398.9,240 421.5,229 325.9,187.5 " />
+    <polygon style="opacity:0.4;" points="789,232 841.2,221 635.9,125 " />
+</svg>

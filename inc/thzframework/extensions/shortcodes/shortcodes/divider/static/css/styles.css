@@ -1,0 +1,184 @@
+/* Inline spacer */
+.thz-divider-spacer{
+	display:inline-block;
+	margin:0 10px;
+	padding:0;
+	font: 0/0 a;
+	vertical-align:middle;	
+}
+/* Horizontal divider */
+.thz-divider-holder{
+	display:block;
+	overflow:hidden;
+	clear:both;
+	width:100%;
+	float:none;
+	padding:0;
+	margin:30px auto;
+}
+.thz-divider,
+.thz-divider-hasicon{
+	display:block;
+	min-height:1px;
+	width:100%;
+	max-width:100%;
+	margin:0 auto;
+	clear:both;
+	position:relative;
+	overflow:hidden;
+}
+
+/* Single line */
+.thz-divider.thz-divider-singleline{
+	border-top:1px solid #eaeaea;
+}
+/* Double line */
+.thz-divider.thz-divider-doubleline{
+	height:10px;
+	border-top:1px solid #eaeaea;
+	border-bottom:1px solid #eaeaea;
+}
+
+/* Divider with icon */
+.thz-divider-hasicon{
+	display:table;
+}
+.thz-divider-hasicon .thz-divider-left{
+	width:50%;
+	display:table-cell;
+	vertical-align:middle;
+}
+.thz-divider-hasicon .thz-divider-icon{
+	display:table-cell;
+	width:auto;
+	padding:1px 20px;
+	vertical-align:middle;
+}
+.thz-divider-holder .thz-di-left .thz-divider-icon{
+	padding-left:0;
+}
+.thz-divider-holder .thz-di-right .thz-divider-icon{
+	padding-right:0;
+}
+.thz-divider-hasicon .thz-divider-right{
+	width:50%;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.thz-divider-hasicon .thz-divider-left:before,
+.thz-divider-hasicon .thz-divider-right:before{
+	content:'';
+	width:100%;
+	display:block;
+	min-height:1px;
+	
+}
+.thz-divider-hasicon.thz-divider-singleline .thz-divider-left:before,
+.thz-divider-hasicon.thz-divider-singleline .thz-divider-right:before{
+	border-top:1px solid #eaeaea;
+}
+.thz-divider-hasicon.thz-divider-doubleline .thz-divider-left:before,
+.thz-divider-hasicon.thz-divider-doubleline .thz-divider-right:before{
+	height:10px;
+	border-top:1px solid #eaeaea;
+	border-bottom:1px solid #eaeaea;
+}
+
+/* Divider shadow */
+
+.thz-divider-shadow{
+    height:5px;
+}
+.thz-divider-shadow:after{
+	content:'';
+	display:block;
+	width:80%;
+	height:1px;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin:0 auto;
+}
+.thz-divider-shadow,
+.thz-divider-shadow:after{
+    background: radial-gradient(ellipse at 50% -50%, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0) 80%);
+    background: -ms-radial-gradient(ellipse at 50% -50%, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0) 80%);
+    background: -moz-radial-gradient(ellipse at 50% -50%, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0) 80%);
+    background: -webkit-radial-gradient(ellipse at 50% -50%, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0) 80%);	
+}
+
+
+/* Shadow and icon */
+.thz-divider-has-icon-shadow .thz-divider-left,
+.thz-divider-has-icon-shadow .thz-divider-right{
+	position:relative;
+}
+.thz-divider-has-icon-shadow .thz-divider-left:before,
+.thz-divider-has-icon-shadow .thz-divider-right:before{
+	height:5px;
+}
+.thz-divider-has-icon-shadow .thz-divider-left:after,
+.thz-divider-has-icon-shadow .thz-divider-right:after{
+	display:block;
+	position:absolute;
+	top:-5px;
+	bottom:0;
+	margin:auto;
+	content:'';
+	width:100%;
+	height:1px;
+}
+.thz-divider-has-icon-shadow .thz-divider-left:after{
+	right:0;
+}
+.thz-divider-has-icon-shadow .thz-divider-right:after{
+	left:0;
+}
+.thz-divider-has-icon-shadow .thz-divider-left:before,
+.thz-divider-has-icon-shadow .thz-divider-left:after{
+    background: radial-gradient(ellipse at 100% -50%, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0) 80%);
+    background: -ms-radial-gradient(ellipse at 100% -50%, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0) 80%);
+    background: -moz-radial-gradient(ellipse at 100% -50%, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0) 80%);
+    background: -webkit-radial-gradient(ellipse at 100% -50%, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0) 80%);
+}
+.thz-divider-has-icon-shadow .thz-divider-right:before,
+.thz-divider-has-icon-shadow .thz-divider-right:after{
+    background: radial-gradient(ellipse at 0% -50%, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0) 80%);
+    background: -ms-radial-gradient(ellipse at 0% -50%, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0) 80%);
+    background: -moz-radial-gradient(ellipse at 0% -50%, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0) 80%);
+    background: -webkit-radial-gradient(ellipse at 0% -50%, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0) 80%);
+}
+
+/* Divider dualcolor */
+.thz-divider-dualcolor{
+	background:#eaeaea;
+	height:3px;
+}
+.thz-divider-dualcolor.thz-dc-left:before{
+	left:0;
+}
+.thz-divider-dualcolor.thz-dc-center:before{
+	left:0;
+	right:0;
+	margin:0 auto;
+}
+.thz-divider-dualcolor.thz-dc-right:before{
+	right:0;
+}
+.thz-divider-dualcolor:before{
+	content:'';
+	position:absolute;
+	top:0;
+	width:100%;
+	max-width:250px;
+	background:#039bf4;
+	height:inherit;
+}
+
+.thz-divider-icon{
+	font-size:38px;
+	color:#039bf4;
+}

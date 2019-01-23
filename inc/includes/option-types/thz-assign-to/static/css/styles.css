@@ -1,0 +1,12 @@
+/**
+ * Prefix (namespace) all css rules with ".fw-option-type-{$option_type}"
+ * This guarantees that there will be no conflicts with other styles.
+ */
+.fw-option-type-thz-assign-to .selectize-dropdown .optgroup-header {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.fw-option-type-thz-assign-to .selectize-dropdown .optgroup .option {
+    padding-left: 20px;
+}

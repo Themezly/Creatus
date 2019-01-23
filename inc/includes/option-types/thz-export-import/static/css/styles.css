@@ -1,0 +1,15 @@
+.wp-core-ui .button.thz_cancel_import{
+	/*margin-right:15px;*/
+}
+
+.thz-export-import-paragraph{
+	max-width:600px;
+}
+#fw-backend-option-fw-option-export_preset{
+	display:none;
+	border:none!important;
+}
+.thz-export-preset-holder{
+	display:inline-block;
+	margin:0 0 0 15px;
+}

@@ -1,0 +1,199 @@
+/**
+ * Prefix (namespace) all css rules with ".fw-option-type-{$option_type}"
+ * This guarantees that there will be no conflicts with other styles.
+ */
+.fw-backend-option-type-thz-typography {
+	display: block;
+}
+.thz-typography-group {
+	display: block;
+	float: left;
+	margin: 0 10px 5px 0;
+	position: relative;
+	min-height:55px;
+}
+.thz-typography-group span {
+	display: block;
+	clear: both;
+	margin: 0 5px 5px 0;
+	font-weight: 600;
+	font-size: 12px;
+	position:relative;
+}
+.thz-fontbox {
+	display: block;
+	position: relative;
+	clear: both;
+}
+.thz-fontbox:before,
+.thz-fontbox:after {
+	display: table;
+	content: '';
+	clear: both;
+}
+#thz-font-selector {
+	display: none;
+	clear: both;
+	float: left;
+	margin: 0;
+}
+#thz-font-selector.thz-fonts-opened {
+	display: block;
+	margin: 0 0 10px 0;
+}
+#thz-font-selector.thz-fonts-closed {
+	display: none;
+}
+.thz-font-input {
+	cursor: pointer;
+	z-index: 1;
+	position: relative;
+}
+#thz-font-selector .family-dropdown {
+	position: absolute;
+	top: 45px;
+	left: 0;
+}
+.thz-typography-preview {
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	clear: both;
+	margin: 15px 0 0 0;
+	overflow: hidden;
+	float: left;
+	padding: 30px;
+	font-size: 28px;
+	line-height: 1.4;
+	text-align: center;
+	max-width: 500px;
+}
+/*.thz-typography-preview.show-preview{
+	display:block;
+}*/
+.thz-typography-subsets {
+	display: none;
+}
+.thz-typography-group .thz-color-picker-trigger,
+.thz-typography-group .thz-color-picker-holder {
+	width: 100%;
+}
+.thz-typography-group input[type="text"].fw-option-type-short-text {
+	max-width: 80px;
+}
+.thz-typography-group.font-input input {
+	text-transform: capitalize;
+}
+.thz-typography-group .fw-option-width-short {
+	width: 65px!important;
+	text-transform: capitalize;
+}
+.thz-typography-group.size input[type="text"] {
+	max-width: 50px;
+	z-index: 1;
+	position: relative;
+}
+
+.thz-typography-group select,
+.thz-typography-group input{
+	margin:0;
+	height:28px;
+	line-height:28px;
+}
+
+@media screen and (max-width: 782px){
+	.thz-typography-group select,
+	.thz-typography-group input:not(.fw-option-type-thz-color-picker){
+		height:36px;
+		line-height:36px;
+	}	
+}
+
+/* choosen override */
+.thz-typography-group .chosen-container.chosen-container-single {
+}
+#thz-font-family {
+	display: none;
+	height: 0;
+	padding: 0;
+	line-height: 0;
+}
+.thz-typography-group .chosen-container .chosen-results {
+	margin: 0;
+	padding: 0;
+}
+.thz-typography-group .chosen-container .chosen-search {
+	margin: 0;
+	padding: 8px;
+	box-shadow: none;
+}
+.thz-typography-group .chosen-container .chosen-results li:nth-child(2) {
+	text-transform: capitalize;
+}
+.thz-typography-group .chosen-container-single .chosen-search input[type=text] {
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+	border: 1px solid #ddd;
+	padding: 8px 5px;
+	margin: 0;
+	box-sizing: border-box;
+	background: none;
+	position: relative;
+}
+.thz-typography-group .chosen-container-single .chosen-search:before {
+	content: "\f179";
+	font-family: dashicons;
+	position: absolute;
+	z-index: 1000;
+	top: 17px;
+	right: 20px;
+	font-size: 20px;
+	color: #afaeae;
+}
+.thz-typography-group .chosen-container.chosen-container-single.chosen-container-active {
+	min-width: 200px;
+}
+.thz-typography-group .chosen-container-single .chosen-single {
+	width: 60px;
+	border-radius: 0px;
+	padding: 2px 6px;
+	line-height: 24px;
+	height: 30px;
+	vertical-align: middle;
+	border: none;
+	box-shadow: none;
+	background: none;
+	color: transparent;
+	outline: 0;
+	margin: -54px 0 0 0;
+}
+.thz-typography-group .chosen-container-single .chosen-single div b {
+	display: none;
+}
+.thz-typography-group .chosen-container-single .chosen-drop {
+	margin: 0;
+	box-shadow: none;
+	border-radius: 0;
+	border: 1px solid #ddd;
+	padding: 0;
+}
+.thz-typography-group .chosen-container-active.chosen-with-drop .chosen-single {
+	border: none;
+	box-shadow: none;
+	background: none;
+}
+.thz-typography-group .chosen-container .chosen-results li {
+	background-color: #fff;
+	background-image: none;
+	background-color: #fff;
+	cursor: pointer;
+	border-bottom: 1px solid #ddd;
+	display: block;
+	padding: 15px 8px;
+}
+.thz-typography-group .chosen-container .chosen-results li.highlighted {
+	background-color: #efefef;
+	background-image: none;
+	color: #121212;
+}

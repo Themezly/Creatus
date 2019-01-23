@@ -1,0 +1,181 @@
+/**
+ * Prefix (namespace) all css rules with ".fw-option-type-{$option_type}"
+ * This guarantees that there will be no conflicts with other styles.
+ */
+.thz-mainmenu-preview-container {
+	display: none;
+	width: auto;
+}
+.fw-option-type-thz-mainmenu {
+	display: block;
+	position: relative;
+}
+.fw-option-type-thz-mainmenu h2 {
+	padding-bottom: 5px;
+}
+.mainmenutitlesep {
+	border-top: 1px solid #efefef;
+	height: 15px;
+	display: block;
+}
+.mainmenu_preview_holder {
+	display: block;
+	position: relative;
+	padding:0 0 50px;
+}
+.mainmenu_preview_holder,
+.mainmenu_preview_holder * {
+	box-sizing: border-box;
+}
+/* top level */
+.thz-mainmenu-preview-container .tm_toplevel {
+	/* background-color:#f7f7f7;*/
+	padding: 0;
+	margin: 0;
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	clear: both;
+	overflow: hidden;
+}
+.thz-mainmenu-preview-container .tm_toplevel li {
+	display: inline-block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.thz-mainmenu-preview-container .tm_toplevel li a {
+	/*padding: 0 25px;*/
+	margin: 0;
+	height: 70px;
+	line-height: 70px;
+	text-decoration: none;
+	display: block;
+	position: relative;
+	box-sizing: content-box;
+}
+/*.thz-mainmenu-preview-container .tm_link a{
+    color:#454545;
+    background-color:#f7f7f7;
+}
+.thz-mainmenu-preview-container .tm_hovered a{
+    color:#039bf4;
+    background-color:#efefef;
+}
+.thz-mainmenu-preview-container .tm_active a{
+    color:#039bf4;
+    background-color:#efefef;
+}*/
+/* sub level */
+.thz-mainmenu-preview-container .tm_sublevel {
+	position: relative;
+	max-width: 220px;
+	list-style-type: none;
+	/* border:1px solid #ccc;*/
+	padding: 0;
+	margin: 10px 0 0 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.thz-mainmenu-preview-container .tm_sublevel li {
+	/*border-bottom: 1px solid #cccccc;*/
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.thz-mainmenu-preview-container .tm_sublevel li:last-child {
+	border-bottom: none!important;
+}
+.thz-mainmenu-preview-container .tm_sublevel li a {
+	display: block;
+	line-height: 50px;
+	/*padding: 0 0 0 10px;*/
+	text-decoration: none;
+}
+/*.thz-mainmenu-preview-container .tm_sublevel_link a{
+    color:#454545;
+    background-color:#ffffff;
+}
+.thz-mainmenu-preview-container .tm_sublevel_hovered a{
+    color:#039bf4;
+    background-color:#efefef;
+}
+.thz-mainmenu-preview-container .tm_sublevel_active a{
+    color:#039bf4;
+    background-color:#efefef;
+}*/
+/* child */
+.thz-mainmenu-preview-container .tm_sublevel.tm_childul {
+	left: 220px;
+	width: 220px;
+	margin: 0;
+	margin-top: 0px!important;
+	margin-left: 10px;
+	position: absolute;
+	top: 0;
+	z-index: 10;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*.mainmenu_preview_holder,
+.mainmenu_preview_holder *{
+	transition: all 0.4s cubic-bezier(0.2, -0.4, 0.36, 1);
+}*/
+
+.thz-menu-note {
+	display: block;
+	margin: 5px 0 10px 0;
+	font-size: 13px;
+	font-style: italic;
+	color: #9F9F9F;
+}
+.mainmenu_preview_holder a:active,
+.mainmenu_preview_holder a:focus {
+	box-shadow: none;
+}
+.mainmenu_preview_holder .childicon {
+	position: relative;
+	line-height: inherit!important;
+	margin: 0 0 0 8px;
+	font-size: .8em;
+}
+.mainmenu_preview_holder .child-sublevel {
+	position: absolute;
+	right: 10px;
+}
+.header_side .tm_toplevel {
+	float: left;
+	max-width: 280px;
+	clear: both;
+}
+.header_side .tm_toplevel li {
+	float: none;
+	display: block;
+}
+.header_side .sub_level_holder {
+	position: static;
+	float: left;
+	max-width: 280px;
+	width: 100%;
+	display: block;
+	clear: both;
+	margin: 0!important;
+}
+.header_side .tm_sublevel {
+	position: static!important;
+	margin-top: 0!important;
+	max-width: 280px!important;
+	width: 100%!important;
+	margin: 0!important;
+	display: block;
+}
+.fw-backend-option-type-thz-mainmenu + .fw-options-tabs-wrapper {
+	margin-top: 20px;
+}
+.thz-menu-preview-dialog {
+	z-index: 300000000;/*	righ:20px;
+	top:20px;
+	position:fixed!important;*/
+}

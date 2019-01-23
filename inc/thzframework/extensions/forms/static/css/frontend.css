@@ -1,0 +1,44 @@
+.wrap-forms select {
+	width: 100%;
+}
+.wrap-forms .field-columns-2 .field-column {
+	width: 50%;
+}
+
+.wrap-forms .field-columns-3 .field-column {
+	width: 33.3333%;
+}
+
+.thz-shortcode-form {
+	position:relative;
+}
+.thz-shortcode-form-msg{
+	display:none;
+	overflow:hidden;
+}
+.thz-shortcode-form-msg ul{
+	list-style-type:none;
+	padding:0;
+	margin:0 0 30px 0;
+}
+.thz-shortcode-form-msg .fw-flash-type-success{
+	color:green;
+	font-weight:bold;
+}
+.thz-shortcode-form-msg .fw-flash-type-success .fw-flash-message:after{
+	font-family: 'Thzicons';
+	content: "\f03a";
+	margin-left:10px;
+}
+.thz-shortcode-form-msg .fw-flash-type-error{
+	color:red;
+}
+.thz-shortcode-form-msg .fw-flash-type-error .fw-flash-message:before{
+	font-family: 'Thzicons';
+    content: "\e67c";
+    margin-right:10px;
+}
+.thz-shortcode-form-msg .fw-flash-type-error em{
+	font-weight:bold;
+	color:red!important;
+}

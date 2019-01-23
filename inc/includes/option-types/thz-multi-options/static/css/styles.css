@@ -1,0 +1,123 @@
+/**
+ * Prefix (namespace) all css rules with ".fw-option-type-{$option_type}"
+ * This guarantees that there will be no conflicts with other styles.
+ */
+.thz-multi-options-group {
+	display: block;
+}
+.thz-multi-options-group:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.fw-backend-option-type-thz-multi-options {
+	display: block;
+}
+.thz-multi-options-group .thz-multi-options-holder {
+	display: block;
+	float: left;
+	margin: 0 10px 5px 0;
+	min-height: 55px;
+}
+.thz-multi-options-group .thz-multi-holding-spinner {
+	/* margin-right: 0; */
+}
+.thz-multi-options-group .thz-multi-holding-radio .fw-option-type-radio-inline {
+	margin: 10px 0px 0 0;
+}
+.thz-multi-options-group .thz-multi-options-title {
+	display: block;
+	clear: both;
+	margin: 0 5px 5px 0;
+	font-weight: 600;
+	font-size: 12px;
+}
+.thz-multi-options-group .thz-multi-options-holder .thz-spinners-holder {
+	display: block;
+	/* margin: 0; */
+	/* padding: 0; */
+}
+.thz-multi-options-group .thz-multi-holding-textarea {
+	float: none;
+	clear: both;
+	max-width: 500px;
+}
+.thz-multi-options-group .thz-spinner {
+	/* padding-right: 25px; */
+}
+.thz-multi-options-group .thz-spinner a {
+	/* right: 4px; */
+}
+.thz-multi-options-group .thz-multi-holding-select select,
+.thz-multi-options-group .thz-multi-holding-text input {
+	height: 28px;
+	line-height: 28px;
+	margin: 0;
+}
+
+
+
+
+.thz-multi-options-group .thz-multi-holding-checkboxes .fw-option-type-checkboxes {
+	padding-top: 5px;
+}
+.thz-multi-options-group input[type="text"].fw-option-type-thz-color-picker:not(.fw-option-type-thz-color-picker) {
+	max-width: 160px;
+}
+.thz-multi-options-holder .thz-color-picker-trigger,
+.thz-multi-options-holder .thz-color-picker-holder {
+	width: 100%;
+}
+.thz-multi-brake {
+	display: block;
+	clear: both;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.thz-multi-options-group .thz-multi-holding-icon .thz-icon-name {
+	display: inline-block;
+}
+.thz-multi-options-group .thz-multi-holding-icon .icons-selector .selector {
+	height: 26px;
+}
+.thz-multi-options-group .thz-multi-holding-icon .icons-selector .selected-icon i {
+	line-height: 28px;
+}
+.thz-multi-options-group .thz-multi-holding-icon .icons-selector .selector-button i {
+	line-height: 28px;
+}
+.thz-multi-options-group .thz-multi-holding-icon .thz-single-icons {
+	width: auto;
+	max-width: 102px;
+}
+.thz-multi-options-group .thz-multi-holding-icon .thz-single-icons input.thz-icon-name[type="text"] {
+	position: absolute;
+	left: 110px;
+	top: 0;
+	display: inline-block;
+	width: 80px;
+	height: 27px;
+}
+.thz-multi-options-holder .thz-icons .thz-icon-name {
+	top: 12px;
+}
+.fw-backend-option.fw-backend-option-type-thz-box-style.for-multi {
+	display: none!important;
+}
+
+
+@media screen and (max-width: 782px){
+	.thz-multi-options-group .thz-multi-holding-select select,
+	.thz-multi-options-group .thz-multi-holding-text input{
+		height:36px;
+		line-height:36px;
+	}	
+	.thz-multi-options-group .thz-multi-holding-icon .icons-selector .selector {
+		height: 34px;
+	}
+
+	.thz-multi-options-group .thz-multi-holding-icon .icons-selector .selected-icon i,
+	.thz-multi-options-group .thz-multi-holding-icon .icons-selector .selector-button i {
+		line-height: 34px;
+	}
+}

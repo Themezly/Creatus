@@ -1,0 +1,36 @@
+.fw-option-type-thz-panel-builder .fw-thz-panel-builder-item-style-default {
+	border: 1px dashed #dddddd;
+	background-color: #f8f8f8;
+	padding: 10px;
+}
+
+.fw-option-type-thz-panel-builder .fw-builder-item-width-changer {
+	height: 20px;
+	display: inline-block;
+}
+
+.fw-option-type-thz-panel-builder .builder-item-type .item-type-icon-title .item-type-icon img {
+	opacity: 0.3;
+}
+
+.fw-option-type-thz-panel-builder .builder-item-type:hover .item-type-icon-title .item-type-icon img {
+	opacity: 0.45;
+}
+
+.fw-backend-option .fw-thz-panel-builder-item-type-form_header_title .fw-form-item-preview-subtitle-edit .fw-builder-item-inline-text-editor input{
+	width: 50% !important;
+}
+
+
+/* Panels  do not need these */
+#fw-option-side_panel .width-changer,
+#fw-option-side_panel .column-item-clone,
+#fw-option-side_panel .custom-section-clone,
+#fw-option-top_panel .custom-section-clone,
+#fw-option-bottom_panel .custom-section-clone,
+.modal-fw-option-input--top_panel #fw-backend-option-fw-edit-options-modal-panelposition,
+.modal-fw-option-input--bottom_panel #fw-backend-option-fw-edit-options-modal-panelposition,
+.modal-fw-option-input--top_panel #fw-backend-option-fw-edit-options-modal-panelwidth,
+.modal-fw-option-input--bottom_panel #fw-backend-option-fw-edit-options-modal-panelwidth{
+	display:none;
+}

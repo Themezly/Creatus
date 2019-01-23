@@ -1,0 +1,20 @@
+.fw-map-canvas .gm-style-iw{
+	overflow: hidden;
+}
+.fw-map-canvas .infowindow{
+	display:table;
+	max-width:500px;
+}
+.fw-map-canvas .infowindow-thumb,
+.fw-map-canvas .infowindow-content{
+	display:table-cell;
+	vertical-align:top;
+}
+.fw-map-canvas .infowindow-thumb{
+	padding:10px 10px 0 0;
+}
+.fw-map-canvas .infowindow-thumb img{
+	max-width:100px;
+	width:100%;
+	height:auto;
+}

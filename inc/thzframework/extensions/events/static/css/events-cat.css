@@ -1,0 +1,54 @@
+/* Events loop*/
+.thz-events .thz-grid-item-media-holder {
+	display: block;
+	position: relative;
+}
+.thz-events.left .thz-grid-item-media-holder {
+	float: left;
+	width: 40%;
+}
+.thz-events.right .thz-grid-item-media-holder {
+	float: right;
+	width: 40%;
+}
+.thz-events.left .has-post-thumbnail .thz-events-intro {
+	margin-left: 40%;
+}
+.thz-events.right .has-post-thumbnail .thz-events-intro {
+	margin-right: 40%;
+}
+.thz-events-meta {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.thz-events.left .thz-grid-item-media-holder,
+.thz-events.left .thz-grid-item-media-holder .thz-grid-item-media,
+.thz-events.left .thz-grid-item-media-holder .thz-aspect,
+.thz-events.left .thz-grid-item-media-holder .thz-ratio-in,
+.thz-events.left .thz-grid-item-media-holder .thz-hover {
+	border-top-left-radius: inherit;
+	border-bottom-left-radius: inherit;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.thz-events.right .thz-grid-item-media-holder,
+.thz-events.right .thz-grid-item-media-holder .thz-grid-item-media,
+.thz-events.right .thz-grid-item-media-holder .thz-aspect,
+.thz-events.right .thz-grid-item-media-holder .thz-ratio-in,
+.thz-events.right .thz-grid-item-media-holder .thz-hover {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-top-right-radius: inherit;
+	border-bottom-right-radius: inherit;
+}
+.thz-events.full .thz-grid-item-media-holder,
+.thz-events.full .thz-grid-item-media-holder .thz-grid-item-media,
+.thz-events.full .thz-grid-item-media-holder .thz-aspect,
+.thz-events.full .thz-grid-item-media-holder .thz-ratio-in,
+.thz-events.full .thz-grid-item-media-holder .thz-hover {
+	border-top-left-radius: inherit;
+	border-bottom-left-radius: 0;
+	border-top-right-radius: inherit;
+	border-bottom-right-radius: 0;
+}

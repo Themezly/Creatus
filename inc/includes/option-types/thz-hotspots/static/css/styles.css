@@ -1,0 +1,115 @@
+.fw-option-type-thz-hotspots{
+	max-width:500px;
+}
+.full-preview .fw-option-type-thz-hotspots{
+	max-width:100%;
+}
+.thz-hotspots-generator{
+	margin:0;
+	min-width:100%;
+	max-width:100%;
+	display:block;
+	overflow:hidden;
+}
+
+.thz-hotspots-preview {
+	width: 100%;
+	max-width:100%;
+	height:300px;
+	position: relative;
+	background: #222;
+	overflow: hidden;
+	display: block;
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+	cursor: copy;
+	position: relative;
+}
+.thz-hotspots-generator.has-image .thz-hotspots-preview{
+	height:auto;
+}
+.thz-hotspots-preview img {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+	position: relative;
+}
+.thz-hotspots-preview .thz-hotspot{
+	display: block;
+	position: absolute;
+	height: 26px;
+	width: 26px;
+	line-height: 26px;
+	border-radius: 26px;
+	text-align: center;
+	background: #07a5e3;
+	color: #fff;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: 600;
+	font-family:Verdana, Geneva, sans-serif;
+}
+.thz-hotspots-generator .fw-option-type-upload{
+	display:none;
+}
+
+.thz-hotspots-image-controlls{
+	margin:0 0 15px 0;
+	display:block;
+	overflow:hidden;
+}
+.thz-hotspots-image-controlls a.button,
+.thz-hotspots-image-controlls a{
+	margin: 0 15px 0 0;
+	display: inline-block;
+}
+.thz-hotspots-image-controlls a.hotspot-preview-size,
+.thz-hotspots-image-controlls a.hotspot-preview-size:focus,
+.thz-hotspots-image-controlls a.hotspot-preview-size:hover{
+	margin: 8px 0 0 0;
+	box-shadow:none;
+}
+.thz-hotspots-image-controlls .hotspot-remove-hotspots,
+.thz-hotspots-image-controlls .hotspot-remove-hotspots:focus,
+.thz-hotspots-image-controlls .hotspot-remove-hotspots:hover{
+	float:right;
+	color:red;
+	margin:8px 0 0 0;
+	display:none;
+	box-shadow:none;
+}
+.thz-hotspots-generator.has-hotspots .hotspot-remove-hotspots{
+	display:block;
+}
+
+.thz-hotspots-generator .hotspot-remove-image{
+	display:none;
+}
+.thz-hotspots-generator.has-image .hotspot-remove-image{
+	display:inline-block;
+}
+
+a.thz-remove-hotspot{
+	padding:10px;
+	border-radius:4px;
+	font-size:13px;
+	font-weight:600;
+	text-decoration:none;
+	margin:0;
+	display:inline-block;
+}
+a.thz-remove-hotspot,
+a.thz-remove-hotspot:focus {
+	background-color: #ed5565;
+	border-color: #d83b4d;
+	color: #fff;
+	box-shadow:none;
+}
+a.thz-remove-hotspot:hover {
+	background-color: #d83b4d;
+	border-color: #d83b4d;
+	color: #fff;
+	box-shadow:none;
+}

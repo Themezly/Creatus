@@ -1,0 +1,6 @@
+/* Simple slider */
+.thz-simple-slider-slide{
+	display:table-cell;
+	vertical-align:middle;
+	width: 100%;
+}

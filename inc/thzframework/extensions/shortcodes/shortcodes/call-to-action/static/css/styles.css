@@ -1,0 +1,96 @@
+.thz-cta-box-holder{
+	display:block;
+	padding:0;
+	position:relative;
+}
+.thz-cta-box-holder:after,
+.thz-cta-box-holder:before{
+	content:'';
+	display:table;
+	clear:both;
+}
+.thz-cta-box {
+	padding:30px;
+	display: table;
+	width:100%;
+	margin:0 auto;
+}
+.thz-cta-icon,
+.thz-cta-text-holder,
+.thz-cta-button,
+.thz-cta-spacer{
+	display:table-cell;
+	position:relative;
+}
+.thz-cta-heading-holder{
+	display:block;
+	padding:0;
+	margin:0;
+}
+.thz-cta-heading{
+	margin:0;
+}
+.thz-cta-subheading{
+	display:block;
+	margin:0;
+	font-size:18px;
+}
+.thz-cta-icon,
+.thz-cta-button{
+	padding: 0;
+	white-space: nowrap;
+	width:1px;
+}
+.thz-cta-text-holder{
+	padding:0;
+}
+.thz-cta-text{
+	padding:10px 0 0 0;
+	margin:0;
+}
+.thz-cta-spacer{
+	padding:0;
+	white-space: nowrap;
+}
+/* Buttons bottom */
+.thz-cta-bottom-buttons{
+	display:inline-block;
+	margin:0 auto;
+}
+.thz-cta-text-holder .thz-cta-button{
+	display:table-cell;
+}
+/* Icon top */
+.thz-cta-text-holder .thz-cta-icon{
+	display: block;
+	width:auto;
+	margin:0;
+}
+
+
+/* icon shape */
+.thz-cta-icon-in{
+	display:block;
+	margin:0;
+}
+.thz-cta-icon-in.thz-cta-ishape-square,
+.thz-cta-icon-in.thz-cta-ishape-rounded,
+.thz-cta-icon-in.thz-cta-ishape-circle{
+	background:#eee;
+}
+.thz-cta-icon-in.thz-cta-ishape-circle{
+	border-radius:100%;
+	border:1px solid #ccc;
+}
+
+@media screen and (max-width: 767px) {
+	.thz-cta-text-holder,
+	.thz-cta-icon,
+	.thz-cta-button,
+	.thz-cta-spacer{
+		display:block;
+		width: 100%;
+		float: none;
+		clear: both
+	}
+}

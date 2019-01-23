@@ -1,0 +1,19 @@
+/* hide filter button*/
+.tablenav.top #post-query-submit {
+	display: none;
+}
+
+@media only screen and (min-width: 1350px) {
+	#fw-option-general-event .fw-backend-option-input-type-map .fw-option-maps-tab .fw-col-sm-6{
+		max-width: 214px;
+	}
+
+	#fw-option-general-event .fw-backend-option-input-type-map .fw-option-maps-tab .fw-col-sm-6.map-googlemap {
+		min-width: 430px;
+	}
+
+	#fw-option-general-event .fw-backend-option-input-type-map .fw-inner.fw-pull-left{
+		width: 100%;
+		max-width: 100%;
+	}
+}

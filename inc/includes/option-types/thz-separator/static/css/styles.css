@@ -1,0 +1,8 @@
+/**
+ * Prefix (namespace) all css rules with ".fw-option-type-{$option_type}"
+ * This guarantees that there will be no conflicts with other styles.
+ */
+
+.fw-backend-option-type-thz-separator{
+	display:block;
+}

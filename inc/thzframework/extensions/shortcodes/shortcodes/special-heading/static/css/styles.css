@@ -1,0 +1,121 @@
+.thz-heading{
+	display:block;
+	clear:both;
+	padding:0;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.thz-heading:before,
+.thz-heading:after{
+	content:'';
+	display:table;
+	clear:both;
+}
+.thz-heading .thz-heading-title{
+	margin:0 auto;
+}
+.thz-heading-holder{
+	display:block;
+	clear:both;
+	padding:0;
+	margin:0 auto;
+}
+.thz-heading-holder:before,
+.thz-heading-holder:after{
+	content:'';
+	display:table;
+	clear:both;
+}	
+/* Underline */
+.thz-sh-underline{
+	display:block;
+	clear:both;
+}
+.thz-sh-underline .thz-heading-title{
+	display:block;
+	clear:both;
+}
+.thz-sh-underline .thz-sh-line{
+	display:block;
+	position:relative;
+	clear:both;
+	height:2px;
+	width:100%;
+	max-width:100%;
+	background-color:transparent;
+	margin:20px auto 0 auto;
+}
+.thz-sh-underline .thz-sh-line:after{
+	content:'';
+	width:75px;
+	height:inherit;
+	background-color:#039bf4;
+	display:block;
+	margin:0 auto;
+	float:none;
+}
+
+/* Sideline */
+.thz-sh-sideline .thz-heading-title{
+  display: inline-block;
+  padding: 0 20px;
+  position: relative;
+  line-height:normal;
+  width:60%;
+  vertical-align:middle;
+}
+.thz-sh-pos-right .thz-heading-title{
+	padding-left:0;
+}
+.thz-sh-pos-left .thz-heading-title{
+	padding-right:0;
+}
+.thz-sh-sideline .thz-sh-ls,
+.thz-sh-sideline .thz-sh-rs{
+  width:20%;
+  display:inline-block;
+  vertical-align:middle;
+  height:1px;
+  margin:0;
+  position:relative;
+}
+.thz-sh-sideline .thz-sh-ls:before,
+.thz-sh-sideline .thz-sh-ls:after,
+.thz-sh-sideline .thz-sh-rs:before,
+.thz-sh-sideline .thz-sh-rs:after{
+	width:100%;
+	content:'';
+	height:1px;
+	background:#eaeaea;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+}
+.thz-sh-sideline .thz-sh-ls:after,
+.thz-sh-sideline .thz-sh-rs:after{
+	top:auto;
+	bottom:0;
+}
+.thz-sh-sl-type-single .thz-sh-ls:after,
+.thz-sh-sl-type-single .thz-sh-rs:after{
+	display:none;
+}
+.thz-heading .thz-sh-sub{
+	display:block;
+	position:relative;
+	width:100%;
+	max-width:100%;
+	margin:0 auto;
+}
+
+/* parts */
+.thz-sh-part{
+	position:relative;
+	display:inline-block;
+	word-break: break-word;
+}
+.thz-heading-holder .thz-sh-part + * {
+	margin-top:0;
+}

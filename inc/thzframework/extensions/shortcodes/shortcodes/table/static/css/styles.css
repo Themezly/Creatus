@@ -1,0 +1,360 @@
+/* Table container */
+.thz-table-container {
+	display: block;
+	position: relative;
+}
+.thz-table-container:before,
+.thz-table-container:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+/* Pricing tables */
+.thz-pricing {
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+	box-sizing: content-box;
+	position: relative;
+	line-height: 1;
+	text-align: center;
+}
+.thz-pricing:after,
+.thz-pricing:before,
+.thz-pricing-in:before,
+.thz-pricing-in:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.thz-pricing-in{
+	display: table;
+	width:100%;
+	table-layout:auto;
+	position: relative;
+}
+.thz-pricing-wrap {
+	display: table-cell;
+	padding: 0;
+	position: relative;
+}
+.thz-pricing-package {
+	display: block;
+	position: relative;
+	margin: 0px;
+}
+.thz-pricing-rows {
+	display: block;
+	box-sizing: content-box;
+	position: relative;
+}
+.thz-pricing-col-1 {
+	width: 100%;
+}
+.thz-pricing-col-2 {
+	width: 50%;
+}
+.thz-pricing-col-3 {
+	width: 33.33%;
+}
+.thz-pricing-col-4 {
+	width: 25%;
+}
+.thz-pricing-col-5 {
+	width: 20%;
+}
+.thz-pricing-hasdes .thz-pricing-col-2 {
+	width: 70%;
+}
+.thz-pricing-hasdes .thz-pricing-col-2.desc-col {
+	width: 30%;
+}
+.thz-pricing-hasdes .thz-pricing-col-3 {
+	width: 40%;
+}
+.thz-pricing-hasdes .thz-pricing-col-3.desc-col {
+	width: 20%;
+}
+.thz-pricing-hasdes .thz-pricing-col-4 {
+	width: 27%;
+}
+.thz-pricing-hasdes .thz-pricing-col-4.desc-col {
+	width: 19%;
+}
+.thz-pricing-hasdes .thz-pricing-col-5 {
+	width: 22%;
+}
+.thz-pricing-hasdes .thz-pricing-col-5.desc-col {
+	width: 12%;
+}
+/* Style 1 layout */
+.thz-pricing-style1.has-highlight .thz-pricing-in{
+	padding-top:40px;
+}
+.thz-pricing-style1 .thz-pricing-wrap {
+	vertical-align:top;
+}
+.thz-pricing-style1 .thz-pricing-rows {
+	padding:20px;
+}
+.thz-pricing-style1 .thz-pricing-desc-heading-row,
+.thz-pricing-style1 .thz-pricing-heading{
+	height:60px;
+	display:block;
+	line-height:60px;
+	overflow:hidden;
+	padding:0;
+}
+.thz-pricing-style1 .thz-pricing-price-row,
+.thz-pricing-style1 .thz-pricing-desc-pricing-row{
+	display:table;
+	table-layout:fixed;
+	width:100%;
+	height:80px;
+	overflow:hidden;
+	padding:0;
+}
+.thz-pricing-style1 .thz-pricing-cell{
+	display:table-cell;
+	vertical-align:middle;
+}
+.thz-pricing-style1 .highlight-col .thz-pricing-heading{
+	padding:20px 0;
+}
+.thz-pricing-style1 .highlight-col .thz-pricing-button-row{
+	padding:40px 0;
+}
+.thz-pricing-style1 .thz-pricing-desc-heading-row {
+	font-size: 23px;
+}
+.thz-pricing-style1 .thz-pricing-desc-pricing-row {
+	font-size: 41px;
+}
+.thz-pricing-style1 .thz-pricing-heading {
+	font-size: 24px;
+	font-weight:600;
+}
+.thz-pricing-style1 .thz-pricing-price-row span {
+	font-size: 38px;
+	font-weight: bold;
+	line-height: 1;
+}
+.thz-pricing-style1 .thz-pricing-price-row small {
+	display: block;
+	font-size: 14px;
+}
+.thz-pricing-style1 .thz-pricing-switch-row {
+	font-size: 20px;
+}
+.thz-pricing-style1 .highlight-col {
+	z-index: 5;
+}
+.thz-pricing-style1 .highlight-col .thz-pricing-package{
+	margin-top:-40px;
+}
+.thz-pricing-style1 .desc-col .thz-pricing-desc-switch-row{
+	padding:23px 20px;
+}
+.thz-pricing-style1 .thz-pricing-package{
+	margin-left:-1px;
+
+}
+/* Style 1 styling */
+.thz-pricing-style1 .thz-pricing-package {
+	border: 1px solid #eaeaea;
+	background: #fff;
+	color: #121212;
+}
+/*.thz-pricing-style1 .thz-pricing-wrap + .thz-pricing-wrap:not(:last-of-type) > .thz-pricing-package,
+.thz-pricing-style1 .desc-col .thz-pricing-package{
+	border-right:0;
+}
+*/
+.thz-pricing-style1 .thz-pricing-rows {
+	border-bottom: 1px solid #eaeaea;
+}
+.thz-pricing-style1 .thz-pricing-rows:last-child {
+	border-bottom: 0px solid transparent;
+}
+.thz-pricing-style1 .thz-pricing-heading {
+	background: #fefefe;
+}
+.thz-pricing-style1 .thz-pricing-price-row {
+	background: #fafafa;
+}
+.thz-pricing-style1 .thz-pricing-price-row small {
+	color: #acacac;
+}
+.thz-pricing-style1 .desc-col .thz-pricing-rows {
+	color: #999;
+}
+/* Style 2 layout */
+.thz-pricing-style2 .thz-pricing-wrap{
+	vertical-align: bottom;
+}
+.thz-pricing-style2 .desc-col{
+	vertical-align: top;
+    top: 20px;
+}
+.thz-pricing-style2 .thz-pricing-package {
+	margin: 0 10px;
+}
+.thz-pricing-style2 .desc-col .thz-pricing-desc-heading-row {
+	font-size: 23px;
+	line-height: 1;
+	padding: 30px;
+}
+.thz-pricing-style2 .thz-pricing-rows {
+	padding: 20px;
+}
+.thz-pricing-style2 .thz-pricing-heading {
+	font-size: 24px;
+	line-height: 1;
+	font-weight: 600;
+	padding:30px;
+}
+.thz-pricing-style2 .desc-col .thz-pricing-desc-pricing-row {
+	font-size: 45px;
+    line-height: 1;
+    padding: 70px 0;
+}
+.thz-pricing-style2 .thz-pricing-price-row {
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.thz-pricing-style2 .thz-price-holder {
+	display: block;
+	height: 150px;
+	width: 150px;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 100%;
+}
+.thz-pricing-style2 .thz-price-holder span {
+	font-size: 40px;
+	display: block;
+	clear: both;
+	margin: 40px 0 0 0;
+}
+.thz-pricing-style2 .highlight-col {
+	z-index: 5;
+}
+.thz-pricing-style2 .highlight-col .thz-pricing-heading {
+	padding: 40px 0;
+}
+.thz-pricing-style2 .thz-pricing-desc-switch-row {
+	padding: 23px 0;
+}
+.thz-pricing-style2 .thz-pricing-switch-row {
+	font-size: 20px;
+}
+/* Style 2 styling */
+.thz-pricing-style2 .thz-pricing-package {
+	border: 1px solid #eaeaea;
+	background: #fff;
+	color: #777;
+}
+.thz-pricing-style2 .thz-pricing-rows {
+	border-bottom: 1px solid #eaeaea;
+}
+.thz-pricing-style2 .thz-pricing-rows:last-child {
+	border-bottom: 0px solid transparent;
+}
+.thz-pricing-style2 .desc-col .thz-pricing-desc-heading-row,
+.thz-pricing-style2 .thz-pricing-heading {
+	background: #fafafa;
+	color: #121212;
+}
+.thz-pricing-style2 .thz-price-holder {
+	background: #fafafa;
+	border: 5px solid #039bf4;
+}
+/* Style 3 layout */
+.thz-pricing-style3 .thz-pricing-wrap {
+	vertical-align:top;
+}
+.thz-pricing-style3 .thz-pricing-rows {
+	padding: 25px;
+}
+.thz-pricing-style3 .desc-col {
+	top:202px;
+}
+.thz-pricing-style3 .thz-pricing-heading {
+	font-size: 20px;
+	line-height: 1;
+	text-transform: uppercase;
+	padding: 50px 0 10px 0;
+}
+.thz-pricing-style3 .thz-pricing-price-row {
+	padding: 0 0 50px 0;
+}
+.thz-pricing-style3 .thz-pricing-price-row span {
+	display: block;
+	font-size: 48px;
+	font-weight: 300;
+	line-height: 1;
+	position: relative;
+	padding:0px 0 10px 0;
+}
+.thz-pricing-style3 .thz-pricing-price-row small {
+	display: block;
+	font-size: 14px;
+}
+.thz-pricing-style3 .highlight-col {
+	z-index: 5;
+	margin: 0 -1px;
+}
+.thz-pricing-style3 .thz-pricing-desc-switch-row {
+	padding: 28px 0;
+}
+.thz-pricing-style3 .thz-pricing-switch-row {
+	font-size: 20px;
+}
+/* Style 3 styling */
+.thz-pricing-style3 .thz-pricing-package {
+	background: #fff;
+	color: #121212;
+}
+.thz-pricing-style3 .thz-pricing-rows {
+	border-bottom: 1px solid #eaeaea;
+}
+.thz-pricing-style3 .thz-pricing-rows:last-child {
+	border-bottom: 0px solid transparent;
+}
+.thz-pricing-style3 .thz-pricing-heading,
+.thz-pricing-style3 .thz-pricing-price-row {
+	background: #039bf4;
+	color: #fff;
+	border: none;
+}
+.thz-pricing-style3 .highlight-col .thz-pricing-heading,
+.thz-pricing-style3 .highlight-col .thz-pricing-price-row {
+	background: #125E7A;
+	color: #fff;
+}
+
+@media (max-width: 980px) {
+	.thz-pricing-in{
+		display:block;
+	}
+	.thz-pricing-in .thz-pricing-wrap{
+		display:block;
+		width:100%;
+	}
+	.thz-pricing-in .desc-col{
+		display:none;
+	}
+	.thz-pricing-in .thz-pricing-wrap + .thz-pricing-wrap{
+		margin-top:30px;
+	}
+	.thz-pricing-style1 .thz-pricing-package{
+		margin-left:0px;
+	
+	}
+}

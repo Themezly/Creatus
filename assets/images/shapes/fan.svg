@@ -1,0 +1,6 @@
+<svg class="thz-svg-shape thz-svg-fan" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 250" preserveAspectRatio="none">
+	<polygon style="opacity:0.2;" points="1000,250 0,250 0,187.5 500.5,220.128 1000,187.5 "/>
+	<polygon style="opacity:0.4;" points="1000,250 0,250 0,203.167 500.5,220.128 1000,203.167 "/>
+	<polygon style="opacity:0.6;" points="1000,250 0,250 0,218.833 500.5,220.128 1000,218.833 "/>
+	<polygon points="1000,250 0,250 0,234.167 500.5,220.128 1000,234.167 "/>
+</svg>

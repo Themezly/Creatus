@@ -1,0 +1,27 @@
+.fw-option.fw-option-type-thz-url .thz-url-holder .thz-url{
+    float:left;
+    margin-right:10px;
+}
+.fw-option.fw-option-type-thz-url .fw-backend-option-descriptor{
+	display:inline-block;
+}
+.fw-option.fw-option-type-thz-url .thz-url-holder .thz-url-input{
+    width:auto;
+    float:left;
+}
+
+.hide-title #fw-backend-option-fw-edit-options-modal-thz_link_type-normal-thz_title{
+	display:none!important;
+}
+
+.hide-target #fw-backend-option-fw-edit-options-modal-thz_link_type-normal-thz_target{
+	display:none!important;
+}
+
+.hide-search #fw-backend-option-fw-edit-options-modal-thz_link_type-normal-thz_find_url{
+	display:none!important;
+}
+
+.hide-magnific #fw-backend-option-fw-edit-options-modal-thz_link_type-picked{
+	display:none!important;
+}

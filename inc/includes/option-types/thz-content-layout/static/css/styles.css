@@ -1,0 +1,197 @@
+/**
+ * Prefix (namespace) all css rules with ".fw-option-type-{$option_type}"
+ * This guarantees that there will be no conflicts with other styles.
+ */
+.fw-backend-option-type-thz-content-layout{
+	display:block;
+}
+.fw-backend-option-type-thz-content-layout .thz-spinners-holder{
+	display:inline-block;
+}
+.fw-backend-option-type-thz-content-layout .thz-spinners-title{
+	display:block;
+	clear:both;
+  	margin: 0 5px 5px 0;
+  	font-weight: bold;
+}
+
+.thz-content-row{
+	display:block;
+	clear:both;
+	margin:0 0 20px 0;
+}
+.thz-content-layout-desc {
+  display: block;
+  clear: both;
+  padding: 0;
+  margin:10px 0;
+  font-size: 13px;
+  font-style: italic;
+  color: #777;
+}
+.thz-content-layout-layoutsbox{
+	margin:20px 0 0 0;
+	display:block;
+	clear:both;
+}
+.thz-assign-new-layout-wrapper{
+	display:block;
+	clear:both;	
+	border:1px solid #eeeeee;
+	border-bottom:none;
+	padding:15px 50px 15px 10px;
+	position:relative;
+	overflow:hidden;
+}
+.thz-assign-new-layout-wrapper.selected_layout{
+	background:#fafafa;
+}
+.thz-assign-new-layout-wrapper:last-child{
+	border:1px solid #eeeeee;
+}
+.thz-assign-new-layout,
+.thz-assign-new-layout:focus{
+	display:inline-block;
+	outline: none;
+	box-shadow:none;
+}
+.thz-assign-new-layout-wrapper .remove-layout{
+	float:none;
+	position:absolute;
+	right:5px;
+	top:10px;
+}
+.fw-option-type-thz-content-layout select option:disabled { 
+	color: #ccc;
+}
+.fw-option-type-thz-content-layout select option.disabled_option{
+	display:none;
+	color:red;
+}
+
+.thz-content-layout-spinners-holder{
+	display:block;
+	overflow:hidden;
+	width:auto;
+	clear:both;
+	float:left;
+	margin:0;
+}
+.thz-content-layout-spinners-holder:before,
+.thz-content-layout-spinners-holder:after{
+	content:'';
+	display:table;
+	clear:both;
+}
+.thz-content-layout-button{
+	display:block;
+	clear:both;
+	float:none;
+}
+.fw-backend-option-type-thz-content-layout .thz-multi-holding-spinner.thz_spinner_hide{
+	display:none;
+}
+.thz-content-layout-button .update-layout{
+	margin-left:0px;
+	background:#fff;
+	color:red;
+}
+.thz-content-layout-button .hide_action_button{
+	display:none;
+}
+.thz-content-layout-autocomplete-menu{
+	overflow: auto;
+	overflow-x:hidden;
+	max-height: 270px;
+	max-width:500px;
+	z-index:800000;
+}
+.thz-content-layout-specific-holder{
+	display:none;
+}
+.thz-content-layout-specific.higlight_specific{
+	border:1px solid rgb(229, 138, 138);
+}
+
+.thz-content-layout-flashinfo span{
+	display:block;
+	line-height:25px;
+	font-size:14px;
+	color:green;
+	font-weight:bold;
+	font-style:italic;
+	margin:20px 0;
+	clear:both;
+}
+
+.thz-content-layout-titles{
+	font-weight:bold;
+	font-size:16px;
+}
+.fw-backend-option-type-thz-content-layout .fw-option.fw-option-type-thz-spinners{
+	display:block;
+	overflow:hidden;
+	float:none;
+	clear:both;
+}
+
+.thz-assign-new-layout-wrapper .activate-edit-layout{
+	font-size:16px;
+	cursor:pointer;
+	color: #aaa;
+	margin:2px 0 0 5px;
+	display:none;
+	position:absolute;
+	top:10px;
+	right:30px;
+	float:none;
+}
+.thz-assign-new-layout-wrapper .activate-edit-layout:hover{
+	color:#01729c;
+}
+.thz-assign-new-layout-wrapper.selected_layout .activate-edit-layout{
+	display:inline-block;
+}
+
+
+
+.thz-content-layout-spinners-holder .thz-multi-options-group{
+	float:left;
+	clear:both;
+	margin:0 0 10px 0;
+}
+
+/* full */
+.thz-content-layout-spinners-holder.full .thz-content-layout-leftblock-parent,
+.thz-content-layout-spinners-holder.full .thz-content-layout-rightblock-parent{
+	display:none;
+}
+
+/* left */
+.thz-content-layout-spinners-holder.left .thz-content-layout-rightblock-parent{
+	display:none;
+}
+
+/* right */
+.thz-content-layout-spinners-holder.right .thz-content-layout-leftblock-parent{
+	display:none;
+}
+
+/* left_right_content */
+.thz-content-layout-spinners-holder.left_right_content .thz-content-layout-contentblock-parent{
+	float:right;
+}
+
+/* left_right_content */
+.thz-content-layout-spinners-holder.content_left_right .thz-content-layout-rightblock-parent{
+	float:right;
+}
+.thz-content-layout-spinners-holder.content_left_right .thz-content-layout-leftblock-parent{
+	float:left;
+	margin-left:95px;
+}
+
+.thz-content-layout-spinners-holder.content_left_right .thz-content-layout-contentblock-parent{
+	position:absolute;
+	left:0;
+}

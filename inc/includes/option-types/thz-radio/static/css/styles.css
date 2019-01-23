@@ -1,0 +1,54 @@
+.fw-option-type-thz-radio.fw-option-type-thz-radio-inline > div {
+	float: left;
+	margin:0;
+	padding:0;
+}
+.fw-option-type-thz-radio.fw-option-type-thz-radio-inline > div span {
+	border:1px solid #ccc;
+	border-right:none;
+}
+.fw-option-type-thz-radio.fw-option-type-thz-radio-inline > div:last-child span {
+	border:1px solid #ccc;
+}
+.fw-option-type-thz-radio.fw-option-type-thz-radio-vertical > div span {
+	border:1px solid #ccc;
+	border-bottom:none;
+}
+.fw-option-type-thz-radio.fw-option-type-thz-radio-vertical > div:last-child span,
+.fw-option-type-thz-radio.fw-option-type-thz-radio-inline > div:last-child span {
+	border:1px solid #ccc;
+}
+.fw-option-type-thz-radio.fw-option-type-thz-radio-inline > div:first-child span {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.fw-option-type-thz-radio.fw-option-type-thz-radio-inline > div:last-child span {
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.fw-option-type-thz-radio.fw-option-type-thz-radio-vertical > div:first-child span {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.fw-option-type-thz-radio.fw-option-type-thz-radio-vertical > div:last-child span {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.fw-option-type-thz-radio input[type=radio] {
+	visibility: hidden;
+	position: absolute;
+	top: -99999px;
+	left: -99999px;
+}
+.fw-option-type-thz-radio label > span {
+	display:block;
+	background-color:#fff;
+	padding:4px 11px;
+	font-size:12px;
+	font-weight:600;
+}
+.fw-option-type-thz-radio input[type="radio"]:checked ~ * {
+ 	background-color:#00a0d2;
+ 	border-color:#00a0d2!important;
+ 	color:#fff;
+}

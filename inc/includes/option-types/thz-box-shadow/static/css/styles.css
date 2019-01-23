@@ -1,0 +1,83 @@
+/**
+ * Prefix (namespace) all css rules with ".fw-option-type-{$option_type}"
+ * This guarantees that there will be no conflicts with other styles.
+ */
+.fw-option-type-thz-box-shadow .td-option{
+	padding-right:0!important;
+}
+
+.fw-option-type-thz-box-shadow .thz-shadows-holder{
+	width:auto;
+	display:block;
+	position:relative;
+	width:100%;
+	max-width:600px;
+}
+.fw-option-type-thz-box-shadow .thz-shadows-holder:before,
+.fw-option-type-thz-box-shadow .thz-shadows-holder:after{
+	display:table;
+	content:'';
+	clear:both;
+	width:100%;
+}
+.fw-option-type-thz-box-shadow .thz-shadows-holder .fw-backend-option{
+    display: block;
+    float: left;
+    margin: 0 10px 5px 0;
+    padding:0;
+    min-height: 55px;
+}
+.fw-option-type-thz-box-shadow .fw-backend-option-type-thz-color-picker{
+	width:85px;
+}
+.fw-option-type-thz-box-shadow .fw-backend-option-type-thz-color-picker .fw-pull-left{
+	float:none!important;
+}
+.fw-option-type-thz-box-shadow .fw-backend-option-type-thz-color-picker .fw-backend-option-label label{
+	font-size:12px;
+	margin: 0;
+}
+.fw-option-type-thz-box-shadow .fw-backend-option-type-thz-color-picker .fw-backend-option-label .fw-inner{
+	padding:0 0 5px 0;
+}
+.fw-option-type-thz-box-shadow .thz-shadows-holder .fw-backend-option-type-checkbox{
+	display:block;
+	margin:0 0 10px 0;
+	clear: both;
+	width: 100%;
+	float: none;
+}
+.fw-option-type-thz-box-shadow .thz-shadows-holder .fw-option-type-addable-option-option{
+	position:relative;
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.fw-option-type-thz-box-shadow .thz-shadows-holder .td-move{
+	display:table-cell;
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	margin:0 auto;
+	width:60%;
+	height:3px;
+	text-align:center;
+	vertical-align:bottom;
+	z-index:10;
+}
+
+div.media-frame-content div.thz-shadows-holder .fw-backend-option > .fw-backend-option-label.fw-col-lg-2 {
+    width:100%;
+    float:none;
+}
+
+/*.fw-option-type-thz-box-shadow .thz-color-picker-trigger, 
+.fw-option-type-thz-box-shadow .thz-color-picker-holder {
+    width: 100%;
+}*/
+
+.fw-option-type-thz-box-shadow .thz-shadows-holder .fw-backend-option:nth-child(6){
+	 width:30px;
+}

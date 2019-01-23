@@ -1,0 +1,89 @@
+.install-setup {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    max-width: 1280px;
+}
+
+.wrap-setup-boxes .sub-header {
+    padding: 10px 0 36px 0;
+    margin: 0;
+}
+.postbox-holder{
+    display:block;
+    width:33.3333%;
+    float:left;
+}
+.auto-setup-box {
+    margin-bottom: 20px;
+    margin-right: 22px;
+}
+.plugins-update-holder .actions{
+	display:none;
+}
+.auto-setup-box .header h3 {
+    padding-left: 22px;
+    font-weight: 500;
+}
+
+.auto-setup-box .content p {
+    color: #666;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.auto-setup-box .content {
+    padding: 22px;
+}
+
+.version-info{
+	font-weight:600;
+}
+.need-update{
+	color:#ff0000;
+}
+
+.latest-version{
+	color:#71C671;
+}
+
+.auto-setup-box ul:not(.update-plugins-list) {
+    margin-left: -5px;
+    margin-bottom: 10px;
+}
+
+.auto-setup-box li {
+    line-height: 20px;
+    color: #23282d;
+    margin-bottom: 10px;
+}
+
+.auto-setup-box li .dashicons.dashicons-yes {
+    color: #6abf2b;
+}
+
+.auto-setup-box li .dashicons.dashicons-no-alt {
+    color: #d54e21;
+}
+
+.auto-setup-box li span {
+    padding-left: 8px;
+}
+
+.auto-setup-box .actions {
+    height: 28px;
+    padding: 15px 22px;
+    background-color: #FAFAFA;
+    border-top: 1px solid #eee;
+}
+
+.skip-auto-setup {
+    margin-right: 0;
+}
+
+@media (min-width: 1280px) {
+    .auto-setup-box .content p:first-child {
+        height: 50px;
+    }
+}

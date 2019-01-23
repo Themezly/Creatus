@@ -1,0 +1,16 @@
+/**
+ * Prefix (namespace) all css rules with ".fw-option-type-{$option_type}"
+ * This guarantees that there will be no conflicts with other styles.
+ */
+.fw-backend-option-type-thz-menu-list{
+	display:block;
+}
+.fw-backend-option-type-thz-menu-list .thz-spinners-holder{
+	display:inline-block;
+}
+.fw-backend-option-type-thz-menu-list .thz-spinners-title{
+	display:block;
+	clear:both;
+  	margin: 0 5px 5px 0;
+  	font-weight: bold;
+}

@@ -1,0 +1,19 @@
+.fw-option-type-thz-sortable-checks .ui-sortable-placeholder{
+	visibility:visible!important;
+	background:#f8fdff;
+	border:1px dashed #ccc;
+	overflow:hidden;
+}
+.thz-sortable-inline .thz-sort-choice{
+	display:inline-block;
+	margin-right:10px;
+	cursor:move;
+}
+.fw-option-type-thz-sortable-checks .thz-sort-choice label{
+	cursor:move;
+}
+.thz-sortable-vertical .thz-sort-choice{
+	display:block;
+	margin-bottom:10px;	
+	cursor:move;
+}

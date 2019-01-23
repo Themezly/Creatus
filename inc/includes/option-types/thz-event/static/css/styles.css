@@ -1,0 +1,18 @@
+.fw-backend-option-type-event {
+	padding-left: 0;
+	padding-top: 0;
+	padding-right: 0;
+}
+
+.fw-option-type-event .fw-backend-option-design-default:last-child {
+	border: none;
+}
+
+.fw-backend-option.fw-backend-option-type-thz-event{
+	padding:0;
+	border: none;
+}
+
+#fw-options-box-events_options_box + #fw-options-box-main{
+	display:none;
+}

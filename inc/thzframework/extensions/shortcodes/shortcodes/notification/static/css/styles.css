@@ -1,0 +1,235 @@
+/* NOTIFICATIONS */
+.thz-notification-container{
+	position: relative;
+	display: block;	
+}
+.thz-notification-container:before,
+.thz-notification-container:after{
+	content:'';
+	display:table;
+	clear:both;
+}
+.thz-notification {
+	padding: 15px;
+	overflow: hidden;
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+	line-height: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	word-wrap: break-word;
+}
+.thz-notification-inner {
+	display: block;
+	overflow: hidden;
+}
+.thz-notification-box {
+	display: block;
+	overflow: hidden;
+}
+.thz-notification-inner.thz-center {
+	text-align: center;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.thz-notification-content {
+	display: block;
+	overflow: hidden;
+}
+.thz-notification .thz-notification-title {
+	margin:0;
+	padding: 0;
+	line-height: 1.1;
+}
+.thz-notification .thz-notification-title + .thz-notification-text{
+	margin-top:15px;
+}
+/* notification icons */
+.thz-notification-icon {
+	display: table-cell;
+	font-size: 30px;
+	width: 30px;
+	vertical-align: top;
+	line-height: 1.1;
+}
+.thz-iconlineup {
+	display: table;
+	width: 100%;
+}
+.thz-notification-icon.valignmiddle {
+	vertical-align: middle;
+}
+.thz-notification-icon.valignbottom {
+	vertical-align: bottom;
+}
+.thz-notification-icon:before {
+	margin: 0 15px 30px 0;
+	line-height: 1.1;
+}
+.thz-notification-icon.fa-lg:before {
+	width: 50px;
+	font-size: 50px;
+	line-height: 1;
+}
+.thz-notification.thz-align-right .thz-notification-icon:before {
+	margin: 0 0px 30px 15px;
+}
+/* close notification */
+.thz-notification-close {
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	text-decoration: inherit;
+	top: 5px;
+	right: 5px;
+	width: 20px;
+	height: 20px;
+}
+.thz-notification-close:before {
+	content: "\f00d";
+	font-size: 20px;
+}
+.thz-notification.thz-align-right .thz-notification-close {
+	right: auto;
+	left: 5px;
+}
+/* notification colors */
+.thz-notification-red {
+	background: #fdf7f7;
+	border-style: solid;
+	border-color: #fbe0e0;
+	border-width: 1px;
+	color: #F44336;
+}
+.thz-notification-red .thz-notification-title {
+	color: #F44336;
+}
+.thz-notification-red a {
+	color: #c12a1f;
+}
+.thz-notification-red a:hover {
+	color: #F44336;
+}
+.thz-notification-green {
+	background: #f8fff3;
+	border-style: solid;
+	border-color: #d3fab7;
+	border-width: 1px;
+	color: #75a362;
+}
+.thz-notification-green .thz-notification-title {
+	color: #4caf50;
+}
+.thz-notification-green a {
+	color: #39793c;
+}
+.thz-notification-green a:hover {
+	color: #4caf50;
+}
+.thz-notification-blue {
+	background: #f3faff;
+	border-style:solid;
+	border-color: #d3edff;
+	border-width: 1px;
+	color: #2196f3;
+}
+.thz-notification-blue .thz-notification-title {
+	color: #2196f3;
+}
+.thz-notification-blue a {
+	color: #1564a2;
+}
+.thz-notification-blue a:hover {
+	color: #2196f3;
+}
+.thz-notification-yellow {
+	background: #fffbf7;
+	border-style: solid;
+	border-color: #ffe6ce;
+	border-width: 1px;
+	color: #ff9800;
+}
+.thz-notification-yellow .thz-notification-title {
+	color: #ff9800;
+}
+.thz-notification-yellow a {
+	color: #d0810c;
+}
+.thz-notification-yellow a:hover {
+	color: #ff9800;
+}
+.thz-notification-gray {
+	background: #fbfbfb;
+	border-style: solid;
+	border-color: #ebebeb;
+	border-width: 1px;
+	color: #5d5d5d;
+}
+.thz-notification-gray .thz-notification-title {
+	color: #5d5d5d;
+}
+.thz-notification-gray a {
+	color: #3a3a3a;
+}
+.thz-notification-gray a:hover {
+	color: #5d5d5d;
+}
+.thz-notification-dark {
+	background: #0e0e0e;
+	border-style: solid;
+	border-color: #000;
+	border-width: 1px;
+	color: #dbdbdb;
+}
+.thz-notification-dark .thz-notification-title {
+	color: #dbdbdb;
+}
+.thz-notification-dark .thz-notification-close {
+	color: #dbdbdb;
+}
+.thz-notification-dark a {
+	color: #bcbcbc;
+}
+.thz-notification-dark a:hover {
+	color: #fff;
+}
+.thz-notification-clear {
+	background: none;
+	border-style: solid;
+	border-color: #e9e9e9;
+	border-width: 1px;
+}
+.thz-notification-clear .thz-notification-close {
+	color: #868686;
+}
+.thz-notification-clear a {
+	color: #121212;
+}
+.thz-notification-clear a:hover {
+	color: #bcbcbc;
+}
+/* notification borders */
+.thz-notification.dashedb {
+	border-style: dashed!Important;
+	border-width: 2px!Important;
+}
+.thz-notification.dottedb {
+	border-style: dotted!Important;
+	border-width: 2px!Important;
+}
+.thz-notification.doubleb {
+	border-style: double!Important;
+	border-width: 5px!Important;
+}
+.thz-notification.bordernone {
+	border: none!Important;
+	border-style: none!Important;
+}

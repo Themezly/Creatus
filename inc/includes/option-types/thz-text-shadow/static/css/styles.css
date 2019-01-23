@@ -1,0 +1,187 @@
+/**
+ * Prefix (namespace) all css rules with ".fw-option-type-{$option_type}"
+ * This guarantees that there will be no conflicts with other styles.
+ */
+.fw-option-type-thz-text-shadow .td-option {
+	padding-right: 0!important;
+}
+.fw-option-type-thz-text-shadow .thz-text-shadows-holder {
+	display: table;
+	position: relative;
+	width: 100%;
+	table-layout: fixed;
+	max-width: 370px;
+}
+.fw-option-type-thz-text-shadow .thz-text-shadows-holder:before,
+.fw-option-type-thz-text-shadow .thz-text-shadows-holder:after {
+	display: table;
+	content: '';
+	clear: both;
+	width: 100%;
+}
+.fw-option-type-thz-text-shadow .thz-text-shadows-holder .fw-backend-option {
+	display: block;
+	float: left;
+	margin: 0 10px 5px 0;
+	min-height: 55px;
+	padding: 0;
+}
+.fw-option-type-thz-text-shadow .fw-backend-option-type-thz-color-picker {
+	width: 35px;
+}
+.fw-option-type-thz-text-shadow .fw-backend-option-type-thz-color-picker .fw-pull-left {
+	float: none!important;
+}
+.fw-option-type-thz-text-shadow .fw-backend-option-type-thz-color-picker .fw-backend-option-label label {
+	font-size: 12px;
+	margin: 0;
+}
+.fw-option-type-thz-text-shadow .customize-control-title{
+	margin: 0 5px 5px 0!important;
+	padding:0;
+	font-size: 12px!important;
+}
+.fw-option-type-thz-text-shadow .fw-backend-option-type-thz-color-picker .fw-backend-option-label .fw-inner {
+	padding: 0 0 5px 0;
+}
+.fw-option-type-thz-text-shadow .thz-text-shadows-holder .fw-backend-option-type-checkbox {
+	display: block;
+	margin: 0 0 10px 0;
+}
+.fw-backend-option-design-customizer .fw-option-type-thz-text-shadow .fw-backend-option-label,
+.fw-backend-option-design-customizer .fw-option-type-thz-text-shadow .fw-inner.fw-clearfix{
+    padding: 0;
+    margin: 0;
+    line-height: inherit;
+    float: none;
+    background: none;
+    width: auto;
+}
+.fw-option-type-thz-text-shadow .thz-text-shadows-holder .fw-option-type-addable-option-option {
+	position: relative;
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+.fw-option-type-thz-text-shadow .customize-control-title{
+	margin: 0 5px 2px 0!important;
+	padding:0;
+	font-size: 12px!important;
+	display: block;
+	font-weight: 600;
+}
+.fw-option-type-thz-text-shadow .thz-text-shadows-holder .td-move {
+	display: table-cell;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 60%;
+	height: 3px;
+	text-align: center;
+	vertical-align: bottom;
+	z-index: 10;
+}
+div.media-frame-content div.thz-text-shadows-holder .fw-backend-option > .fw-backend-option-label.fw-col-lg-2 {
+	width: 100%;
+	float: none;
+}
+.thz-text-shadow-preview {
+	position: relative;
+	display: block;
+	border: 1px dashed #ccc;
+	border-radius: 5px;
+	margin: 0;
+	padding: 30px 15px;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1.4;
+	width: 100%;
+	max-width: 330px;
+	overflow: hidden;
+}
+.thz-text-shadow-text {
+	/*text-align:center;*/
+	display: block;
+	width: inherit;
+	line-height: inherit;
+}
+.thz-text-shadow-preview-colors {
+	display: block;
+	margin: 15px 0 20px 0;
+	position: relative;
+}
+.thz-text-shadow-c {
+	float: right;
+	margin: 0 5px 0 0;
+}
+.thz-text-shadow-c.using-connected-color {
+	display: none;
+}
+.thz-text-shadow-preview-colors .thz-text-shadow-title {
+	font-size: 12px;
+	font-weight: 600;
+	display: block;
+	float: left;
+	margin: 5px 5px 0 0;
+}
+.thz-text-shadow-preview-colors .thz-color-picker-trigger,
+.thz-text-shadow-preview-colors .thz-color-picker-holder {
+	width: 100%;
+}
+.thz-text-shadows-container {
+	position: relative;
+}
+.thz-text-shadows-container.no-preview{
+	margin-top:50px;
+}
+.thz-text-shadows-container .fw-option-type-addable-option-add {
+	position: absolute;
+	top: -50px;
+}
+/* text shadow */
+.thz-box-holding-text-shadow {
+	float: none;
+	clear: both;
+}
+.thz-box-holding-text-shadow .fw-option-type-thz-text-shadow {
+	display: none;
+	margin: 15px 0 0 0;
+}
+.thz-box-holding-text-shadow.show-shadows .fw-option-type-thz-text-shadow {
+	display: block;
+	display: block;
+	position: relative;
+	z-index: 1;
+}
+.thz-box-holding-text-shadow .thz-show-text-shadow {
+	margin: 5px 0 0 0;
+	display: inline-block;
+	cursor: pointer;
+	font-style: italic;
+	color: green;
+	font-weight: 600;
+	font-size: 12px;
+}
+.thz-show-text-shadow .has-shadows {
+	display: none;
+}
+.thz-box-holding-text-shadow .thz-show-text-shadow .has-shadows.show {
+	display: inline-block;
+	margin: 0 0 0 5px;
+	color: red;
+}
+.thz-text-shadow-preview-colors:before,
+.thz-text-shadow-preview-colors:after,
+.thz-text-shadow-preview:after,
+.thz-text-shadow-preview:before,
+.thz-text-shadows-container:before,
+.thz-text-shadows-container:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+.connect-text-shadow.thz-option-initialized.show-shadows .thz-typography-preview {
+	display: none!important;
+}

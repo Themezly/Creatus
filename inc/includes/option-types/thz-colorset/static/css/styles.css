@@ -1,0 +1,23 @@
+/**
+ * Prefix (namespace) all css rules with ".fw-option-type-{$option_type}"
+ * This guarantees that there will be no conflicts with other styles.
+ */
+.thz-colorset-box{
+	float:left;
+	margin:0px 10px 0 0;
+}
+.thz-colorset-label{
+    display: block;
+    clear: both;
+    margin: 0 5px 5px 0;
+    font-weight: 600;
+    font-size: 12px;
+}
+.thz-colorset-box .thz-color-picker-holder{
+	display: inline-block;
+    position: relative;
+}
+.thz-colorset-box .thz-color-picker-trigger, 
+.thz-colorset-box .thz-color-picker-holder {
+    width: 100%;
+}

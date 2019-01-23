@@ -1,0 +1,50 @@
+.fw-option.fw-option-type-thz-ace .thz-url-holder .thz-ace {
+	float: left;
+	margin-right: 10px;
+}
+.fw-option.fw-option-type-thz-ace .thz-ace-holder .thz-ace-input {
+	width: auto;
+	float: left;
+}
+.thz-ace-holder {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	height:300px;
+	width: 100%;
+	max-width:850px;
+	border: 1px solid #dedede;
+}
+.thz-ace-holder textarea{
+
+}
+.thz-ace-editor{
+	position: absolute !important;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.fw-backend-option-type-thz-ace .fw-backend-option-label,
+.fw-backend-option-type-thz-ace .fw-backend-option-desc {
+	display:none;
+
+}
+.thz-ace-label{
+    font-weight: 600;
+    float: none;
+    display:block;
+    clear:both;
+    margin:0 0 10px 0;
+    font-size: 14px;
+}
+.thz-ace-desc{
+    float: none;
+    display:block;
+    clear:both;
+    margin:0 0 20px 0;
+    font-size: 13px;
+ 	font-style: italic;
+    color: #666666;
+	max-width: 800px;
+}

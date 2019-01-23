@@ -1,0 +1,200 @@
+/* Typekit */
+.thz-typekit-wrapper {
+	display: block;
+	overflow: hidden;
+}
+.thz-typekit-wrapper + .thz-typekit-wrapper {
+	margin-top: 15px;
+}
+.thz-typekit-name,
+.thz-typekit-families {
+	display: block;
+	clear: both;
+	margin: 0 0 8px 0;
+ font-size::116px;
+	font-weight: 600;
+}
+.thz-typekit-wrapper ul {
+	margin: 15px 0 0 15px;
+}
+.thz-typekit-wrapper ul li {
+	margin: 0 0 8px 15px;
+	padding: 0;
+	list-style-type: circle;
+}
+.thz-typekit-list.loading:before {
+	content: '';
+	display: block;
+	clear: both;
+	width: 20px;
+	height: 20px;
+	margin: 0 0 15px;
+	background: url(../../../../../../../../../wp-admin/images/spinner.gif);
+}
+/* Fontsquirrel */
+.thz-fontsquirrel-wrapper {
+	max-width: 800px;
+}
+.thz-fontsquirrel-wrapper .categories,
+.thz-fontsquirrel-wrapper .fonts {
+	display: block;
+	clear: both;
+	overflow: hidden;
+	margin: 0 0 15px 0;
+}
+.thz-fontsquirrel-wrapper .categories li {
+	float: left;
+	margin: 0 8px 8px 0;
+}
+.thz-fontsquirrel-wrapper .categories li a {
+	text-decoration: none;
+	font-size: 12px;
+	letter-spacing: 0.5px;
+	border: 1px solid #dedede;
+	border-radius: 3px;
+	padding: 3px 5px;
+	display: block;
+	font-weight: 600;
+}
+.thz-fontsquirrel-wrapper a:focus {
+	box-shadow: none;
+}
+.thz-fontsquirrel-wrapper .fonts li {
+	font-size: 14px;
+	padding: 0 0 5px 0;
+	display: block;
+	border-bottom: 1px solid #dedede;
+	padding: 8px 0;
+	position: relative;
+}
+.thz-fontsquirrel-wrapper .fonts li.inactive {
+	display: none;
+}
+.thz-fontsquirrel-wrapper .fonts li.loading:before {
+	content: '';
+	display: block;
+	background: rgba(255, 255, 255, 0.4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+}
+.thz-fontsquirrel-wrapper .fonts li .font-title {
+	position: relative;
+	padding: 0 30px 0 0;
+}
+.thz-fontsquirrel-wrapper .fonts li.loading .font-title:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	margin: 0 0 0 15px;
+	background: url(../../../../../../../../../wp-admin/images/spinner.gif);
+}
+.thz-fontsquirrel-wrapper .fonts li a {
+	text-decoration: none;
+	margin: 0 0 0 30px;
+	font-size: 16px;
+	vertical-align: middle;
+	display: inline-block;
+	float: right;
+}
+.thz-fontsquirrel-wrapper .fonts li a.delete-font {
+	color: #F4511E;
+}
+.thz-fontsquirrel-wrapper .fonts li a.hide-icon {
+	display: none;
+}
+.fsearch-container {
+	display: block;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	margin: 0 0 30px 0;
+}
+input[type="text"].fsearch {
+	margin: 0;
+	border-radius: 4px;
+	border: 1px solid #f2f2f2;
+	border-radius: 4px;
+	box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.03);
+	background-color: #ffffff;
+	font-size: 14px;
+	width: 100%;
+	padding: 7px 10px;
+}
+input[type="text"].fsearch:focus {
+	border-color: #ccc;
+}
+.fsearch::-webkit-input-placeholder {
+ color: #ccccccc;
+ font-style:italic;
+}
+.fsearch::-moz-placeholder {
+ color: #ccccccc;
+ font-style:italic;
+}
+.fsearch:-ms-input-placeholder {
+ color: #ccccccc;
+ font-style:italic;
+}
+.fsearch:-moz-placeholder {
+ color: #ccccccc;
+ font-style:italic;
+}
+.fsearch-container a.clear-fsearch,
+.fsearch-container a.clear-fsearch:focus,
+.fsearch-container a.clear-fsearch:hover {
+	visibility: hidden;
+	color: #aaa;
+	text-decoration: none;
+	font-size: 14px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	margin: 0 0 0 5px;
+	box-shadow: none;
+}
+.searching.fsearch-container a.clear-fsearch {
+	visibility: visible;
+}
+.downloaded-fonts {
+	display: block;
+	overflow: hidden;
+	clear: both;
+}
+.downloaded-fonts.has-fonts {
+	margin: 0 0 20px;
+}
+.downloaded-title {
+	display: block;
+	font-size: 14px;
+	font-weight: 500;
+	margin: 0 0 15px 0;
+}
+.downloaded {
+	text-decoration: none;
+	font-size: 12px;
+	letter-spacing: 0.5px;
+	border: 1px solid #dedede;
+	border-radius: 3px;
+	padding: 3px 5px;
+	display: block;
+	float: left;
+	font-weight: 600;
+	margin: 0 8px 8px 0;
+}
+.downloaded-fonts .cant-proceed{
+	display: block;
+	clear:both;
+	font-size: 14px;
+	font-weight: 500;
+	margin: 0 0 15px 0;
+	color: #F4511E;
+}

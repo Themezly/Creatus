@@ -1,0 +1,103 @@
+/**
+ * Prefix (namespace) all css rules with ".fw-option-type-{$option_type}"
+ * This guarantees that there will be no conflicts with other styles.
+ */
+.fw-backend-option-type-thz-spinners {
+	display: block;
+}
+.thz-spinner {
+	display: inline-block;
+	position: relative;
+	padding-right: 20px;
+	width: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.thz-spinner input.fw-option.fw-option-type-thz-spinner {
+	width: auto!important;
+	max-width: 45px!important;
+	text-align: center;
+	height: 28px;
+	line-height: 28px;
+	padding: 0px 5px;
+	margin: 0;
+}
+.thz-spinner a {
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	right: 0;
+	height: 15px;
+	width: 15px;
+	line-height: 15px;
+	outline: none;
+	text-align: right;
+	box-shadow: none!important;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.thz-spinner a.thz-spinner-up {
+	top: -1px;
+}
+.thz-spinner a.thz-spinner-down {
+	bottom: -1px;
+}
+.thz-spinner .add-on {
+	width: auto;
+	display: inline-block;
+	float: right;
+	min-width: 16px;
+	padding: 0px 4px;
+	font-size: 12px;
+	font-weight: 400;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	text-shadow: 0 1px 0 #ffffff;
+	background-color: #eeeeee;
+	border: 1px solid #cccccc;
+	margin: 0px 0 0 -2px;
+}
+select.add-on.thz-spinner-units {
+	max-width: 40px!important;
+	width: auto!important;
+	padding: 0 0 1px 0;
+	height: 28px;
+	line-height: 28px;
+	margin: 0px 0px 0 -2px;
+	font-size: 12px;
+}
+select.add-on.thz-spinner-units:focus {
+	box-shadow: none;
+	border: 1px solid #cccccc;
+}
+
+.thz-spinner-title {
+	display: block;
+	clear: both;
+	margin: 0 5px 5px 0;
+	font-weight: 600;
+	font-size: 12px;
+}
+.thz-spinners-holder {
+	display: inline-block;
+}
+
+
+@media screen and (max-width: 782px){
+	.thz-spinner input.fw-option.fw-option-type-thz-spinner,
+	select.add-on.thz-spinner-units{
+		height:36px;
+		line-height:36px;
+	}	
+
+	.thz-spinner .add-on {
+		height:34px;
+		line-height:34px;
+	}
+}

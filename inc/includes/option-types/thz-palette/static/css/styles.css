@@ -1,0 +1,42 @@
+/**
+ * Prefix (namespace) all css rules with ".fw-option-type-{$option_type}"
+ * This guarantees that there will be no conflicts with other styles.
+ */
+.fw-option-type-thz-palette{
+ 	display:block;
+}
+.fw-option-type-thz-palette:before,
+.fw-option-type-thz-palette:after{
+ 	content:'';
+ 	display:table;
+ 	clear:both;
+ }
+.thz-palette-box{
+	float:left;
+	margin:0px 10px 0 0;
+}
+.thz-palette-box:nth-child(6n){
+	clear:left;
+}
+
+.thz-palette-box:nth-child(n+6){
+	margin-top:15px;
+}
+.thz-palette-label{
+    display: block;
+    clear: both;
+    margin: 0 5px 5px 0;
+    font-weight: 600;
+    font-size: 12px;
+}
+.thz-palette-box .thz-color-picker-holder{
+	display: inline-block;
+    position: relative;
+}
+.thz-palette-box .fw-backend-option-descriptor{
+    position: relative;
+}
+.thz-palette-box .thz-color-picker-trigger, 
+.thz-palette-box .thz-color-picker-holder {
+    width: 100%;
+}

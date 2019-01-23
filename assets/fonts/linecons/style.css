@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'Linecons';
+  src: url('fonts/Linecons.woff?3q03wa') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.linecons {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Linecons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.linecons-heart2:before {
+  content: "\f2ac";
+}
+.linecons-cloud3:before {
+  content: "\f2ad";
+}
+.linecons-star5:before {
+  content: "\f2ae";
+}
+.linecons-tv2:before {
+  content: "\f2af";
+}
+.linecons-sound2:before {
+  content: "\f2b0";
+}
+.linecons-video:before {
+  content: "\f2b1";
+}
+.linecons-trash3:before {
+  content: "\f2b2";
+}
+.linecons-user2:before {
+  content: "\f2b3";
+}
+.linecons-key3:before {
+  content: "\f2b4";
+}
+.linecons-search2:before {
+  content: "\f2b5";
+}
+.linecons-settings2:before {
+  content: "\f2b6";
+}
+.linecons-camera:before {
+  content: "\f2b7";
+}
+.linecons-tag3:before {
+  content: "\f2b8";
+}
+.linecons-lock2:before {
+  content: "\f2b9";
+}
+.linecons-bulb:before {
+  content: "\f2ba";
+}
+.linecons-pen2:before {
+  content: "\f2bb";
+}
+.linecons-diamond3:before {
+  content: "\f2bc";
+}
+.linecons-display2:before {
+  content: "\f2bd";
+}
+.linecons-location5:before {
+  content: "\f2be";
+}
+.linecons-eye5:before {
+  content: "\f2bf";
+}
+.linecons-bubble3:before {
+  content: "\f2c0";
+}
+.linecons-stack3:before {
+  content: "\f2c1";
+}
+.linecons-cup2:before {
+  content: "\f2c2";
+}
+.linecons-phone:before {
+  content: "\f2c3";
+}
+.linecons-news:before {
+  content: "\f2c4";
+}
+.linecons-mail2:before {
+  content: "\f2c5";
+}
+.linecons-like:before {
+  content: "\f2c6";
+}
+.linecons-photo:before {
+  content: "\f2c7";
+}
+.linecons-note:before {
+  content: "\f2c8";
+}
+.linecons-clock2:before {
+  content: "\f2c9";
+}
+.linecons-paperplane:before {
+  content: "\f2ca";
+}
+.linecons-params:before {
+  content: "\f2cb";
+}
+.linecons-banknote:before {
+  content: "\f2cc";
+}
+.linecons-data:before {
+  content: "\f2cd";
+}
+.linecons-music3:before {
+  content: "\f2ce";
+}
+.linecons-megaphone2:before {
+  content: "\f2cf";
+}
+.linecons-study:before {
+  content: "\f2d0";
+}
+.linecons-lab2:before {
+  content: "\f2d1";
+}
+.linecons-food:before {
+  content: "\f2d2";
+}
+.linecons-t-shirt:before {
+  content: "\f2d3";
+}
+.linecons-fire2:before {
+  content: "\f2d4";
+}
+.linecons-clip:before {
+  content: "\f2d5";
+}
+.linecons-shop:before {
+  content: "\f2d6";
+}
+.linecons-calendar2:before {
+  content: "\f2d7";
+}
+.linecons-wallet2:before {
+  content: "\f2d8";
+}
+.linecons-vynil:before {
+  content: "\f2d9";
+}
+.linecons-truck2:before {
+  content: "\f2da";
+}
+.linecons-world:before {
+  content: "\f2db";
+}

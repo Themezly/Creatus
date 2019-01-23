@@ -1,0 +1,60 @@
+/* Media gallery */
+.thz-media-item-media {
+	display: block;
+	position: relative;
+	box-sizing: content-box;
+}
+.thz-overlay-box {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 5;
+	border-radius: inherit;
+}
+.thz-overlay-box-icon {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+}
+.thz-overlay-box-directional {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+	border-radius: inherit;   
+}
+.thz-media-mode-reveal .thz-media-item-media .thz-hover-mask,
+.thz-media-mode-directional .thz-media-item-media .thz-hover-mask,
+.thz-media-mode-thzhover .thz-media-item-media .thz-hover-link {
+	z-index: 20;
+}
+.thz-items-grid.thz-media-gallery-grid .thz-media-item .thz-grid-item-in {
+	overflow: visible;
+}
+
+.thz-media-item-media .thz-slick-holder,
+.thz-media-item-media .slick-list,
+.thz-media-item-media .thz-slick-slider,
+.thz-media-item-media .thz-slick-slide,
+.thz-media-item-media .thz-slick-slide-in,
+.thz-media-item-media .thz-media-item-ratio,
+.thz-media-item-media .thz-media-custom-size,
+.thz-media-item-media .thz-ratio-in,
+.thz-media-item-media .thz-hover,
+.thz-media-item-media .thz-hover-mask,
+.thz-media-item-media .thz-hover-mask-table,
+.thz-media-item-media .thz-hover-img-mask:before {
+	border-radius: inherit;
+}
