@@ -3765,27 +3765,6 @@ function thz_col_width( $number, $default ) {
 	return $class;
 }
 
-
-/**
- * @param string $code name of the shortcode
- * @param string $content
- *
- * @return string content with shortcode striped
- */
-function _thz_strip_shortcode( $code, $content ) {
-
-	global $shortcode_tags;
-
-	$stack          = $shortcode_tags;
-	$shortcode_tags = array( $code => 1 );
-
-	$content = strip_shortcodes( $content );
-
-	$shortcode_tags = $stack;
-
-	return $content;
-}
-
 /*
  * Return post builder content if builder is active
 */
