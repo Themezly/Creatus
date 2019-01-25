@@ -123,7 +123,7 @@ class FW_Option_Type_ThzBoxStyle extends FW_Option_Type
 			// JSON.parse fix
 			$data['value'] = empty( $data['value'] ) ? '' : $data['value'];
 			
-			$renderview = @fw_render_view(dirname(__FILE__) . '/views/'.$view.'.php', array(
+			$renderview = fw_render_view(dirname(__FILE__) . '/views/'.$view.'.php', array(
 				'id' => $id,
 				'option' => $option,
 				'data' => $data,
@@ -135,7 +135,7 @@ class FW_Option_Type_ThzBoxStyle extends FW_Option_Type
 		}else{
 			
 			
-			$renderview = @fw_render_view(dirname(__FILE__) . '/views/'.$view.'.php', array(
+			$renderview = fw_render_view(dirname(__FILE__) . '/views/'.$view.'.php', array(
 				'id' => $id,
 				'option' => $this->_set_default_values($option),
 				'data' => $this->_set_default_values($data),
