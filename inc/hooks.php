@@ -1044,7 +1044,6 @@ function _thz_ajax_action_get_posts() {
 		'post_status' => $post_status
 	);
 	
-	global $wp_query;
 	$wp_query = new WP_Query( $args );
 	$c = json_decode( stripslashes( $current ) );
 	
@@ -1532,16 +1531,12 @@ add_action( 'init', '_thz_remove_project_gallery_metabox' );
  * Remove gallery shortcode from content
  */
 function _thz_filter_remove_gallery($content){
-    
-	global $shortcode_tags;
-	$stack = $shortcode_tags;
-	$shortcode_tags = array('gallery' => 1);
 
-	$content = strip_shortcodes($content);
-
-	$shortcode_tags = $stack;
+	if( 'gallery'  == get_post_format() && function_exists('_thz_strip_shortcode') ){
+		$content = _thz_strip_shortcode('gallery',$content);
+	}
+	
 	return $content;       
-        
 
 }
 

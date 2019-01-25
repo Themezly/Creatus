@@ -1462,8 +1462,8 @@ if ( ! function_exists( 'thz_pagination' ) ) {
 	function thz_pagination( $numpages = '', $paged = 1, $echo = true, $options = false ) {
 
 		$html = '';
-		global $paged;
-		if ( empty( $paged ) ) {
+		
+		if ( empty( thz_paged() ) ) {
 			$paged = 1;
 		}
 		if ( $numpages == '' ) {
