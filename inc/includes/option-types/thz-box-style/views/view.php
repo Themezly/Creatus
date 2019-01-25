@@ -15,9 +15,7 @@
 	);
 }
 
-$disabled = $option['disable'];
-unset($defaults['color'],$defaults['image'],$defaults['video'],$defaults['gradient'],$defaults['shape']);
-
+$disabled 			= $option['disable'];
 $single_tab_class 	= '';
 $is_single 			= false;
 $default_order		= array('layout','padding','margin','borders','borderradius','boxsize','boxshadow','background');
