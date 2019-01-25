@@ -1202,11 +1202,13 @@ if ( ! function_exists( '_thz_transition_duration_list' ) ) {
  
 if ( ! function_exists( '_thz_reveal_list' ) ) {
 	
-	function _thz_reveal_list($no_eff_text = 'No effect ( intro stays on hover )'){
+	function _thz_reveal_list( $reveal_none_txt = false ){
+		
+		$reveal_none = $reveal_none_txt ? $reveal_none_txt : esc_html__('No effect ( intro stays on hover )', 'creatus');
 		
 		$defaults = array(
 		
-			'thz-reveal-none' => sprintf( __( '%s', 'creatus' ), $no_eff_text ),
+			'thz-reveal-none' => $reveal_none,
 			'thz-reveal-fadeout' => esc_html__('Fade out', 'creatus'),
 			'thz-reveal-goleft' => esc_html__('Go left', 'creatus'),
 			'thz-reveal-goleft-zoomout' => esc_html__('Go left zoom out', 'creatus'),
