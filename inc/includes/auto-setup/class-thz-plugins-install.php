@@ -433,8 +433,8 @@ class Thz_Admin_Plugins_Install {
 
 	public function get_setup_messages() {
 		return array(
-			'plugins_only'      => sprintf( esc_html__( 'This option will activate Unyson dependencies. The %s demo content will not be installed %s.', 'creatus' ), '<b>', '</b>' ),
-			'plugins_and_demo'  => sprintf( esc_html__( 'This option will activate Unyson dependencies together %s with the demo content %s for the theme.', 'creatus' ), '<b>', '</b>' ),
+			'plugins_only'      => sprintf( esc_html__( 'This option will activate Unyson dependencies. The %1$s demo content will not be installed %2$s.', 'creatus' ), '<b>', '</b>' ),
+			'plugins_and_demo'  => sprintf( esc_html__( 'This option will activate Unyson dependencies together %1$s with the demo content %2$s for the theme.', 'creatus' ), '<b>', '</b>' ),
 			'skip_auto_install' => esc_html__( 'Skip the auto setup all together and activate all the Unyson dependencies manually. Note that this page will not be  accessible until you install the theme again.', 'creatus' )
 		);
 	}

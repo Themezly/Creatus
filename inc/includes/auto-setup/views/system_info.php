@@ -125,7 +125,7 @@ if( extension_loaded( 'suhosin' ) ) {
 	$thz_required_input_vars = $thz_server_requirements['server']['suhosin_post_max_vars'];
 	if ( $thz_max_input_vars < $thz_required_input_vars ) {
 
-		$thz_suhosin_description_text .= '<span class="fw-error-message">' . sprintf( esc_html__( '%s - Recommended Value is: %s.', 'creatus' ), $thz_max_input_vars, '<strong>' . ( $thz_required_input_vars ) . '</strong>' ) . '</span> <a href="https://themezly.com/docs/how-to-increase-the-max-input-vars-limit/" target="_blank">'.__('Increasing max input vars limit','creatus').'</a>';
+		$thz_suhosin_description_text .= '<span class="fw-error-message">' . sprintf( esc_html__( '%1$s - Recommended Value is: %2$s.', 'creatus' ), $thz_max_input_vars, '<strong>' . ( $thz_required_input_vars ) . '</strong>' ) . '</span> <a href="https://themezly.com/docs/how-to-increase-the-max-input-vars-limit/" target="_blank">'.__('Increasing max input vars limit','creatus').'</a>';
 
 		$has_issue = true;
 		

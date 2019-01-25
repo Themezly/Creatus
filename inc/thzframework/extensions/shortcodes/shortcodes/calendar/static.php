@@ -74,7 +74,7 @@ wp_localize_script(
 			'no_events_in_day' => esc_html__( 'No events in this day.', 'creatus' ),
 			'title_year'       => '{0}',
 			'title_month'      => '{0} {1}',
-			'title_week'       => sprintf( esc_html__( 'week %s of %s', 'creatus' ), '{0}', '{1}' ),
+			'title_week'       => sprintf( esc_html__( 'week %1$s of %2$s', 'creatus' ), '{0}', '{1}' ),
 			'title_day'        => '{0} {1} {2}, {3}',
 			'week'             => esc_html__( 'Week ', 'creatus' ) . '{0}',
 			'all_day'          => esc_html__( 'All day', 'creatus' ),

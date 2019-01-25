@@ -226,8 +226,8 @@ class Thz_Simple_Auto_Install {
 
 	public function get_setup_messages() {
 		return array(
-			'plugins_only'      => sprintf( esc_html__( 'This option will activate theme dependencies. You will %s not be redirected to demo content installer %s.', 'creatus' ), '<b>', '</b>' ),
-			'plugins_and_demo'  => sprintf( esc_html__( 'This option will activate theme dependencies and %s redirect you to demo content installer %s.', 'creatus' ), '<b>', '</b>' ),
+			'plugins_only'      => sprintf( esc_html__( 'This option will activate theme dependencies. You will %1$s not be redirected to demo content installer %2$s.', 'creatus' ), '<b>', '</b>' ),
+			'plugins_and_demo'  => sprintf( esc_html__( 'This option will activate theme dependencies and %1$s redirect you to demo content installer %2$s.', 'creatus' ), '<b>', '</b>' ),
 			'skip_auto_install' => esc_html__( 'Skip the auto setup all together and activate all the theme dependencies manually. Note that this page will not be  accessible until you deactivate/activate the theme again.', 'creatus' )
 		);
 	}
@@ -544,8 +544,8 @@ class Thz_Admin_Auto_Install extends Thz_Simple_Auto_Install {
 
 	public function get_setup_messages() {
 		return array(
-			'plugins_only'      => sprintf( esc_html__( 'This option will activate %s already installed plugins and dependencies %s by Network Administrator. You will %s not be redirected to theme demo content installer %s.', 'creatus' ), '<b>', '</b>', '<b>', '</b>' ),
-			'plugins_and_demo'  => sprintf( esc_html__( 'This option will activate theme dependencies %s and redirect you to theme demo content installer %s.', 'creatus' ), '<b>', '</b>' ),
+			'plugins_only'      => sprintf( esc_html__( 'This option will activate %1$s already installed plugins and dependencies %2$s by Network Administrator. You will %3$s not be redirected to theme demo content installer %4$s.', 'creatus' ), '<b>', '</b>', '<b>', '</b>' ),
+			'plugins_and_demo'  => sprintf( esc_html__( 'This option will activate theme dependencies %1$s and redirect you to theme demo content installer %2$s.', 'creatus' ), '<b>', '</b>' ),
 			'skip_auto_install' => esc_html__( 'Skip the auto setup all together and activate all the plugins manually. Note that this page will not be accessible until you deactivate/activate the theme again.', 'creatus' )
 		);
 	}
@@ -965,8 +965,8 @@ class Thz_Super_Admin_Auto_Install extends Thz_Admin_Auto_Install {
 
 	public function get_setup_messages() {
 		return array(
-			'plugins_and_demo'  => sprintf( esc_html__( 'This option will install and activate all theme plugins and dependencies and %s redirect you to theme demo content installer%s.', 'creatus' ), '<b>', '</b>' ),
-			'plugins_only'      => sprintf( esc_html__( 'This option will install and activate all theme plugins and dependencies. You will %s not be redirected to theme demo content installer%s.', 'creatus' ), '<b>', '</b>' ),
+			'plugins_and_demo'  => sprintf( esc_html__( 'This option will install and activate all theme plugins and dependencies and %1$s redirect you to theme demo content installer%2$s.', 'creatus' ), '<b>', '</b>' ),
+			'plugins_only'      => sprintf( esc_html__( 'This option will install and activate all theme plugins and dependencies. You will %1$s not be redirected to theme demo content installer%2$s.', 'creatus' ), '<b>', '</b>' ),
 			'skip_auto_install' => esc_html__( 'Skip the auto setup all together and install all the plugins manually. Note that this page will not be accessible until you deactivate/activate the theme again.', 'creatus' )
 		);
 	}
@@ -978,8 +978,9 @@ class Thz_Installer_Helper {
 		if ( ! class_exists( 'WP_Upgrader' ) ) {
 			require_once ABSPATH . 'wp-admin/includes/class-wp-upgrader.php';
 		}
-
-		@set_time_limit( 60 * 10 );
+		if( function_exists( 'set_time_limit' ) ){
+			set_time_limit( 60 * 10 );
+		}
 
 		/**
 		 * @var WP_Upgrader $upgrader
@@ -1087,8 +1088,11 @@ class Thz_Plugin_Installer_Helper extends Thz_Installer_Helper {
 	}
 
 	public static function process_package( $plugin, $action ) {
-		@set_time_limit( 60 * 5 );
-
+		
+		if( function_exists( 'set_time_limit' ) ){
+			set_time_limit( 60 * 5 );
+		}
+		
 		$download = self::get_link($plugin);
 
 		if ( is_wp_error( $download ) ) {

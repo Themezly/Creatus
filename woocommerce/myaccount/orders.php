@@ -63,7 +63,7 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
 								<?php echo wc_get_order_status_name( $order->get_status() ); ?>
 
 							<?php elseif ( 'order-total' === $column_id ) : ?>
-								<?php echo sprintf( _n( '%s for %s item', '%s for %s items', $item_count, 'creatus' ), $order->get_formatted_order_total(), $item_count ); ?>
+								<?php echo sprintf( _n( '%1$s for %2$s item', '%1$s for %2$s items', $item_count, 'creatus' ), $order->get_formatted_order_total(), $item_count ); ?>
 							<?php elseif ( 'order-actions' === $column_id ) : ?>
 								<?php
 								$actions = wc_get_account_orders_actions( $order );

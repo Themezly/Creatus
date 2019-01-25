@@ -556,7 +556,7 @@ $options = array(
 									'type'  => 'text',
 									'label' => __( 'API key', 'creatus' ),
 									'value' => 'c5125a0fd25d986b2ec17e1c2b5d2c7d',
-									'desc'  => sprintf(__('Use this key until you %1s: %2s', 'creatus'),
+									'desc'  => sprintf(__('Use this key until you %1$s: %2$s', 'creatus'),
 									'<a href="http://www.flickr.com/services/apps/create/apply" target="_blank">get your own</a>',
 									'c5125a0fd25d986b2ec17e1c2b5d2c7d'
 									)
