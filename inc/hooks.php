@@ -1180,42 +1180,6 @@ if ( ! function_exists( '_thz_ajax_action_posts_search' ) ){
 add_action( 'wp_ajax_thz_find_posts', '_thz_ajax_action_posts_search' );
 add_action( 'wp_ajax_nopriv_thz_find_posts', '_thz_ajax_action_posts_search' );
 
-/**
- * Add tag and category tax for pages
- * if ThzCore_Plugin is disabled
- */
-function _thz_action_tax_for_pages() {
-	
-	register_taxonomy_for_object_type( 'post_tag', 'page' );
-	register_taxonomy_for_object_type( 'category', 'page' );
-	
-}
-
-if( ! class_exists( 'ThzCore_Plugin' ) ) {
-	add_action( 'init', '_thz_action_tax_for_pages' );
-}
-
-
-/**
- * Display the pages in tag and category archives
- * if ThzCore_Plugin is disabled
- */
-function _thz_action_pages_archives( $wp_query ) {
-	
-	 $my_post_array = array('post','page');
-	 
-	 if ( $wp_query->get( 'category_name' ) || $wp_query->get( 'cat' ) ){
-	 	$wp_query->set( 'post_type', $my_post_array );
-	 }
-	 
-	 if ( $wp_query->get( 'tag' ) ) {
-	 	$wp_query->set( 'post_type', $my_post_array );
-	 }
-}
-
-if ( ! is_admin() && ! class_exists( 'ThzCore_Plugin' ) && !is_preview() ) {
-	add_action( 'pre_get_posts', '_thz_action_pages_archives' );
-}
 
 /**
  * Get posts for post shorcode via ajax
