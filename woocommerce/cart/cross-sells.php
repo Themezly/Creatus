@@ -55,7 +55,7 @@ if(!thz_woo_version( '2.7' )){
 				
 				 	$post_object = get_post( thz_woo_get_id( $cross_sell ) );
 
-					setup_postdata( $GLOBALS['post'] =& $post_object );
+					setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WPThemeReview.WordPress.WP.GlobalVariablesOverride - This line is from WooCommerce plugin template override. Not changed by the theme.
 
 					wc_get_template_part( 'content', 'product_rel' ); ?>
 					</div>
