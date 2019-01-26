@@ -637,10 +637,6 @@ function _thz_action_register_frontend_scripts() {
 	$preset = get_option('thz_default_preset','starter');
 	
 	// styles
-	if ( !thz_fw_loaded() ) { // backup untill unyson is active
-		wp_register_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', false, thz_theme_version() ,'all'); 
-	}
-	
 	wp_register_style( 'thz-icons', thz_theme_file_uri( '/assets/fonts/thz-icons-pack/style.css' ), false, thz_theme_version() ,'all');
 	
 	wp_register_style( THEME_NAME. '-woocommerce', thz_theme_file_uri( '/assets/css/woocommerce.css' ), false, thz_theme_version() ,'all' );
