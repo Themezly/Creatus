@@ -638,10 +638,8 @@ function _thz_action_register_frontend_scripts() {
 	
 	// styles
 	wp_register_style( 'thz-icons', thz_theme_file_uri( '/assets/fonts/thz-icons-pack/style.css' ), false, thz_theme_version() ,'all');
-	
 	wp_register_style( THEME_NAME. '-woocommerce', thz_theme_file_uri( '/assets/css/woocommerce.css' ), false, thz_theme_version() ,'all' );
 	wp_register_style( THEME_NAME. '-bbpress', thz_theme_file_uri( '/assets/css/bbpress.css'), false, thz_theme_version() ,'all' );
-	
 	wp_register_style( THEME_NAME. '-theme', thz_theme_file_uri( '/assets/css/thz-theme.css'), false, thz_theme_version() ,'all' );
 	wp_register_style( THEME_NAME. '-layout', thz_theme_file_uri( '/assets/css/thz-layout.css' ), false, thz_theme_version() ,'all' );
 	wp_register_style( THEME_NAME. '-menus', thz_theme_file_uri( '/assets/css/thz-menus.css'), false, thz_theme_version() ,'all' );
