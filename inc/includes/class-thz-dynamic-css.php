@@ -924,7 +924,7 @@ class Thz_Dynamic_Css {
 			$add_css .='* @websites     http://www.themezly.com | http://www.youjoomla.com'.PHP_EOL;
 			$add_css .='* @notice       This is a auto generated CSS file. Do not edit directly.'.PHP_EOL;
 			$add_css .='**/'.PHP_EOL;
-			$add_css .= implode("\n",$css_file_content);
+			$add_css .= implode(PHP_EOL,$css_file_content);
 			
 			
 			
