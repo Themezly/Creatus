@@ -7573,7 +7573,8 @@ function _thz_site_dynamic_css(){
 	$add_css .= _thz_mainmenu_css();
 	
 	// page blocks positions
-	$add_css .= thz_page_block_positions_css();
+	$pbp_css = thz_page_block_positions_css();
+	$add_css .= $pbp_css;
 	
 	// hero section css
 	$add_css .= _thz_hero_section_css();
