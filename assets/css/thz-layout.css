@@ -4048,16 +4048,16 @@ html.searchOpen:not(.canvasOpen) .thz-body-box {
 	# Site offline 
  ============================================ */
 
-#wpadminbar .quicklinks .ab-top-secondary > li.thz-site-offline{
+#wp-toolbar .ab-top-secondary > li.thz-site-offline{
 	float:left;
 	background:#e74c3c;
 	padding:0 5px;
 	color:#fff;
 }
-#wpadminbar .quicklinks .ab-top-secondary > li.thz-site-offline a{
+#wp-toolbar .ab-top-secondary > li.thz-site-offline a{
 	color:#fff;
 }
-#wpadminbar .quicklinks .ab-top-secondary > li.thz-site-offline:hover{
+#wp-toolbar .ab-top-secondary > li.thz-site-offline:hover{
 	opacity:0.8;
 }
 
