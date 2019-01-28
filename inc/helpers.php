@@ -1461,11 +1461,9 @@ if ( ! function_exists( 'thz_pagination' ) ) {
 
 	function thz_pagination( $numpages = '', $paged = 1, $echo = true, $options = false ) {
 
-		$html = '';
+		$html 	= '';
+		$paged 	= thz_paged();
 		
-		if ( empty( thz_paged() ) ) {
-			$paged = 1;
-		}
 		if ( $numpages == '' ) {
 			global $wp_query;
 			$numpages = $wp_query->max_num_pages;
