@@ -669,6 +669,94 @@ function _thz_logo_options() {
 	if ( ! empty( $custom_logo ) && isset( $custom_logo[0] ) ) {
 		$logo_options = thz_get_post_option( 'custom_logo/0/site_logo', null );
 	}
+	
+	if( !thz_fw_loaded() ){
+
+		$logo_options =  array(
+				'type'=>'textual',
+				'image' => array(),
+				'darksections' => array(),
+				'lightsections' => array(),
+				'sticky' => array(),
+				'mobile' => array(),
+				'svgimg' => array(),
+				'text'=> get_bloginfo( 'name' ),
+				'f'=> array(
+					'family'  		=> 'Creatus',
+					'weight'     	=> '500',
+					'subset'    	=> 'ffk',
+					'transform' 	=> 'default',
+					'align'     	=> 'default',
+					'size' 			=> 20,
+					'line-height' 	=> 1,
+					'spacing' 		=> '0.3px',
+					'color' 		=> 'color_2',
+					'text-shadow' 	=> array()					
+				),
+				'sub-text'=> display_header_text() ? get_bloginfo( 'description' ) : '',
+				'sub-f'=> array(
+					'family'  		=> 'Creatus',
+					'weight'     	=> '400',
+					'subset'    	=> 'ffk',
+					'transform' 	=> 'uppercase',
+					'align'     	=> 'default',
+					'size' 			=> 10,
+					'line-height' 	=> 1.2,
+					'spacing'		=> 0,
+					'color' 		=> 'color_3',
+					'text-shadow' 	=> array()				
+				),
+				'sc'=> array(
+					't'=> '',
+					's'=> '',
+				),
+				'mc'=> array(
+					't'=> '',
+					's'=> '',
+				),
+				'ds'=> array(
+					't'=> '',
+					's'=> '',
+				),
+				'ls'=> array(
+					't'=> '',
+					's'=> '',
+				),
+				'svg'=> array(
+					'd'=> '',
+					'ds'=> '',
+					'ls'=> '',
+					's'=> '',
+					'm'=> '',
+					'a'=> 'fill',
+				),
+				'width'=> 300,
+				'height'=> 80,
+				'mwidth'=> 80,
+				'mheight'=> 80,
+				'boxstyle'=>array(
+					'margin' => array(
+						'top' => '0',
+						'right' => 'auto',
+						'bottom' => '0',
+						'left' => 'auto'
+					),			
+			),
+		);
+
+		if ( has_custom_logo() ) {
+			$custom_logo_id = get_theme_mod( 'custom_logo' );
+			$custom_logo  	= wp_get_attachment_image_src( $custom_logo_id , 'full' );			
+			$logo_options['type'] = 'image';
+			$logo_options['image']['attachment_id'] = $custom_logo_id ;
+			$logo_options['image']['url'] = esc_url( $custom_logo[0] );
+			$logo_options['image']['width'] = $custom_logo[1];
+			$logo_options['image']['height'] = $custom_logo[2];
+				
+		}
+			
+		
+	}
 
 	return $logo_options;
 }

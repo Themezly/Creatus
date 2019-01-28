@@ -99,6 +99,17 @@ function _thz_action_theme_setup() {
 		'gallery',
 		'caption' 
 	 ) );
+	 
+	if( !thz_fw_loaded() ){ 
+		$logo_defaults = array(
+			'height'      => 80,
+			'width'       => 300,
+			'flex-height' => true,
+			'flex-width'  => true,
+			'header-text' => array( 'site-title', 'site-description' ),
+		);
+		add_theme_support( 'custom-logo', $logo_defaults );
+	}
 
 }
 
