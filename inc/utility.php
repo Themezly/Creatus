@@ -2105,6 +2105,10 @@ function  _thz_remove_name_from_option($html, $return = false){
 */
 function thz_notify($color_class ='blue',$title = '',$msg ='',$echo = true){
 	
+	if( !thz_fw_loaded() ){
+		return;
+	}
+	
 	$html ='<div class="thz-notification thz-notification-'.thz_sanitize_class( $color_class ).' thz-text-left">';
 	$html .='<div class="thz-notification-box">';
 	$html .='<div class="thz-notification-text">';
