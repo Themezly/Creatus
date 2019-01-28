@@ -15,7 +15,6 @@ return array(
 		array(
 			'name'   => 'Assign Widgets',
 			'slug'   => 'assign-widgets',
-			'source' => esc_url('https://updates.themezly.io/plugins/assign-widgets.zip')
 		),
 	),
 	'theme_id'           => 'creatus',
