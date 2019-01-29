@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Creatus\n"
-"POT-Creation-Date: 2019-01-26 18:20+0100\n"
+"POT-Creation-Date: 2019-01-29 15:25+0100\n"
 "PO-Revision-Date: 2017-03-23 13:38+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -160,79 +160,79 @@ msgstr ""
 msgid "Something went wrong. Not able to load start preset."
 msgstr ""
 
-#: inc/helpers.php:893
+#: inc/helpers.php:982
 msgid "No slides available. Go to Revolution Slider settings and create slides"
 msgstr ""
 
-#: inc/helpers.php:910
+#: inc/helpers.php:999
 msgid "Revolution Slider is not installed"
 msgstr ""
 
-#: inc/helpers.php:937
+#: inc/helpers.php:1026
 msgid "No slides available. Go to Layer Slider settings and create slides"
 msgstr ""
 
-#: inc/helpers.php:955
+#: inc/helpers.php:1044
 msgid "Layer Slider is not installed"
 msgstr ""
 
-#: inc/helpers.php:1178
+#: inc/helpers.php:1267
 msgid "Not able to load particles"
 msgstr ""
 
-#: inc/helpers.php:1551 inc/helpers.php:1691
+#: inc/helpers.php:1638 inc/helpers.php:1778
 #: woocommerce/myaccount/orders.php:90
 msgid "Previous"
 msgstr ""
 
-#: inc/helpers.php:1606 inc/helpers.php:1691
+#: inc/helpers.php:1693 inc/helpers.php:1778
 #: woocommerce/myaccount/orders.php:94
 msgid "Next"
 msgstr ""
 
-#: inc/helpers.php:1972
+#: inc/helpers.php:2059
 #, php-format
 msgid "%1$s preferences"
 msgstr ""
 
-#: inc/helpers.php:1973
+#: inc/helpers.php:2060
 #, php-format
 msgid "Adjust %1$s preferences"
 msgstr ""
 
-#: inc/helpers.php:1985
+#: inc/helpers.php:2072
 msgid "Date link"
 msgstr ""
 
-#: inc/helpers.php:1987
+#: inc/helpers.php:2074
 msgid "Link to post"
 msgstr ""
 
-#: inc/helpers.php:1988
+#: inc/helpers.php:2075
 msgid "Do not link to post"
 msgstr ""
 
-#: inc/helpers.php:1993 inc/thzframework/theme/options/heros/title.php:162
+#: inc/helpers.php:2080 inc/thzframework/theme/options/heros/title.php:162
 #: inc/thzframework/theme/options/posts/project_options.php:220
 msgid "Author link"
 msgstr ""
 
-#: inc/helpers.php:1995 inc/thzframework/theme/options/heros/title.php:164
+#: inc/helpers.php:2082 inc/thzframework/theme/options/heros/title.php:164
 #: inc/thzframework/theme/options/posts/project_options.php:222
 msgid "Link to author page"
 msgstr ""
 
-#: inc/helpers.php:1996 inc/thzframework/theme/options/heros/title.php:165
+#: inc/helpers.php:2083 inc/thzframework/theme/options/heros/title.php:165
 #: inc/thzframework/theme/options/posts/project_options.php:223
 msgid "Do not link to author page"
 msgstr ""
 
-#: inc/helpers.php:2000
+#: inc/helpers.php:2087
 #: inc/thzframework/theme/options/posts/project_options.php:227
 msgid "Author avatar"
 msgstr ""
 
-#: inc/helpers.php:2008
+#: inc/helpers.php:2095
 #: inc/includes/option-types/thz-event/class-fw-option-type-thz-event.php:43
 #: inc/includes/option-types/thz-section-builder/items/section/options.php:20
 #: inc/thzframework/extensions/shortcodes/shortcodes/accordion/options.php:145
@@ -363,7 +363,7 @@ msgstr ""
 msgid "Show"
 msgstr ""
 
-#: inc/helpers.php:2014
+#: inc/helpers.php:2101
 #: inc/includes/option-types/thz-event/class-fw-option-type-thz-event.php:47
 #: inc/thzframework/extensions/forms/extensions/contact-forms/shortcodes/contact-form/options.php:93
 #: inc/thzframework/extensions/shortcodes/shortcodes/accordion/options.php:144
@@ -513,21 +513,21 @@ msgstr ""
 msgid "Hide"
 msgstr ""
 
-#: inc/helpers.php:2023
+#: inc/helpers.php:2110
 #: inc/thzframework/theme/options/additional/comments.php:155
 #: inc/thzframework/theme/options/heros/title.php:192
 #: inc/thzframework/theme/options/posts/project_options.php:250
 msgid "Avatar size"
 msgstr ""
 
-#: inc/helpers.php:2032
+#: inc/helpers.php:2119
 #: inc/thzframework/theme/options/additional/comments.php:161
 #: inc/thzframework/theme/options/heros/title.php:201
 #: inc/thzframework/theme/options/posts/project_options.php:259
 msgid "Avatar shape"
 msgstr ""
 
-#: inc/helpers.php:2034 inc/includes/option-types/thz-addable-layer/view.php:38
+#: inc/helpers.php:2121 inc/includes/option-types/thz-addable-layer/view.php:38
 #: inc/thzframework/extensions/media/extensions/slider/extensions/slick-full/options/options.php:102
 #: inc/thzframework/extensions/shortcodes/shortcodes/call-to-action/options.php:245
 #: inc/thzframework/extensions/shortcodes/shortcodes/icon-box/options.php:400
@@ -565,7 +565,7 @@ msgstr ""
 msgid "Square"
 msgstr ""
 
-#: inc/helpers.php:2035
+#: inc/helpers.php:2122
 #: inc/thzframework/extensions/shortcodes/shortcodes/call-to-action/options.php:246
 #: inc/thzframework/extensions/shortcodes/shortcodes/icon-box/options.php:401
 #: inc/thzframework/extensions/shortcodes/shortcodes/icon/options.php:478
@@ -589,7 +589,7 @@ msgstr ""
 msgid "Rounded"
 msgstr ""
 
-#: inc/helpers.php:2036 inc/includes/option-types/thz-background/view.php:428
+#: inc/helpers.php:2123 inc/includes/option-types/thz-background/view.php:428
 #: inc/thzframework/extensions/shortcodes/shortcodes/call-to-action/options.php:244
 #: inc/thzframework/extensions/shortcodes/shortcodes/icon-box/options.php:399
 #: inc/thzframework/extensions/shortcodes/shortcodes/icon/options.php:476
@@ -614,16 +614,16 @@ msgstr ""
 msgid "Circle"
 msgstr ""
 
-#: inc/helpers.php:2044 inc/thzframework/theme/options/heros/title.php:226
+#: inc/helpers.php:2131 inc/thzframework/theme/options/heros/title.php:226
 #: inc/thzframework/theme/options/posts/project_options.php:271
 msgid "Avatar space"
 msgstr ""
 
-#: inc/helpers.php:2084
+#: inc/helpers.php:2171
 msgid "Views"
 msgstr ""
 
-#: inc/helpers.php:2085 inc/thzframework/theme/options/heros/sub_title.php:129
+#: inc/helpers.php:2172 inc/thzframework/theme/options/heros/sub_title.php:129
 #: inc/thzframework/theme/options/posts/project_options.php:71
 #: inc/thzframework/theme/options/posts/project_options.php:104
 #: template-parts/events/event-grid.php:129
@@ -632,7 +632,7 @@ msgstr ""
 msgid "Date"
 msgstr ""
 
-#: inc/helpers.php:2086 inc/thzframework/theme/options/blog/quote_format.php:51
+#: inc/helpers.php:2173 inc/thzframework/theme/options/blog/quote_format.php:51
 #: inc/thzframework/theme/options/blog/single.php:47
 #: inc/thzframework/theme/options/heros/sub_title.php:131
 #: inc/thzframework/theme/options/pagetemplates/settings.php:21
@@ -640,117 +640,117 @@ msgstr ""
 msgid "Author"
 msgstr ""
 
-#: inc/helpers.php:2087 inc/includes/option-types/thz-menu-list/view.php:141
+#: inc/helpers.php:2174 inc/includes/option-types/thz-menu-list/view.php:141
 #: inc/thzframework/theme/options/heros/sub_title.php:130
 #: template-parts/events/event-grid.php:144
 #: template-parts/events/event-sidebar.php:184
 msgid "Categories"
 msgstr ""
 
-#: inc/helpers.php:2088 inc/thzframework/theme/options/blog/single.php:41
+#: inc/helpers.php:2175 inc/thzframework/theme/options/blog/single.php:41
 #: inc/thzframework/theme/options/posts/project_options.php:70
 #: inc/thzframework/theme/options/posts/project_options.php:89
 msgid "Tags"
 msgstr ""
 
-#: inc/helpers.php:2089
+#: inc/helpers.php:2176
 msgid "Comments count"
 msgstr ""
 
-#: inc/helpers.php:2090 inc/helpers.php:2247 inc/static.php:73
+#: inc/helpers.php:2177 inc/helpers.php:2334 inc/static.php:73
 msgid "Likes"
 msgstr ""
 
-#: inc/helpers.php:2125
+#: inc/helpers.php:2212
 msgid "views"
 msgstr ""
 
-#: inc/helpers.php:2182 inc/helpers.php:3334
+#: inc/helpers.php:2269 inc/helpers.php:3421
 msgid "by"
 msgstr ""
 
-#: inc/helpers.php:2247 inc/static.php:72
+#: inc/helpers.php:2334 inc/static.php:72
 msgid "Like"
 msgstr ""
 
-#: inc/helpers.php:2450 inc/helpers.php:2455
+#: inc/helpers.php:2537 inc/helpers.php:2542
 msgid "comments"
 msgstr ""
 
-#: inc/helpers.php:2460
+#: inc/helpers.php:2547
 msgid "comment"
 msgstr ""
 
-#: inc/helpers.php:3054
+#: inc/helpers.php:3141
 msgid "Do not assign position"
 msgstr ""
 
-#: inc/helpers.php:3055 inc/thzframework/theme/options/heros/heros.php:59
+#: inc/helpers.php:3142 inc/thzframework/theme/options/heros/heros.php:59
 msgid "Above the header"
 msgstr ""
 
-#: inc/helpers.php:3056 inc/thzframework/theme/options/heros/heros.php:63
+#: inc/helpers.php:3143 inc/thzframework/theme/options/heros/heros.php:63
 msgid "Under the header"
 msgstr ""
 
-#: inc/helpers.php:3057
+#: inc/helpers.php:3144
 msgid "Under the hero section"
 msgstr ""
 
-#: inc/helpers.php:3058
+#: inc/helpers.php:3145
 msgid "Above the footer section"
 msgstr ""
 
-#: inc/helpers.php:3059
+#: inc/helpers.php:3146
 msgid "Between the footer section and branding"
 msgstr ""
 
-#: inc/helpers.php:3060
+#: inc/helpers.php:3147
 msgid "Under the footer branding"
 msgstr ""
 
-#: inc/helpers.php:3061
+#: inc/helpers.php:3148
 msgid "Above the post"
 msgstr ""
 
-#: inc/helpers.php:3062
+#: inc/helpers.php:3149
 msgid "Under the post"
 msgstr ""
 
-#: inc/helpers.php:3063
+#: inc/helpers.php:3150
 msgid "Above the related posts"
 msgstr ""
 
-#: inc/helpers.php:3064
+#: inc/helpers.php:3151
 msgid "Under the related posts"
 msgstr ""
 
-#: inc/helpers.php:3065
+#: inc/helpers.php:3152
 msgid "Offcanvas Overlay"
 msgstr ""
 
-#: inc/helpers.php:3242
+#: inc/helpers.php:3329
 #: inc/thzframework/theme/options/customizer/options_accordions.php:399
 #: inc/thzframework/theme/options/taxonomies/product_cat.php:46
 #: inc/thzframework/theme/options/woo/settings.php:13
 msgid "Shop"
 msgstr ""
 
-#: inc/helpers.php:3245
+#: inc/helpers.php:3332
 msgid "Search Results for:"
 msgstr ""
 
-#: inc/helpers.php:3248
+#: inc/helpers.php:3335
 #: inc/thzframework/theme/options/pagetemplates/settings.php:13
 #: template-parts/404-section.php:19
 msgid "404"
 msgstr ""
 
-#: inc/helpers.php:3320
+#: inc/helpers.php:3407
 msgid "in"
 msgstr ""
 
-#: inc/helpers.php:3466
+#: inc/helpers.php:3553
 #: inc/thzframework/theme/options/advanced/customizer.php:52
 #: inc/thzframework/theme/options/advanced/customizer.php:89
 #: inc/thzframework/theme/options/customizer/options_accordions.php:86
@@ -758,23 +758,23 @@ msgstr ""
 msgid "Blog"
 msgstr ""
 
-#: inc/helpers.php:4797
+#: inc/helpers.php:4884
 msgid "Start typing"
 msgstr ""
 
-#: inc/helpers.php:5013
+#: inc/helpers.php:5100
 msgid "Search..."
 msgstr ""
 
-#: inc/helpers.php:5825
+#: inc/helpers.php:5912
 msgid "Select metro layout"
 msgstr ""
 
-#: inc/helpers.php:5828
+#: inc/helpers.php:5915
 msgid "Select desired metro layout. See help for more info"
 msgstr ""
 
-#: inc/helpers.php:5829
+#: inc/helpers.php:5916
 msgid ""
 "Hover over layout images and use suggested column/items combo for perfect "
 "layouts. Insert the items in assigned items option and columns in \"Grid "
@@ -782,246 +782,246 @@ msgid ""
 "\"Packery\""
 msgstr ""
 
-#: inc/helpers.php:6642 inc/includes/woocommerce/hooks.php:226
+#: inc/helpers.php:6729 inc/includes/woocommerce/hooks.php:226
 msgid "Select Options"
 msgstr ""
 
-#: inc/helpers.php:6647 inc/includes/woocommerce/hooks.php:231
+#: inc/helpers.php:6734 inc/includes/woocommerce/hooks.php:231
 msgid "View Options"
 msgstr ""
 
-#: inc/helpers.php:6652 inc/helpers.php:6669 inc/helpers.php:6709
+#: inc/helpers.php:6739 inc/helpers.php:6756 inc/helpers.php:6796
 #: inc/includes/woocommerce/hooks.php:236
 #: inc/includes/woocommerce/hooks.php:253
 #: inc/includes/woocommerce/hooks.php:293
 msgid "More Info"
 msgstr ""
 
-#: inc/helpers.php:6657 inc/includes/woocommerce/hooks.php:241
+#: inc/helpers.php:6744 inc/includes/woocommerce/hooks.php:241
 msgid "Add to Cart"
 msgstr ""
 
-#: inc/helpers.php:6665 inc/helpers.php:6729
+#: inc/helpers.php:6752 inc/helpers.php:6816
 #: inc/includes/woocommerce/hooks.php:249
 #: inc/includes/woocommerce/hooks.php:313
 #: inc/thzframework/theme/options/mainmenu/general.php:210
 msgid "View cart"
 msgstr ""
 
-#: inc/helpers.php:6698 inc/includes/woocommerce/hooks.php:282
+#: inc/helpers.php:6785 inc/includes/woocommerce/hooks.php:282
 #: woocommerce/single-product/sale-flash.php:37
 msgid "Out of stock!"
 msgstr ""
 
-#: inc/helpers.php:6718 inc/includes/woocommerce/hooks.php:302
+#: inc/helpers.php:6805 inc/includes/woocommerce/hooks.php:302
 #: woocommerce/single-product/sale-flash.php:32
 msgid "Sale!"
 msgstr ""
 
-#: inc/hooks.php:189
+#: inc/hooks.php:200
 msgid "Thz Large"
 msgstr ""
 
-#: inc/hooks.php:190
+#: inc/hooks.php:201
 msgid "Thz Medium"
 msgstr ""
 
-#: inc/hooks.php:191
+#: inc/hooks.php:202
 msgid "Thz Small"
 msgstr ""
 
-#: inc/hooks.php:192
+#: inc/hooks.php:203
 msgid "Medium Large"
 msgstr ""
 
-#: inc/hooks.php:725
+#: inc/hooks.php:736
 #, php-format
 msgid ""
 "Please visit <a href=\"%s\">System info page</a> before saving and make sure "
 "all values are marked with green check."
 msgstr ""
 
-#: inc/hooks.php:754
+#: inc/hooks.php:765
 msgid " Magnific popup"
 msgstr ""
 
-#: inc/hooks.php:755
+#: inc/hooks.php:766
 msgid ""
 "If link is not an image the popup will be opened as Magnific popup iframe."
 msgstr ""
 
-#: inc/hooks.php:756
+#: inc/hooks.php:767
 #: inc/includes/builder-templates/class-thz-builder-templates.php:109
 #: inc/includes/builder-templates/views/sections.php:24
 msgid "Template Library"
 msgstr ""
 
-#: inc/hooks.php:849
+#: inc/hooks.php:860
 msgid "Passowrd or login guess hints are disabled"
 msgstr ""
 
-#: inc/hooks.php:912 inc/hooks.php:1152
+#: inc/hooks.php:923 inc/hooks.php:1163
 #: inc/includes/option-types/thz-assign-to/class-fw-option-type-thz-assign-to.php:292
 #: inc/includes/option-types/thz-content-layout/class-fw-option-type-thz-content-layout.php:100
 msgid "-no title"
 msgstr ""
 
-#: inc/hooks.php:1443
+#: inc/hooks.php:1454
 msgid "Table Type"
 msgstr ""
 
-#: inc/hooks.php:1487
+#: inc/hooks.php:1498
 msgid "Read more"
 msgstr ""
 
-#: inc/hooks.php:1882 inc/widgets/thz-twitter/views/widget.php:60
+#: inc/hooks.php:1893 inc/widgets/thz-twitter/views/widget.php:60
 msgid "No response from Twitter"
 msgstr ""
 
-#: inc/hooks.php:2160
+#: inc/hooks.php:2171
 msgid "Dropcaps"
 msgstr ""
 
-#: inc/hooks.php:2163
+#: inc/hooks.php:2174
 msgid "Dropcap"
 msgstr ""
 
-#: inc/hooks.php:2169
+#: inc/hooks.php:2180
 msgid "Dropcap box"
 msgstr ""
 
-#: inc/hooks.php:2175
+#: inc/hooks.php:2186
 msgid "Dropcap box outline"
 msgstr ""
 
-#: inc/hooks.php:2181
+#: inc/hooks.php:2192
 msgid "Dropcap rounded"
 msgstr ""
 
-#: inc/hooks.php:2187
+#: inc/hooks.php:2198
 msgid "Dropcap rounded outline"
 msgstr ""
 
-#: inc/hooks.php:2193
+#: inc/hooks.php:2204
 msgid "Dropcap circle"
 msgstr ""
 
-#: inc/hooks.php:2199
+#: inc/hooks.php:2210
 msgid "Dropcap circle outline"
 msgstr ""
 
-#: inc/hooks.php:2207
+#: inc/hooks.php:2218
 msgid "Theme Styles"
 msgstr ""
 
-#: inc/hooks.php:2210
+#: inc/hooks.php:2221
 msgid "Highlight"
 msgstr ""
 
-#: inc/hooks.php:2215
+#: inc/hooks.php:2226
 msgid "Bold primary color"
 msgstr ""
 
-#: inc/hooks.php:2220
+#: inc/hooks.php:2231
 msgid "Primary color"
 msgstr ""
 
-#: inc/hooks.php:2225
+#: inc/hooks.php:2236
 msgid "Muted color"
 msgstr ""
 
-#: inc/hooks.php:2230
+#: inc/hooks.php:2241
 msgid "Dark color"
 msgstr ""
 
-#: inc/hooks.php:2235
+#: inc/hooks.php:2246
 #: inc/thzframework/extensions/shortcodes/shortcodes/special-heading/options.php:144
 msgid "Underline"
 msgstr ""
 
-#: inc/hooks.php:2240
+#: inc/hooks.php:2251
 msgid "Underline primary"
 msgstr ""
 
-#: inc/hooks.php:2248
+#: inc/hooks.php:2259
 msgid "Font sizes"
 msgstr ""
 
-#: inc/hooks.php:2251
+#: inc/hooks.php:2262
 #: inc/thzframework/extensions/shortcodes/shortcodes/media-gallery/options.php:598
 #: inc/thzframework/theme/options/advanced/images.php:45
 msgid "Small"
 msgstr ""
 
-#: inc/hooks.php:2256
+#: inc/hooks.php:2267
 msgid "Font medium"
 msgstr ""
 
-#: inc/hooks.php:2261
+#: inc/hooks.php:2272
 msgid "Font large"
 msgstr ""
 
-#: inc/hooks.php:2266
+#: inc/hooks.php:2277
 msgid "Font Xlarge"
 msgstr ""
 
-#: inc/hooks.php:2271
+#: inc/hooks.php:2282
 msgid "Font Jumbo"
 msgstr ""
 
-#: inc/hooks.php:2276
+#: inc/hooks.php:2287
 msgid "Font Mega"
 msgstr ""
 
-#: inc/hooks.php:2284
+#: inc/hooks.php:2295
 msgid "Content widths"
 msgstr ""
 
-#: inc/hooks.php:2287
+#: inc/hooks.php:2298
 msgid "85 percent container"
 msgstr ""
 
-#: inc/hooks.php:2294
+#: inc/hooks.php:2305
 msgid "75 percent container"
 msgstr ""
 
-#: inc/hooks.php:2300
+#: inc/hooks.php:2311
 msgid "50 percent container"
 msgstr ""
 
-#: inc/hooks.php:2307
+#: inc/hooks.php:2318
 msgid "40 percent container"
 msgstr ""
 
-#: inc/hooks.php:2314
+#: inc/hooks.php:2325
 msgid "Stretch full width"
 msgstr ""
 
-#: inc/hooks.php:2321
+#: inc/hooks.php:2332
 msgid "Stretch site width"
 msgstr ""
 
-#: inc/hooks.php:2328
+#: inc/hooks.php:2339
 msgid "2 text columns"
 msgstr ""
 
-#: inc/hooks.php:2335
+#: inc/hooks.php:2346
 msgid "3 text columns"
 msgstr ""
 
-#: inc/hooks.php:2342
+#: inc/hooks.php:2353
 msgid "4 text columns"
 msgstr ""
 
-#: inc/hooks.php:2349
+#: inc/hooks.php:2360
 msgid "5 text columns"
 msgstr ""
 
-#: inc/hooks.php:2356
+#: inc/hooks.php:2367
 msgid "6 text columns"
 msgstr ""
 
-#: inc/hooks.php:2365
+#: inc/hooks.php:2376
 #: inc/includes/option-types/thz-panel-builder/items/section/options.php:160
 #: inc/includes/option-types/thz-section-builder/items/section/options.php:115
 #: inc/thzframework/extensions/shortcodes/shortcodes/section/options.php:135
@@ -1033,86 +1033,86 @@ msgstr ""
 msgid "Containers"
 msgstr ""
 
-#: inc/hooks.php:2368
+#: inc/hooks.php:2379
 msgid "Div"
 msgstr ""
 
-#: inc/hooks.php:2374
+#: inc/hooks.php:2385
 #: inc/includes/option-types/thz-panel-builder/items/section/class-fw-option-type-thz-panel-builder-item-section.php:24
 #: inc/includes/option-types/thz-section-builder/items/section/class-fw-option-type-thz-section-builder-item-section.php:24
 #: inc/thzframework/extensions/shortcodes/shortcodes/section/config.php:18
 msgid "Section"
 msgstr ""
 
-#: inc/hooks.php:2383
+#: inc/hooks.php:2394
 msgid "Blockquotes"
 msgstr ""
 
-#: inc/hooks.php:2386
+#: inc/hooks.php:2397
 msgid "Blockquote"
 msgstr ""
 
-#: inc/hooks.php:2391
+#: inc/hooks.php:2402
 msgid "Pullquote"
 msgstr ""
 
-#: inc/hooks.php:2397
+#: inc/hooks.php:2408
 msgid "Blockquote right"
 msgstr ""
 
-#: inc/hooks.php:2402
+#: inc/hooks.php:2413
 msgid "Blockquote centered"
 msgstr ""
 
-#: inc/hooks.php:2407
+#: inc/hooks.php:2418
 msgid "Blockquote quoted"
 msgstr ""
 
-#: inc/hooks.php:2413
+#: inc/hooks.php:2424
 msgid "Blockquote brackets"
 msgstr ""
 
-#: inc/hooks.php:2575
+#: inc/hooks.php:2586
 msgid "Password:"
 msgstr ""
 
-#: inc/hooks.php:2576
+#: inc/hooks.php:2587
 msgid "Enter post password"
 msgstr ""
 
-#: inc/hooks.php:2581
+#: inc/hooks.php:2592
 msgctxt "post password form"
 msgid "Enter"
 msgstr ""
 
-#: inc/hooks.php:2676
+#: inc/hooks.php:2687
 msgid "Logged in ( overrides all roles above ) "
 msgstr ""
 
-#: inc/hooks.php:2680
+#: inc/hooks.php:2691
 msgid "Logged out ( site visitors only )"
 msgstr ""
 
-#: inc/hooks.php:2741 inc/thzframework/theme/options/posts/forum.php:12
+#: inc/hooks.php:2752 inc/thzframework/theme/options/posts/forum.php:12
 msgid "Add CSS for this page"
 msgstr ""
 
-#: inc/hooks.php:2742 inc/thzframework/theme/options/posts/forum.php:13
+#: inc/hooks.php:2753 inc/thzframework/theme/options/posts/forum.php:13
 msgid "Page CSS is active"
 msgstr ""
 
-#: inc/hooks.php:2743 inc/hooks.php:2754 inc/hooks.php:2764
+#: inc/hooks.php:2754 inc/hooks.php:2765 inc/hooks.php:2775
 #: inc/thzframework/theme/options/posts/forum.php:14
 #: inc/thzframework/theme/options/posts/forum.php:25
 #: inc/thzframework/theme/options/posts/forum.php:35
 msgid "Page CSS"
 msgstr ""
 
-#: inc/hooks.php:2749 inc/thzframework/theme/options/posts/forum.php:20
+#: inc/hooks.php:2760 inc/thzframework/theme/options/posts/forum.php:20
 msgid "Click to add page CSS"
 msgstr ""
 
-#: inc/hooks.php:2755 inc/thzframework/theme/options/posts/forum.php:26
+#: inc/hooks.php:2766 inc/thzframework/theme/options/posts/forum.php:26
 #: inc/thzframework/theme/options/posts/fw-event.php:39
 #: inc/thzframework/theme/options/posts/fw-portfolio.php:39
 #: inc/thzframework/theme/options/posts/post.php:42
@@ -1126,7 +1126,7 @@ msgid ""
 "#thz-wrapper before selector to avoid the use of !important rule."
 msgstr ""
 
-#: inc/hooks.php:2771 inc/hooks.php:2820
+#: inc/hooks.php:2782 inc/hooks.php:2831
 #: inc/thzframework/theme/options/posts/forum.php:40
 #: inc/thzframework/theme/options/posts/fw-event.php:57
 #: inc/thzframework/theme/options/posts/fw-portfolio.php:56
@@ -1138,7 +1138,7 @@ msgstr ""
 msgid "Creatus options"
 msgstr ""
 
-#: inc/hooks.php:2775 inc/thzframework/theme/options/posts/forum.php:45
+#: inc/hooks.php:2786 inc/thzframework/theme/options/posts/forum.php:45
 #: inc/thzframework/theme/options/posts/fw-event.php:70
 #: inc/thzframework/theme/options/posts/fw-portfolio.php:80
 #: inc/thzframework/theme/options/posts/page.php:27
@@ -1148,21 +1148,21 @@ msgstr ""
 msgid "Page options"
 msgstr ""
 
-#: inc/hooks.php:2840 inc/hooks.php:2843
+#: inc/hooks.php:2851 inc/hooks.php:2854
 #: inc/thzframework/theme/options/taxonomies/product_cat.php:32
 msgid "Custom posts options"
 msgstr ""
 
-#: inc/hooks.php:2841
+#: inc/hooks.php:2852
 msgid ""
 "Add custom posts options for this category or leave as is for theme defaults."
 msgstr ""
 
-#: inc/hooks.php:2842
+#: inc/hooks.php:2853
 msgid "Custom posts options are set"
 msgstr ""
 
-#: inc/hooks.php:2846
+#: inc/hooks.php:2857
 #: inc/thzframework/theme/options/taxonomies/product_cat.php:41
 msgid "Add custom posts options"
 msgstr ""
@@ -7664,7 +7664,7 @@ msgstr ""
 #: inc/thzframework/theme/options/customizer/options_popups.php:137
 #: inc/thzframework/theme/options/customizer/options_popups.php:167
 #: inc/thzframework/theme/options/events/related.php:6
-#: inc/thzframework/theme/options/header/settings.php:6
+#: inc/thzframework/theme/options/header/general_tab.php:7
 #: inc/thzframework/theme/options/mainmenu/settings.php:7
 #: inc/thzframework/theme/options/portfolio/related.php:6
 #: inc/thzframework/theme/options/portfolio/settings.php:10
@@ -18273,11 +18273,6 @@ msgid ""
 "shortcodes here."
 msgstr ""
 
-#: inc/thzframework/theme/options/header/settings.php:16
-#: inc/thzframework/theme/options/socials/media.php:74
-msgid "Toolbar"
-msgstr ""
-
 #: inc/thzframework/theme/options/header/toolbar.php:12
 msgid "Header toolbar"
 msgstr ""
@@ -18375,6 +18370,11 @@ msgstr ""
 
 #: inc/thzframework/theme/options/header/toolbar.php:212
 msgid "Adjust toolbar navigation sub level item colors and item width"
+msgstr ""
+
+#: inc/thzframework/theme/options/header/toolbar_tab.php:7
+#: inc/thzframework/theme/options/socials/media.php:74
+msgid "Toolbar"
 msgstr ""
 
 #: inc/thzframework/theme/options/heros/heros.php:8
