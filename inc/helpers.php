@@ -653,7 +653,8 @@ function thz_contained( $value, $echo = true, $option = false ) {
 function thz_toolbar_print( $show ) {
 	
 	if( 'show' == $show ){
-		get_template_part( 'template-parts/headers/header', 'toolbar');
+		$toolbar 	= thz_theme_file_path('/template-parts/headers/header-toolbar.php');
+		thz_render_view( $toolbar ,array(), false );
 	}	
 	
 }
