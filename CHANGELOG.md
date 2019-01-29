@@ -1,6 +1,21 @@
 <div class="thz-docs-codeblock" markdown="1">
 
+## Version: 1.5.1 (January 29th, 2019)
 
+#### Code improvement
+ - If fw is not loaded use default wp custom-logo
+ - Compiled line endings are all same format
+ - Removed cdn backup for fa
+ - Added sprintf strings order
+ - Added boxsize to media gallery element
+ - Added singular placeholder for comments 
+ - Updated language file
+
+#### Bug fix
+ - Fixed toolbar render
+ - Fixed tabs order for header options in page settings
+ 
+ 
 ## Version: 1.5.0 (January 23rd, 2019)
 
 #### Code improvement
