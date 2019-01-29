@@ -7,7 +7,6 @@
  - Compiled line endings are all same format
  - Removed cdn backup for fa
  - Added sprintf strings order
- - Added boxsize to media gallery element
  - Added singular placeholder for comments 
  - Updated language file
 
