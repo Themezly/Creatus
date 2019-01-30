@@ -4110,7 +4110,8 @@ if ( ! function_exists( 'thz_html_classes' ) ) {
 	function thz_html_classes() {
 
 		$site            = 'thz-site-html';
-		$headers         = ' header_' . thz_get_option( 'headers/picked', 'inline' );
+		$header_mode 	 = ' thz-header-mode-'.thz_get_option('header_mode','stacked');
+		$headers         = ' header_' . thz_get_option( 'headers/picked', 'inline' ).$header_mode;
 		$preloader       = thz_get_option( 'preloader', 'disable' ) == 'enable' ? ' thz-preloader-active' : '';
 		$lateral         = thz_detect_lateral_header() ? ' thz-lateral-header' : ' thz-horizontal-header';
 		$body_frame      = thz_get_option( 'bf/m', 'inactive' );
