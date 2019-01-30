@@ -51,6 +51,7 @@
 	# Media element
 	# Browser specific
 	# Rotate element
+	# Builders
 
 */
 /* ============================================ 
@@ -3136,4 +3137,12 @@ html:not(.thz-preloader-active) .thz-preloader.leave-curtain .thz-preloader-in{
 	display:inline-block;
 	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
     transform: scaleY(-1);
+}
+
+/* ============================================ 
+	# Builders
+ ============================================ */
+.thz-horizontal-header.thz-header-mode-absolute .elementor-editor-active .elementor-section-wrap section:first-child .elementor-editor-section-settings,
+.thz-horizontal-header.thz-header-mode-absolute .brz-ed-wrap-block-item:first-child .brz-ed-collapsible-wrap{
+	top:100px;
 }
