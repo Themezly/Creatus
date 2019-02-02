@@ -205,8 +205,6 @@ class Thz_Theme_Includes {
 	}
 
 	/**
-	 * @todo - is it a good idea to automatically load widgets in child theme? wouldn't it be better to have an action that allows hooking to it?
-	 *
 	 * @internal
 	 */
 	public static function _action_widgets_init() {
