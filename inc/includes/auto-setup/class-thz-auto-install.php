@@ -2,8 +2,6 @@
 	die( 'Direct access forbidden.' );
 }
 
-require('class-thz-plugins-install.php');
-
 class Thz_Simple_Auto_Install {
 	private $page_slug = 'creatus_auto_setup';
 	private $file_uri;
@@ -1244,9 +1242,7 @@ class Thz_Auto_Install_Upgrader_Skin extends WP_Upgrader_Skin {
 
 class Thz_Auto_Install {
 	public function __construct() {
-		if( check_auto_setup_plugins_status() ) {
-			new Thz_Admin_Plugins_Install();
-		} elseif  ( current_user_can( 'install_plugins' ) ) {
+		if  ( current_user_can( 'install_plugins' ) ) {
 			new Thz_Super_Admin_Auto_Install();
 		} elseif ( current_user_can( 'activate_plugins' ) && current_user_can( 'switch_themes' ) ) {
 			new Thz_Admin_Auto_Install();
