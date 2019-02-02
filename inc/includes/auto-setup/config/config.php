@@ -8,9 +8,8 @@ return array(
 	'demos'          => _thz_get_demos_plugins_list(),
 	'plugins'        => array(
 		array(
-			'name'   => 'Thz Core',
-			'slug'   => 'thz-core',
-			'source' => esc_url('https://updates.themezly.io/plugins/thz-core.zip')
+			'name'   => 'Creatus Extended',
+			'slug'   => 'creatus-extended',
 		),
 		array(
 			'name'   => 'Assign Widgets',
