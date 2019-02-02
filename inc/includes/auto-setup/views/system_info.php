@@ -289,6 +289,11 @@ $options = array(
 ?>
 <div class="wrap creatus-system-info">
 	<div class="thz-system-info">
+    	<div class="thz-system-group">
+        	<h4><?php echo __( 'Please consider using Creatus Child Theme for any custom modifications.', 'creatus' ); ?></h4>
+            <a class="button button-primary" target="_blank" href="https://github.com/Themezly/Creatus-Child/releases"><?php esc_html_e( 'Download Creatus Child Theme', 'creatus' ) ?></a>
+        </div>
+        <br/>
 		<h1><?php esc_html_e( 'System info', 'creatus' ) ?> <span class="thz-admin-system-state<?php echo $hass_issue_class; ?>"></span></h1>
 		<p class="sub-header">
 		<?php echo __( 'Please make sure all items below are marked with a green check <b>before</b> proceeding with the auto setup or saving the theme options.', 'creatus' ) ?>

@@ -87,10 +87,6 @@
                     <?php endforeach; ?>
                     <li>
                         <div class="dashicons dashicons-yes"></div>
-                        <span><?php esc_html_e( 'Download and Activate Child Theme', 'creatus' ) ?></span>
-                    </li>
-                    <li>
-                        <div class="dashicons dashicons-yes"></div>
                         <span><?php esc_html_e( 'Redirect to Demo Content Installer', 'creatus' ) ?></span>
                     </li>
                 </ul>
@@ -124,10 +120,6 @@
                             <div class="dashicons dashicons-yes"></div>
                             <span><?php printf( esc_html__( '%s Plugin', 'creatus' ), $plugin_name ); ?></span></li>
                     <?php endforeach; ?>
-                    <li>
-                        <div class="dashicons dashicons-yes"></div>
-                        <span><?php esc_html_e( 'Download and Activate Child Theme', 'creatus' ) ?></span>
-                    </li>
                     <li>
                         <div class="dashicons dashicons-no-alt"></div>
                         <span><?php esc_html_e( 'Redirect to Demo Content Installer', 'creatus' ) ?></span>
@@ -163,10 +155,6 @@
                             <div class="dashicons dashicons-no-alt"></div>
                             <span><?php printf( esc_html__( '%s Plugin', 'creatus' ), $plugin_name ); ?></span></li>
                     <?php endforeach; ?>
-                    <li>
-                        <div class="dashicons dashicons-no-alt"></div>
-                        <span><?php esc_html_e( 'Download and Activate Child Theme', 'creatus' ) ?></span>
-                    </li>
                     <li>
                         <div class="dashicons dashicons-no-alt"></div>
                         <span><?php esc_html_e( 'Redirect to Demo Content Installer', 'creatus' ) ?></span>

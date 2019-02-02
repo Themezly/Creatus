@@ -653,11 +653,9 @@ class Thz_Admin_Auto_Install extends Thz_Simple_Auto_Install {
 }
 
 class Thz_Super_Admin_Auto_Install extends Thz_Admin_Auto_Install {
-	private $child_theme_source;
 
 	public function __construct() {
 		parent::__construct();
-		$this->child_theme_source = $this->config['child_theme_source'];
 
 		add_action( 'wp_ajax_' . $this->_prefix . '_install_demo_plugins', array(
 			$this,
@@ -755,11 +753,7 @@ class Thz_Super_Admin_Auto_Install extends Thz_Admin_Auto_Install {
 					'nonce'       => wp_create_nonce( 'install-supported-extensions' ),
 					'message'     => esc_html__( 'Installing supported extensions', 'creatus' ),
 				),
-				'install-child-theme'          => array(
-					'ajax_action' => $this->_prefix . '_install_child_theme',
-					'nonce'       => wp_create_nonce( 'install-child-theme' ),
-					'message'     => esc_html__( 'Downloading and installing child theme', 'creatus' ),
-				),
+
 			)
 		);
 	}
@@ -782,10 +776,6 @@ class Thz_Super_Admin_Auto_Install extends Thz_Admin_Auto_Install {
 			'install_supported_extensions'
 		) );
 
-		add_action( 'wp_ajax_' . $this->_prefix . '_install_child_theme', array(
-			$this,
-			'install_child_theme'
-		) );
 	}
 
 	public function install_supported_extensions() {
@@ -915,53 +905,6 @@ class Thz_Super_Admin_Auto_Install extends Thz_Admin_Auto_Install {
 
 		wp_send_json_success();
 	}
-
-	public function install_child_theme() {
-		ob_end_clean();
-		if ( ! current_user_can( 'install_themes' ) || empty( $this->child_theme_source ) ) {
-			wp_send_json_error( array( 'message' => esc_html__( 'Current user can\'t install themes or child theme source must be specified','creatus') ) );
-		}
-
-		check_ajax_referer( 'install-child-theme' );
-		$credentials = get_site_transient( $this->credentials_key );
-
-		if ( ! $this->initialize_filesystem( $credentials, wp_normalize_path( get_theme_root() ) ) ) {
-			wp_send_json_error( array(
-				'message' => sprintf( esc_html__( 'Failed to install Theme. Folder %s is not writable', 'creatus' ), wp_normalize_path( get_theme_root() ) ),
-			) );
-		}
-
-		/**
-		 * @var WP_Filesystem_Base $wp_filesystem
-		 */
-		global $wp_filesystem;
-
-		$response = array( 'success' => true );
-
-		$theme_path = pathinfo( get_template_directory() );
-		$child_path = $theme_path['dirname'];
-
-		$child_name     = $child_path . '/' . $this->get_theme_id() . '-child';
-		$child_rel_path = str_replace( get_theme_root() . '/', '', $child_name );
-
-		if ( ! $wp_filesystem->is_dir( $child_name ) ) {
-			$response = Thz_Installer_Helper::download_and_install_a_package(
-				$this->child_theme_source,
-				$child_name,
-				array(
-					'type'   => 'theme',
-					'action' => 'install',
-				),
-				$this->get_theme_id() . '-child'
-			);
-		}
-
-		switch_theme( $child_rel_path );
-
-		$this->insert_step_status( 'install-child-theme', $response['success'] );
-		wp_send_json_success();
-	}
-
 
 	public function get_setup_messages() {
 		return array(
