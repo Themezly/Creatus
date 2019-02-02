@@ -17,6 +17,5 @@ return array(
 		),
 	),
 	'theme_id'           => 'creatus',
-	//'child_theme_source' => esc_url('https://updates.themezly.io/plugins/creatus-child.zip'),
 	'has_demo_content'   => true
 );
