@@ -330,12 +330,11 @@ function _thz_get_tgmpa_plugins_list(){
 			'required'  => false,
 			'version'   => '1.0.0', 
 		),
-		'thz-core'=> array(
-			'name'               => 'Thz Core', // The plugin name.
-			'slug'               => 'thz-core', // The plugin slug (typically the folder name).
-			'source'             => esc_url('https://updates.themezly.io/plugins/thz-core.zip'), // The plugin source.
+		'creatus-extended'=> array(
+			'name'               => 'Creatus Extended', // The plugin name.
+			'slug'               => 'creatus-extended', // The plugin slug (typically the folder name).
 			'required'           => false, // If false, the plugin is only 'recommended' instead of required.
-			'version'            => '1.5.1', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
+			'version'            => '1.0.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
 		),
 		'assign-widgets'=> array(
 			'name'               => 'Assign Widgets', // The plugin name.
