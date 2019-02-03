@@ -413,38 +413,6 @@ function _thz_get_demos_plugins_list () {
 
 
 /**
- * Disable Unyson update 
- * if new update is bigger than max version
-*/
-
-function _thz_filter_disable_unyson_update( $updates ) {
-
-   $requirements = defined('FW') ? fw()->theme->manifest->get('requirements') : false;
-   
-   if($requirements && isset($updates->response) && isset($requirements['framework']['max_version'])){
-	   
-	   $response = $updates->response;
-	   
-	   if(isset($response['unyson/unyson.php']) ){
-	   	 
-		 $new_version = $response['unyson/unyson.php']->new_version;
-		 $max_version = $requirements['framework']['max_version'];
-		 
-		 if (version_compare($new_version, $max_version, ">")) {
-			 
-			unset( $updates->response['unyson/unyson.php'] );
-		 }
-		
-	   }
-   }
-   
-   return $updates;
-}
-
-add_filter( 'site_transient_update_plugins', '_thz_filter_disable_unyson_update' );
-
-
-/**
  * Get passed var
  * @return array|string
  */
