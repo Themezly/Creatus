@@ -2084,20 +2084,6 @@ function _thz_filter_get_archives_link( $output ) {
 add_filter( 'get_archives_link', '_thz_filter_get_archives_link', 10, 6 ); 
 
 
-
-/*
- * Load page builder templates
-*/
-function _thz_action_load_builder_templates() {
-	
-	require_once get_template_directory().'/inc/includes/builder-templates/init.php';
-	
-}
-
-add_action('fw_init', '_thz_action_load_builder_templates');
-
-
-
 /*
  * Load fonts import page
 */
