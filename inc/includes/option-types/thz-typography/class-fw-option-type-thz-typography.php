@@ -387,26 +387,31 @@ class FW_Option_Type_ThzTypography extends FW_Option_Type
 			'subsets' => false
 		);
 		
-		// typekit
-		if( $subset == 'default' || $subset == 'all'){
+		if( thz_creatus_extended() ){
 			
-			$imported  	= get_option('thz_imported_fonts');
-			$slug		= thz_typekit_slug($font);
-			$current_data['variants'] 	= thz_akg('tykfonts/fonts_data/'.$slug.'/variations',$imported,false);
-			$current_data['subsets'] 	= array($subset);
+			// typekit
+			if( $subset == 'default' || $subset == 'all'){
+				
+				$imported  	= get_option('thz_imported_fonts');
+				$slug		= thz_typekit_slug($font);
+				$current_data['variants'] 	= thz_akg('tykfonts/fonts_data/'.$slug.'/variations',$imported,false);
+				$current_data['subsets'] 	= array($subset);
+				
+				return $current_data[$return];
+			}
 			
-			return $current_data[$return];
-		}
+			
+			// fontsquirell
+			if( $subset == 'fsq' ){
+				
+				$imported  	= get_option('thz_imported_fonts');
+				$variants 	= thz_akg('fsqfonts/'.$font,$imported,false);
+				$current_data['variants'] 	= $variants ? array_keys($variants) : array();
+				$current_data['subsets'] 	= array($subset);
+				
+				return $current_data[$return];
+			}
 		
-		// fontsquirell
-		if( $subset == 'fsq' ){
-			
-			$imported  	= get_option('thz_imported_fonts');
-			$variants 	= thz_akg('fsqfonts/'.$font,$imported,false);
-			$current_data['variants'] 	= $variants ? array_keys($variants) : array();
-			$current_data['subsets'] 	= array($subset);
-			
-			return $current_data[$return];
 		}
 
 		// fontfacekit
