@@ -157,7 +157,6 @@ class Thz_Theme_Includes {
 			$path . 'class-thz-item-utility.php',
 			$path . 'classes-thz-menu-walkers.php',
 			$path . 'class-thz-doc.php',
-			$path . 'class-thz-demos.php',
 			$path . 'class-thz-dynamic-css.php',
 			$path . 'class-thz-generate-css.php',
 			$path . 'thz-assign-layout.php',
