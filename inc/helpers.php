@@ -50,6 +50,17 @@ function thz_core(){
 	return defined('THZHELPERS');
 	
 }
+
+/**
+ * Check if Creatus Extended is active
+ * @internal
+ */
+function thz_creatus_extended(){
+	
+	return defined('CREATUSEXTENDED');
+	
+}
+
 /**
  * Check if page is using page builder
  * @internal
