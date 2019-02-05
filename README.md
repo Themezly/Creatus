@@ -16,7 +16,7 @@ Visit [Creatus](https://creatus.io/) WordPress Theme Demo to see it in action.
 ## Download
 
 
-* [Latest release](https://themezly.com/pricing)
+* [Latest release](https://github.com/Themezly/Creatus/releases/latest)
 * [All packages](https://github.com/Themezly/Creatus/releases)
 
 
