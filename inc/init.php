@@ -80,6 +80,12 @@ class Thz_Theme_Includes {
 			$files    = array(
 				'class-thz-customizer.php'
 			);
+			
+			if( !thz_fw_active() ){
+				
+				$files[] = 'customizer-defaults.php';
+			}
+			
 			foreach ( $files as $file ) {
 				require_once $abs_path . $file;
 			}
