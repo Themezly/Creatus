@@ -192,8 +192,8 @@ Source: http://fontawesome.io/
 License: Creative Commons CC0
 Source: https://stocksnap.io
 
-https://stocksnap.io/photo/J2KJ6CNZTC
-https://stocksnap.io/photo/0PTTRQX5L1
-https://stocksnap.io/photo/NOFSYE1P0V
-https://stocksnap.io/photo/BBA96CDDCD
-https://stocksnap.io/photo/O9V8SGL6FD
+* https://stocksnap.io/photo/J2KJ6CNZTC
+* https://stocksnap.io/photo/0PTTRQX5L1
+* https://stocksnap.io/photo/NOFSYE1P0V
+* https://stocksnap.io/photo/BBA96CDDCD
+* https://stocksnap.io/photo/O9V8SGL6FD
