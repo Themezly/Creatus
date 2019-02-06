@@ -3700,6 +3700,15 @@ function thz_page_info_check( $assigned_pages = array() ) {
  * @return bool
  */
 function thz_global_page_title() {
+	
+	if( !thz_fw_active() ){
+		if ( 
+		( 'page' == get_option( 'show_on_front' ) && is_front_page() && !is_home() ) || 
+		( 'posts' == get_option( 'show_on_front' ) && is_home() && is_front_page() )
+		){
+			return false;
+		}
+	}
 
 	$show_on           = thz_get_theme_option( 'pt_show_on', null );
 	$show_title        = thz_page_info_check( $show_on );
