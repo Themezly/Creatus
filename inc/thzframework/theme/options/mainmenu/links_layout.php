@@ -28,7 +28,7 @@ $options = array(
 	),
 	'tm_tl_boxstyle' => array(
 		'type' => 'thz-box-style',
-		'label' => 'Top level link padding',
+		'label' => __('Top level link padding', 'creatus'),
 		'attr' => array(
 			'data-tminputid' => 'tm_tl_boxstyle',
 			'data-changing' => 'padding'
@@ -113,7 +113,7 @@ $options = array(
 	),
 	'tm_sl_boxstyle' => array(
 		'type' => 'thz-box-style',
-		'label' => 'Sub level link padding',
+		'label' => __('Sub level link padding', 'creatus'),
 		'attr' => array(
 			'data-tminputid' => 'tm_sl_boxstyle',
 			'data-changing' => 'padding'

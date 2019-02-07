@@ -58,7 +58,7 @@ $options = array(
 	),
 	'tm_subli_border' => array(
 		'type' => 'thz-box-style',
-		'label' => 'Sub level li border',
+		'label' => __('Sub level li border', 'creatus'),
 		'attr' => array(
 			'data-tminputid' => 'tm_subli_border',
 			'data-changing' => 'border'
