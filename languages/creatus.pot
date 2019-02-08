@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Creatus\n"
-"POT-Creation-Date: 2019-02-03 21:16+0100\n"
+"POT-Creation-Date: 2019-02-08 02:07+0100\n"
 "PO-Revision-Date: 2017-03-23 13:38+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -663,7 +663,7 @@ msgstr ""
 msgid "views"
 msgstr ""
 
-#: inc/helpers.php:2280 inc/helpers.php:3432
+#: inc/helpers.php:2280 inc/helpers.php:3442
 msgid "by"
 msgstr ""
 
@@ -727,28 +727,28 @@ msgstr ""
 msgid "Offcanvas Overlay"
 msgstr ""
 
-#: inc/helpers.php:3340
+#: inc/helpers.php:3350
 #: inc/thzframework/theme/options/customizer/options_accordions.php:399
 #: inc/thzframework/theme/options/taxonomies/product_cat.php:46
 #: inc/thzframework/theme/options/woo/settings.php:13
 msgid "Shop"
 msgstr ""
 
-#: inc/helpers.php:3343
+#: inc/helpers.php:3353
 msgid "Search Results for:"
 msgstr ""
 
-#: inc/helpers.php:3346
+#: inc/helpers.php:3356
 #: inc/thzframework/theme/options/pagetemplates/settings.php:13
 #: template-parts/404-section.php:19
 msgid "404"
 msgstr ""
 
-#: inc/helpers.php:3418
+#: inc/helpers.php:3428
 msgid "in"
 msgstr ""
 
-#: inc/helpers.php:3564
+#: inc/helpers.php:3574
 #: inc/thzframework/theme/options/advanced/customizer.php:52
 #: inc/thzframework/theme/options/advanced/customizer.php:89
 #: inc/thzframework/theme/options/customizer/options_accordions.php:86
@@ -756,23 +756,23 @@ msgstr ""
 msgid "Blog"
 msgstr ""
 
-#: inc/helpers.php:4896
+#: inc/helpers.php:4915
 msgid "Start typing"
 msgstr ""
 
-#: inc/helpers.php:5112
+#: inc/helpers.php:5131
 msgid "Search..."
 msgstr ""
 
-#: inc/helpers.php:5924
+#: inc/helpers.php:5954
 msgid "Select metro layout"
 msgstr ""
 
-#: inc/helpers.php:5927
+#: inc/helpers.php:5957
 msgid "Select desired metro layout. See help for more info"
 msgstr ""
 
-#: inc/helpers.php:5928
+#: inc/helpers.php:5958
 msgid ""
 "Hover over layout images and use suggested column/items combo for perfect "
 "layouts. Insert the items in assigned items option and columns in \"Grid "
@@ -780,38 +780,38 @@ msgid ""
 "\"Packery\""
 msgstr ""
 
-#: inc/helpers.php:6741 inc/includes/woocommerce/hooks.php:226
+#: inc/helpers.php:6771 inc/includes/woocommerce/hooks.php:226
 msgid "Select Options"
 msgstr ""
 
-#: inc/helpers.php:6746 inc/includes/woocommerce/hooks.php:231
+#: inc/helpers.php:6776 inc/includes/woocommerce/hooks.php:231
 msgid "View Options"
 msgstr ""
 
-#: inc/helpers.php:6751 inc/helpers.php:6768 inc/helpers.php:6808
+#: inc/helpers.php:6781 inc/helpers.php:6798 inc/helpers.php:6838
 #: inc/includes/woocommerce/hooks.php:236
 #: inc/includes/woocommerce/hooks.php:253
 #: inc/includes/woocommerce/hooks.php:293
 msgid "More Info"
 msgstr ""
 
-#: inc/helpers.php:6756 inc/includes/woocommerce/hooks.php:241
+#: inc/helpers.php:6786 inc/includes/woocommerce/hooks.php:241
 msgid "Add to Cart"
 msgstr ""
 
-#: inc/helpers.php:6764 inc/helpers.php:6828
+#: inc/helpers.php:6794 inc/helpers.php:6858
 #: inc/includes/woocommerce/hooks.php:249
 #: inc/includes/woocommerce/hooks.php:313
 #: inc/thzframework/theme/options/mainmenu/general.php:210
 msgid "View cart"
 msgstr ""
 
-#: inc/helpers.php:6797 inc/includes/woocommerce/hooks.php:282
+#: inc/helpers.php:6827 inc/includes/woocommerce/hooks.php:282
 #: woocommerce/single-product/sale-flash.php:37
 msgid "Out of stock!"
 msgstr ""
 
-#: inc/helpers.php:6817 inc/includes/woocommerce/hooks.php:302
+#: inc/helpers.php:6847 inc/includes/woocommerce/hooks.php:302
 #: woocommerce/single-product/sale-flash.php:32
 msgid "Sale!"
 msgstr ""
@@ -6737,6 +6737,94 @@ msgstr ""
 msgid "This will take a moment. Loading customizer options please wait..."
 msgstr ""
 
+#: inc/includes/utilities/customizer/customizer-defaults.php:49
+msgid "Theme Options"
+msgstr ""
+
+#: inc/includes/utilities/customizer/customizer-defaults.php:50
+msgid "Customize the login of your website."
+msgstr ""
+
+#: inc/includes/utilities/customizer/customizer-defaults.php:56
+msgid "Hero Section"
+msgstr ""
+
+#: inc/includes/utilities/customizer/customizer-defaults.php:66
+#: inc/includes/utilities/customizer/customizer-defaults.php:162
+msgid "Install Recomended Plugins"
+msgstr ""
+
+#: inc/includes/utilities/customizer/customizer-defaults.php:71
+#: inc/includes/utilities/customizer/customizer-defaults.php:167
+#, php-format
+msgid ""
+"This is a default customizer setup. For advanced theme options Install and "
+"activate %1$srecommended plugins%2$s."
+msgstr ""
+
+#: inc/includes/utilities/customizer/customizer-defaults.php:87
+msgid "Before Title"
+msgstr ""
+
+#: inc/includes/utilities/customizer/customizer-defaults.php:90
+msgid "Add text before hero section title."
+msgstr ""
+
+#: inc/includes/utilities/customizer/customizer-defaults.php:101
+msgid "Hero Title"
+msgstr ""
+
+#: inc/includes/utilities/customizer/customizer-defaults.php:104
+msgid "Add hero section title."
+msgstr ""
+
+#: inc/includes/utilities/customizer/customizer-defaults.php:115
+msgid "Sub Title"
+msgstr ""
+
+#: inc/includes/utilities/customizer/customizer-defaults.php:118
+msgid "Add hero section sub title"
+msgstr ""
+
+#: inc/includes/utilities/customizer/customizer-defaults.php:129
+msgid "Button text"
+msgstr ""
+
+#: inc/includes/utilities/customizer/customizer-defaults.php:132
+msgid "Add hero button text"
+msgstr ""
+
+#: inc/includes/utilities/customizer/customizer-defaults.php:143
+msgid "Button link"
+msgstr ""
+
+#: inc/includes/utilities/customizer/customizer-defaults.php:146
+msgid "Add hero button link"
+msgstr ""
+
+#: inc/includes/utilities/customizer/customizer-defaults.php:152
+#: inc/thzframework/theme/options/footer_settings.php:201
+#: inc/thzframework/theme/options/footer_settings.php:211
+#: inc/thzframework/theme/options/footer_settings.php:221
+msgid "Branding"
+msgstr ""
+
+#: inc/includes/utilities/customizer/customizer-defaults.php:183
+msgid "Branding text"
+msgstr ""
+
+#: inc/includes/utilities/customizer/customizer-defaults.php:186
+msgid "Add branding ( copyright ) text"
+msgstr ""
+
+#: inc/includes/utilities/customizer/customizer-defaults.php:197
+msgid "Branding link"
+msgstr ""
+
+#: inc/includes/utilities/customizer/customizer-defaults.php:200
+msgid "Add branding link"
+msgstr ""
+
 #: inc/includes/utilities/item/main-page-utility.class.php:51
 msgid ""
 "Class should be instantiated before \"wp\" action is triggered because it "
@@ -8898,6 +8986,10 @@ msgstr ""
 msgid "Set icon color."
 msgstr ""
 
+#: inc/thzframework/extensions/shortcodes/shortcodes/call-to-action/options.php:530
+msgid "Heading font"
+msgstr ""
+
 #: inc/thzframework/extensions/shortcodes/shortcodes/call-to-action/options.php:534
 #: inc/thzframework/extensions/shortcodes/shortcodes/call-to-action/options.php:565
 #: inc/thzframework/extensions/shortcodes/shortcodes/call-to-action/options.php:596
@@ -8918,12 +9010,22 @@ msgstr ""
 msgid "Heading font family and metrics"
 msgstr ""
 
+#: inc/thzframework/extensions/shortcodes/shortcodes/call-to-action/options.php:561
+msgid "Sub heading font"
+msgstr ""
+
 #: inc/thzframework/extensions/shortcodes/shortcodes/call-to-action/options.php:568
 msgid "Set custom font settings for sub heading"
 msgstr ""
 
 #: inc/thzframework/extensions/shortcodes/shortcodes/call-to-action/options.php:580
 msgid "Sub heading font family and metrics"
+msgstr ""
+
+#: inc/thzframework/extensions/shortcodes/shortcodes/call-to-action/options.php:592
+#: inc/thzframework/extensions/shortcodes/shortcodes/text-block/options.php:59
+#: inc/thzframework/theme/options/custom_typo.php:19
+msgid "Text font"
 msgstr ""
 
 #: inc/thzframework/extensions/shortcodes/shortcodes/call-to-action/options.php:599
@@ -12003,6 +12105,10 @@ msgstr ""
 msgid "This is dummy notification text. Please replace it."
 msgstr ""
 
+#: inc/thzframework/extensions/shortcodes/shortcodes/notification/options.php:137
+msgid "Notification style type"
+msgstr ""
+
 #: inc/thzframework/extensions/shortcodes/shortcodes/notification/options.php:141
 msgid "Predefined"
 msgstr ""
@@ -13592,11 +13698,6 @@ msgstr ""
 #: inc/thzframework/extensions/shortcodes/shortcodes/text-block/options.php:52
 #: inc/thzframework/theme/options/events/single_title_and_date.php:162
 msgid "Headings font"
-msgstr ""
-
-#: inc/thzframework/extensions/shortcodes/shortcodes/text-block/options.php:59
-#: inc/thzframework/theme/options/custom_typo.php:19
-msgid "Text font"
 msgstr ""
 
 #: inc/thzframework/extensions/shortcodes/shortcodes/text-block/options.php:69
@@ -17929,12 +18030,6 @@ msgstr ""
 msgid "Social links"
 msgstr ""
 
-#: inc/thzframework/theme/options/footer_settings.php:201
-#: inc/thzframework/theme/options/footer_settings.php:211
-#: inc/thzframework/theme/options/footer_settings.php:221
-msgid "Branding"
-msgstr ""
-
 #: inc/thzframework/theme/options/footer_settings.php:207
 msgid "Middle content"
 msgstr ""
@@ -18597,6 +18692,10 @@ msgstr ""
 msgid "Set sub level ul border radius."
 msgstr ""
 
+#: inc/thzframework/theme/options/mainmenu/containers_sub_level.php:61
+msgid "Sub level li border"
+msgstr ""
+
 #: inc/thzframework/theme/options/mainmenu/containers_sub_level.php:88
 msgid "First sub level top offset"
 msgstr ""
@@ -18856,6 +18955,10 @@ msgstr ""
 msgid "Set top level hovered item colors"
 msgstr ""
 
+#: inc/thzframework/theme/options/mainmenu/hovered_style.php:35
+msgid "Top level hovered link border"
+msgstr ""
+
 #: inc/thzframework/theme/options/mainmenu/hovered_style.php:54
 msgid "Sub level hovered link colors"
 msgstr ""
@@ -18870,6 +18973,10 @@ msgstr ""
 
 #: inc/thzframework/theme/options/mainmenu/link_style.php:9
 msgid "Set top level link colors"
+msgstr ""
+
+#: inc/thzframework/theme/options/mainmenu/link_style.php:35
+msgid "Top level link border"
 msgstr ""
 
 #: inc/thzframework/theme/options/mainmenu/link_style.php:54
@@ -18891,6 +18998,10 @@ msgstr ""
 #: inc/thzframework/theme/options/mainmenu/links_layout.php:27
 msgid ""
 "Set top level link height. The menu height will be adjusted to this option."
+msgstr ""
+
+#: inc/thzframework/theme/options/mainmenu/links_layout.php:31
+msgid "Top level link padding"
 msgstr ""
 
 #: inc/thzframework/theme/options/mainmenu/links_layout.php:62
@@ -18933,6 +19044,10 @@ msgstr ""
 
 #: inc/thzframework/theme/options/mainmenu/links_layout.php:112
 msgid "Set sub level link height."
+msgstr ""
+
+#: inc/thzframework/theme/options/mainmenu/links_layout.php:116
+msgid "Sub level link padding"
 msgstr ""
 
 #: inc/thzframework/theme/options/mainmenu/links_layout.php:148
@@ -21525,6 +21640,10 @@ msgstr ""
 
 #: inc/thzframework/theme/options/widgets_settings.php:185
 msgid "Adjust tag items font metrics."
+msgstr ""
+
+#: inc/thzframework/theme/options/widgetsgenerator.php:13
+msgid "Grids generator"
 msgstr ""
 
 #: inc/thzframework/theme/options/widgetsgenerator.php:15
