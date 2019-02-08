@@ -81,7 +81,7 @@ class Thz_Theme_Includes {
 				'class-thz-customizer.php'
 			);
 			
-			if( !thz_fw_active() ){
+			if( !thz_fw_active() && is_customize_preview() ){
 				
 				$files[] = 'customizer-defaults.php';
 			}
