@@ -3142,7 +3142,12 @@ html:not(.thz-preloader-active) .thz-preloader.leave-curtain .thz-preloader-in{
 /* ============================================ 
 	# Builders
  ============================================ */
-.thz-horizontal-header.thz-header-mode-absolute .elementor-editor-active .elementor-section-wrap section:first-child .elementor-editor-section-settings,
+.thz-horizontal-header.thz-header-mode-absolute .elementor-editor-active .elementor-section-wrap > section:first-child .elementor-editor-section-settings,
 .thz-horizontal-header.thz-header-mode-absolute .brz-ed-wrap-block-item:first-child .brz-ed-collapsible-wrap{
 	top:100px;
+}
+
+.thz-horizontal-header.thz-header-mode-absolute #elementor-add-new-section{
+	margin: 0 auto;
+	padding: 120px 0;
 }
