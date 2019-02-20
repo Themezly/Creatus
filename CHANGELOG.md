@@ -1,5 +1,13 @@
 <div class="thz-docs-codeblock" markdown="1">
 
+## Version: 1.5.2 (February 20th, 2019)
+
+#### Code improvement
+ - Added header mode page class
+ - Added Elementor and Brizy first section options adjustment when absolute headers
+ - Added fix for Chrome video autoplay thnx @miramaya
+
+
 ## Version: 1.5.1 (January 29th, 2019)
 
 #### Code improvement
