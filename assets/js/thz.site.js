@@ -3101,7 +3101,7 @@
 			
 			var $markup ='<div class="mfp-iframe-scaler">';
 				$markup +='<div class="mfp-close"></div>';
-				$markup +='<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>';
+				$markup +='<iframe class="mfp-iframe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 				$markup +='</div>';
 				$markup +='<div class="mfp-bottom-bar">';
 				$markup +='<div class="mfp-title"></div>';
@@ -3152,7 +3152,7 @@
 								
 								return m[1] + suffix;
 							},
-							src: '//www.youtube.com/embed/%id%'
+							src: 'https://www.youtube.com/embed/%id%'
 						},
 						vimeo: {
 							index: 'vimeo.com/', 
@@ -3169,7 +3169,7 @@
 								var id = m[5] + '?autoplay=1'+ suffix;
 								return id;
 							},
-							src: '//player.vimeo.com/video/%id%'
+							src: 'https://player.vimeo.com/video/%id%'
 						}
 					}
                 };
