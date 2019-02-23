@@ -25,10 +25,12 @@ if ( ! $messages ) {
 }
 
 ?>
-<?php if (is_product()){?><div class="thz-column thz-col-1"><?php }?>
-<ul class="woocommerce-error" role="alert">
-	<?php foreach ( $messages as $message ) : ?>
-		<li><?php echo wc_kses_notice( $message ); ?></li>
-	<?php endforeach; ?>
-</ul>
+<?php if (is_product()){?><div class="thz-column thz-col-1 thz-site-width"><?php }?>
+<div class="woocommerce-message woocommerce-error" role="alert">
+    <ul>
+        <?php foreach ( $messages as $message ) : ?>
+            <li><?php echo wc_kses_notice( $message ); ?></li>
+        <?php endforeach; ?>
+    </ul>
+</div>
 <?php if (is_product()){?></div><?php }?>

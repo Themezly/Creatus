@@ -25,7 +25,7 @@ if ( ! $messages ) {
 }
 
 ?>
-<?php if (is_product()){?><div class="thz-column thz-col-1"><?php }?>
+<?php if (is_product()){?><div class="thz-column thz-col-1 thz-site-width"><?php }?>
 <?php foreach ( $messages as $message ) : ?>
 	<div class="woocommerce-message" role="alert"><?php echo wc_kses_notice( $message ); ?></div>
 <?php endforeach; ?>
