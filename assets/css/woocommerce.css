@@ -552,6 +552,9 @@
 	content: "\e0b1";
 	font-weight:normal;
 }
+.woocommerce-error:before{
+	display:none;
+}
 .woocommerce-error {
 	color: #ff4542;
 }
