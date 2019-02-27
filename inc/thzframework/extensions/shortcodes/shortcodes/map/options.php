@@ -68,7 +68,7 @@ $options       = array(
 				'popup' => true,
 				'button-text' => esc_html__('Customize map container box style', 'creatus'),
 				'desc' => esc_html__('Adjust .thz-map box style','creatus'),
-				'disable' => array('layout','boxsize','transform','video'),
+				'disable' => array('video'),
 				'units' => array(
 					'borderradius',
 					'boxsize',
