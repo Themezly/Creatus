@@ -1536,6 +1536,9 @@
                     .addClass('thz-woo-item-in-cart');
 
                 $(btn).parent().attr('data-original-title', 'View cart');
+				
+				$('li.thz-menu-woo-cart').removeClass('thz-mini-no-items')
+				.addClass('thz-mini-has-items');
 					
             });
 
@@ -1564,8 +1567,15 @@
 						}
 						
 						$this.parent().slideUp(400, function() {
+							
+							var $cart_badge = data.fragments['span.thz-woo-cart-badge'];
 							$('div.widget_shopping_cart_content').replaceWith(data.fragments['div.widget_shopping_cart_content']);
-							$('span.thz-woo-cart-badge').replaceWith(data.fragments['span.thz-woo-cart-badge']);
+							$('span.thz-woo-cart-badge').replaceWith( $cart_badge );
+							
+							if( $($cart_badge).hasClass('thz-mini-no-items') ){
+								$('li.thz-menu-woo-cart').addClass('thz-mini-no-items')
+								.removeClass('thz-mini-has-items');								
+							}
 							//$('.post-'+product_id+'.product .thz-woo-item').removeClass('thz-woo-item-in-cart');// woo hook 260
 						});
 
