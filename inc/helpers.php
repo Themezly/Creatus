@@ -6711,124 +6711,126 @@ if ( ! function_exists( 'thz_query_taxonomies' ) ) {
  * Woo buttons
  * @return string
  */
-function _thz_woo_buttons( $product, $atts ) {
-
-	$btns_show = thz_akg( 'cart_btn', $atts, 'both' );
-	$html      = '';
-
-	if ( $btns_show != 'hide' ) {
-
-		$label_space = $btns_show == 'both' ? ' thz-ml-10' : '';
-		$cartajax    = thz_woo_product_type( $product ) == 'simple' ? ' ajax_add_to_cart' : '';
-		$item_badge  = '';
-
-		global $woocommerce;
-
-		switch ( thz_woo_product_type( $product ) ) {
-			case "variable" :
-				$link       = apply_filters( 'variable_add_to_cart_url', get_permalink( thz_woo_get_id( $product ) ) );
-				$label      = apply_filters( 'variable_add_to_cart_text', esc_html__( 'Select Options', 'creatus' ) );
-				$icon_class = 'thzicon thzicon-plus';
-				break;
-			case "grouped" :
-				$link       = apply_filters( 'grouped_add_to_cart_url', get_permalink( thz_woo_get_id( $product ) ) );
-				$label      = apply_filters( 'grouped_add_to_cart_text', esc_html__( 'View Options', 'creatus' ) );
-				$icon_class = 'thzicon thzicon-search3';
-				break;
-			case "external" :
-				$link       = apply_filters( 'external_add_to_cart_url', get_permalink( thz_woo_get_id( $product ) ) );
-				$label      = apply_filters( 'external_add_to_cart_text', esc_html__( 'More Info', 'creatus' ) );
-				$icon_class = 'thzicon thzicon-circle-plus';
-				break;
-			default :
-				$link       = apply_filters( 'add_to_cart_url', esc_url( $product->add_to_cart_url() ) );
-				$label      = apply_filters( 'add_to_cart_text', esc_html__( 'Add to Cart', 'creatus' ) );
-				$icon_class = thz_get_option( 'wooicons/mc', 'thzicon thzicon-shopping-cart2' );
-				break;
-		}
-
-
-		if ( thz_woo_in_cart( $product->get_id() ) ) {
-
-			$label = esc_html__( 'View cart', 'creatus' );
-
-		}
-		if ( ! $product->is_in_stock() ) {
-			$label = esc_html__( 'More Info', 'creatus' );
-		}
-
-		$tip       = $btns_show == 'icon' ? ' title="' . $label . '"' : '';
-		$tip_class = $btns_show == 'icon' ? ' thz-tips' : '';
-
-		if ( thz_woo_product_type( $product ) && ! thz_woo_in_cart( thz_woo_get_id( $product ) ) ) {
-
-			$eclass = 'thz-woo-item-add-to-cart thz-woo-item-cart-buttons add_to_cart_button product_type_' . thz_woo_product_type( $product ) . $cartajax . '';
-
-			$add_to_cart = '<a href="' . $link . '" rel="nofollow" data-product_id="' . thz_woo_get_id( $product ) . '"';
-			$add_to_cart .= ' class="' . thz_sanitize_class( $eclass ) . '">';
+if ( ! function_exists( '_thz_woo_buttons' ) ) {
+	function _thz_woo_buttons( $product, $atts ) {
+	
+		$btns_show = thz_akg( 'cart_btn', $atts, 'both' );
+		$html      = '';
+	
+		if ( $btns_show != 'hide' ) {
+	
+			$label_space = $btns_show == 'both' ? ' thz-ml-10' : '';
+			$cartajax    = thz_woo_product_type( $product ) == 'simple' ? ' ajax_add_to_cart' : '';
+			$item_badge  = '';
+	
+			global $woocommerce;
+	
+			switch ( thz_woo_product_type( $product ) ) {
+				case "variable" :
+					$link       = apply_filters( 'variable_add_to_cart_url', get_permalink( thz_woo_get_id( $product ) ) );
+					$label      = apply_filters( 'variable_add_to_cart_text', esc_html__( 'Select Options', 'creatus' ) );
+					$icon_class = 'thzicon thzicon-plus';
+					break;
+				case "grouped" :
+					$link       = apply_filters( 'grouped_add_to_cart_url', get_permalink( thz_woo_get_id( $product ) ) );
+					$label      = apply_filters( 'grouped_add_to_cart_text', esc_html__( 'View Options', 'creatus' ) );
+					$icon_class = 'thzicon thzicon-search3';
+					break;
+				case "external" :
+					$link       = apply_filters( 'external_add_to_cart_url', get_permalink( thz_woo_get_id( $product ) ) );
+					$label      = apply_filters( 'external_add_to_cart_text', esc_html__( 'More Info', 'creatus' ) );
+					$icon_class = 'thzicon thzicon-circle-plus';
+					break;
+				default :
+					$link       = apply_filters( 'add_to_cart_url', esc_url( $product->add_to_cart_url() ) );
+					$label      = apply_filters( 'add_to_cart_text', esc_html__( 'Add to Cart', 'creatus' ) );
+					$icon_class = thz_get_option( 'wooicons/mc', 'thzicon thzicon-shopping-cart2' );
+					break;
+			}
+	
+	
+			if ( thz_woo_in_cart( $product->get_id() ) ) {
+	
+				$label = esc_html__( 'View cart', 'creatus' );
+	
+			}
+			if ( ! $product->is_in_stock() ) {
+				$label = esc_html__( 'More Info', 'creatus' );
+			}
+	
+			$tip       = $btns_show == 'icon' ? ' title="' . $label . '"' : '';
+			$tip_class = $btns_show == 'icon' ? ' thz-tips' : '';
+	
+			if ( thz_woo_product_type( $product ) && ! thz_woo_in_cart( thz_woo_get_id( $product ) ) ) {
+	
+				$eclass = 'thz-woo-item-add-to-cart thz-woo-item-cart-buttons add_to_cart_button product_type_' . thz_woo_product_type( $product ) . $cartajax . '';
+	
+				$add_to_cart = '<a href="' . $link . '" rel="nofollow" data-product_id="' . thz_woo_get_id( $product ) . '"';
+				$add_to_cart .= ' class="' . thz_sanitize_class( $eclass ) . '">';
+				if ( $btns_show == 'icon' || $btns_show == 'both' ) {
+					$add_to_cart .= '<i class="' . $icon_class . '"></i>';
+				}
+				if ( $btns_show == 'label' || $btns_show == 'both' ) {
+					$add_to_cart .= '<span class="thz-woo-item-cart-label' . $label_space . '">';
+					$add_to_cart .= $label;
+					$add_to_cart .= '</span>';
+				}
+				$add_to_cart .= '</a>';
+	
+			} else {
+				$add_to_cart = '';
+			}
+	
+			if ( ! $product->is_in_stock() ) {
+	
+				$item_badge .= '<span class="thz-woo-item-badge thz-woo-item-out-of-stock">';
+				$item_badge .= esc_html__( 'Out of stock!', 'creatus' );
+				$item_badge .= '</span>';
+	
+				$link        = apply_filters( 'out_of_stock_add_to_cart_url', get_permalink( thz_woo_get_id( $product ) ) );
+				$add_to_cart = '<a href="' . $link . '" rel="nofollow"';
+				$add_to_cart .= ' class="thz-woo-item-add-to-cart thz-woo-item-cart-buttons">';
+				if ( $btns_show == 'icon' || $btns_show == 'both' ) {
+					$add_to_cart .= '<i class="thzicon thzicon-circle-plus"></i>';
+				}
+				if ( $btns_show == 'label' || $btns_show == 'both' ) {
+					$add_to_cart .= '<span class="thz-woo-item-cart-label' . $label_space . '">';
+					$add_to_cart .= esc_html__( 'More Info', 'creatus' );
+					$add_to_cart .= '</span>';
+				}
+				$add_to_cart .= '</a>';
+			}
+	
+			if ( $product->is_on_sale() && $product->is_in_stock() ) {
+	
+				$item_badge .= '<span class="thz-woo-item-badge thz-woo-item-on-sale">';
+				$item_badge .= esc_html__( 'Sale!', 'creatus' );
+				$item_badge .= '</span>';
+			}
+	
+			$view_cart = '<a class="thz-woo-item-view-cart thz-woo-item-cart-buttons"';
+			$view_cart .= ' href="' . wc_get_cart_url() . '">';
 			if ( $btns_show == 'icon' || $btns_show == 'both' ) {
-				$add_to_cart .= '<i class="' . $icon_class . '"></i>';
+				$view_cart .= '<i class="thzicon thzicon-check"></i>';
 			}
 			if ( $btns_show == 'label' || $btns_show == 'both' ) {
-				$add_to_cart .= '<span class="thz-woo-item-cart-label' . $label_space . '">';
-				$add_to_cart .= $label;
-				$add_to_cart .= '</span>';
+				$view_cart .= '<span class="thz-woo-item-cart-label' . $label_space . '">';
+				$view_cart .= esc_html__( 'View cart', 'creatus' );
+				$view_cart .= '</span>';
 			}
-			$add_to_cart .= '</a>';
-
-		} else {
-			$add_to_cart = '';
+			$view_cart .= '</a>';
+	
+			//$html .= $item_badge;
+			$html .= '<div class="thz-posts-woo-buttons' . $tip_class . '"' . $tip . '>';
+			$html .= $add_to_cart;
+			$html .= $view_cart;
+			$html .= '</div>';
+	
 		}
-
-		if ( ! $product->is_in_stock() ) {
-
-			$item_badge .= '<span class="thz-woo-item-badge thz-woo-item-out-of-stock">';
-			$item_badge .= esc_html__( 'Out of stock!', 'creatus' );
-			$item_badge .= '</span>';
-
-			$link        = apply_filters( 'out_of_stock_add_to_cart_url', get_permalink( thz_woo_get_id( $product ) ) );
-			$add_to_cart = '<a href="' . $link . '" rel="nofollow"';
-			$add_to_cart .= ' class="thz-woo-item-add-to-cart thz-woo-item-cart-buttons">';
-			if ( $btns_show == 'icon' || $btns_show == 'both' ) {
-				$add_to_cart .= '<i class="thzicon thzicon-circle-plus"></i>';
-			}
-			if ( $btns_show == 'label' || $btns_show == 'both' ) {
-				$add_to_cart .= '<span class="thz-woo-item-cart-label' . $label_space . '">';
-				$add_to_cart .= esc_html__( 'More Info', 'creatus' );
-				$add_to_cart .= '</span>';
-			}
-			$add_to_cart .= '</a>';
-		}
-
-		if ( $product->is_on_sale() && $product->is_in_stock() ) {
-
-			$item_badge .= '<span class="thz-woo-item-badge thz-woo-item-on-sale">';
-			$item_badge .= esc_html__( 'Sale!', 'creatus' );
-			$item_badge .= '</span>';
-		}
-
-		$view_cart = '<a class="thz-woo-item-view-cart thz-woo-item-cart-buttons"';
-		$view_cart .= ' href="' . wc_get_cart_url() . '">';
-		if ( $btns_show == 'icon' || $btns_show == 'both' ) {
-			$view_cart .= '<i class="thzicon thzicon-check"></i>';
-		}
-		if ( $btns_show == 'label' || $btns_show == 'both' ) {
-			$view_cart .= '<span class="thz-woo-item-cart-label' . $label_space . '">';
-			$view_cart .= esc_html__( 'View cart', 'creatus' );
-			$view_cart .= '</span>';
-		}
-		$view_cart .= '</a>';
-
-		//$html .= $item_badge;
-		$html .= '<div class="thz-posts-woo-buttons' . $tip_class . '"' . $tip . '>';
-		$html .= $add_to_cart;
-		$html .= $view_cart;
-		$html .= '</div>';
-
+	
+		return $html;
+	
 	}
-
-	return $html;
-
 }
 
 /**
