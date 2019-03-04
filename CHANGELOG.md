@@ -1,5 +1,17 @@
 <div class="thz-docs-codeblock" markdown="1">
 
+## Version: 1.5.3 (March 4th, 2019)
+
+#### Code improvement
+ - Woo 3.5.5 templates update
+ - Woo menu cart add/remove item in cart class to parent
+ - Related items holder allow full layout option
+ - Map element container allow full layout option
+ - Allow _thz_woo_buttons function override
+ 
+#### Bug fix
+ - Chrome slick items blured text fix
+ 
 ## Version: 1.5.2 (February 20th, 2019)
 
 #### Code improvement
