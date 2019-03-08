@@ -1,5 +1,13 @@
 <div class="thz-docs-codeblock" markdown="1">
 
+## Version: 1.5.4 (March 8th, 2019)
+
+#### Code improvement
+ - Added switch hook for Creatus Pro lateral header branding
+ 
+#### Bug fix
+ - Fixed mobile svg logo width and height
+ 
 ## Version: 1.5.3 (March 4th, 2019)
 
 #### Code improvement
