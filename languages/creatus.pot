@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Creatus\n"
-"POT-Creation-Date: 2019-01-29 15:25+0100\n"
+"POT-Creation-Date: 2019-03-08 17:04+0100\n"
 "PO-Revision-Date: 2017-03-23 13:38+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -758,23 +758,23 @@ msgstr ""
 msgid "Blog"
 msgstr ""
 
-#: inc/helpers.php:4884
+#: inc/helpers.php:4885
 msgid "Start typing"
 msgstr ""
 
-#: inc/helpers.php:5100
+#: inc/helpers.php:5101
 msgid "Search..."
 msgstr ""
 
-#: inc/helpers.php:5912
+#: inc/helpers.php:5913
 msgid "Select metro layout"
 msgstr ""
 
-#: inc/helpers.php:5915
+#: inc/helpers.php:5916
 msgid "Select desired metro layout. See help for more info"
 msgstr ""
 
-#: inc/helpers.php:5916
+#: inc/helpers.php:5917
 msgid ""
 "Hover over layout images and use suggested column/items combo for perfect "
 "layouts. Insert the items in assigned items option and columns in \"Grid "
@@ -782,38 +782,38 @@ msgid ""
 "\"Packery\""
 msgstr ""
 
-#: inc/helpers.php:6729 inc/includes/woocommerce/hooks.php:226
+#: inc/helpers.php:6731 inc/includes/woocommerce/hooks.php:226
 msgid "Select Options"
 msgstr ""
 
-#: inc/helpers.php:6734 inc/includes/woocommerce/hooks.php:231
+#: inc/helpers.php:6736 inc/includes/woocommerce/hooks.php:231
 msgid "View Options"
 msgstr ""
 
-#: inc/helpers.php:6739 inc/helpers.php:6756 inc/helpers.php:6796
+#: inc/helpers.php:6741 inc/helpers.php:6758 inc/helpers.php:6798
 #: inc/includes/woocommerce/hooks.php:236
 #: inc/includes/woocommerce/hooks.php:253
 #: inc/includes/woocommerce/hooks.php:293
 msgid "More Info"
 msgstr ""
 
-#: inc/helpers.php:6744 inc/includes/woocommerce/hooks.php:241
+#: inc/helpers.php:6746 inc/includes/woocommerce/hooks.php:241
 msgid "Add to Cart"
 msgstr ""
 
-#: inc/helpers.php:6752 inc/helpers.php:6816
+#: inc/helpers.php:6754 inc/helpers.php:6818
 #: inc/includes/woocommerce/hooks.php:249
 #: inc/includes/woocommerce/hooks.php:313
 #: inc/thzframework/theme/options/mainmenu/general.php:210
 msgid "View cart"
 msgstr ""
 
-#: inc/helpers.php:6785 inc/includes/woocommerce/hooks.php:282
+#: inc/helpers.php:6787 inc/includes/woocommerce/hooks.php:282
 #: woocommerce/single-product/sale-flash.php:37
 msgid "Out of stock!"
 msgstr ""
 
-#: inc/helpers.php:6805 inc/includes/woocommerce/hooks.php:302
+#: inc/helpers.php:6807 inc/includes/woocommerce/hooks.php:302
 #: woocommerce/single-product/sale-flash.php:32
 msgid "Sale!"
 msgstr ""
@@ -3921,7 +3921,7 @@ msgstr ""
 
 #: inc/includes/option-types/thz-box-style/views/view.php:164
 #: inc/thzframework/extensions/shortcodes/shortcodes/notification/options.php:173
-#: woocommerce/single-product/add-to-cart/variable.php:52
+#: woocommerce/single-product/add-to-cart/variable.php:54
 msgid "Clear"
 msgstr ""
 
@@ -4002,7 +4002,7 @@ msgid "Relative"
 msgstr ""
 
 #: inc/includes/option-types/thz-box-style/views/view.php:220
-#: inc/thzframework/theme/options/header/general.php:51
+#: inc/thzframework/theme/options/header/general.php:50
 msgid "Absolute"
 msgstr ""
 
@@ -6053,7 +6053,7 @@ msgstr ""
 #: inc/thzframework/theme/options/events/single_event.php:300
 #: inc/thzframework/theme/options/events/single_event.php:353
 #: inc/thzframework/theme/options/footer_settings.php:60
-#: inc/thzframework/theme/options/header/general.php:109
+#: inc/thzframework/theme/options/header/general.php:108
 #: inc/thzframework/theme/options/heros/heros.php:315
 #: inc/thzframework/theme/options/heros/heros.php:333
 #: inc/thzframework/theme/options/mainmenu/containers_mega.php:13
@@ -6095,7 +6095,7 @@ msgstr ""
 #: inc/thzframework/theme/options/events/single_event.php:236
 #: inc/thzframework/theme/options/events/single_event.php:301
 #: inc/thzframework/theme/options/events/single_event.php:354
-#: inc/thzframework/theme/options/header/general.php:113
+#: inc/thzframework/theme/options/header/general.php:112
 #: inc/thzframework/theme/options/heros/heros.php:319
 #: inc/thzframework/theme/options/heros/heros.php:337
 #: inc/thzframework/theme/options/mainmenu/containers_mega.php:17
@@ -13869,7 +13869,7 @@ msgid "Form layout"
 msgstr ""
 
 #: inc/thzframework/theme/options/additional/comments.php:172
-#: inc/thzframework/theme/options/header/general.php:50
+#: inc/thzframework/theme/options/header/general.php:49
 msgid "Stacked"
 msgstr ""
 
@@ -18174,100 +18174,100 @@ msgstr ""
 msgid "Header layout type"
 msgstr ""
 
-#: inc/thzframework/theme/options/header/general.php:44
+#: inc/thzframework/theme/options/header/general.php:43
 msgid "Header mode"
 msgstr ""
 
-#: inc/thzframework/theme/options/header/general.php:45
+#: inc/thzframework/theme/options/header/general.php:44
 msgid "Select header mode"
 msgstr ""
 
-#: inc/thzframework/theme/options/header/general.php:46
+#: inc/thzframework/theme/options/header/general.php:45
 msgid ""
 "If stacked header is positioned above the next element. Aboslute header is "
 "positioned over the next element and it is mostly used for transparent "
 "header layouts."
 msgstr ""
 
-#: inc/thzframework/theme/options/header/general.php:57
+#: inc/thzframework/theme/options/header/general.php:56
 msgid "Header box style"
 msgstr ""
 
-#: inc/thzframework/theme/options/header/general.php:59
+#: inc/thzframework/theme/options/header/general.php:58
 msgid "Customize header box style"
 msgstr ""
 
-#: inc/thzframework/theme/options/header/general.php:60
+#: inc/thzframework/theme/options/header/general.php:59
 msgid "Adjust #header_holder box style"
 msgstr ""
 
-#: inc/thzframework/theme/options/header/general.php:82
+#: inc/thzframework/theme/options/header/general.php:81
 msgid "Menu position"
 msgstr ""
 
-#: inc/thzframework/theme/options/header/general.php:83
+#: inc/thzframework/theme/options/header/general.php:82
 msgid "Select desired menu position"
 msgstr ""
 
-#: inc/thzframework/theme/options/header/general.php:104
+#: inc/thzframework/theme/options/header/general.php:103
 msgid "Header contained?"
 msgstr ""
 
-#: inc/thzframework/theme/options/header/general.php:105
+#: inc/thzframework/theme/options/header/general.php:104
 msgid "If set to contained header will be contained by max site width"
 msgstr ""
 
-#: inc/thzframework/theme/options/header/general.php:116
+#: inc/thzframework/theme/options/header/general.php:115
 msgid ""
 "This option is useful when you would like to stretch the header content all "
 "the way to the page edges."
 msgstr ""
 
-#: inc/thzframework/theme/options/header/general.php:120
+#: inc/thzframework/theme/options/header/general.php:119
 msgid "Header content"
 msgstr ""
 
-#: inc/thzframework/theme/options/header/general.php:121
+#: inc/thzframework/theme/options/header/general.php:120
 msgid ""
 "Select what will be shown in header content ( right side of the header ) "
 msgstr ""
 
-#: inc/thzframework/theme/options/header/general.php:129
+#: inc/thzframework/theme/options/header/general.php:128
 msgid "Search input box"
 msgstr ""
 
-#: inc/thzframework/theme/options/header/general.php:135
+#: inc/thzframework/theme/options/header/general.php:134
 msgid "Advertising banner"
 msgstr ""
 
-#: inc/thzframework/theme/options/header/general.php:143
+#: inc/thzframework/theme/options/header/general.php:142
 #: inc/thzframework/theme/options/header/toolbar.php:142
 msgid "Slogan"
 msgstr ""
 
-#: inc/thzframework/theme/options/header/general.php:150
+#: inc/thzframework/theme/options/header/general.php:149
 msgid "Slogan and search"
 msgstr ""
 
-#: inc/thzframework/theme/options/header/general.php:157
+#: inc/thzframework/theme/options/header/general.php:156
 #: inc/thzframework/theme/options/posts/page_options.php:57
 #: inc/utility.php:1776
 msgid "Do not use"
 msgstr ""
 
-#: inc/thzframework/theme/options/header/general.php:167
+#: inc/thzframework/theme/options/header/general.php:166
 msgid "Insert slogan"
 msgstr ""
 
-#: inc/thzframework/theme/options/header/general.php:168
+#: inc/thzframework/theme/options/header/general.php:167
 msgid "Add your custom slogan here."
 msgstr ""
 
-#: inc/thzframework/theme/options/header/general.php:173
+#: inc/thzframework/theme/options/header/general.php:172
 msgid "Insert banner code"
 msgstr ""
 
-#: inc/thzframework/theme/options/header/general.php:174
+#: inc/thzframework/theme/options/header/general.php:173
 msgid ""
 "Add your banner code here . Use valid Javascript or HTML. You can also add "
 "shortcodes here."
@@ -23597,7 +23597,7 @@ msgid ""
 "Only logged in customers who have purchased this product may leave a review."
 msgstr ""
 
-#: woocommerce/single-product/add-to-cart/variable.php:37
+#: woocommerce/single-product/add-to-cart/variable.php:39
 msgid "This product is currently out of stock and unavailable."
 msgstr ""
 
