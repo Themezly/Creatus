@@ -117,10 +117,14 @@ function _thz_logo_css(){
 		$add_css .= 'height:'.$logo_height.';';
 		$add_css .= '}';
 		
+		// mobile default
 		$add_css .= '.thz-mobile-menu-holder #logomobileholder{width:'.$mlogo_width.';}';
 		$add_css .=	'.thz-mobile-menu-holder #logomobile{width:'.$mlogo_width.';min-height:'.$mlogo_height.';}';
 		$add_css .=	'.thz-mobile-menu-holder #logomobile-in a{height:'.$mlogo_height.';}';
-		
+		$add_css .=	'.thz-mobile-menu-holder #logomobileholder.type-svg .thz-logo svg{';
+		$add_css .= 'width:'.$mlogo_width.';';
+		$add_css .= 'height:'.$mlogo_height.';';
+		$add_css .= '}';			
 		
 		
 		$svg_d		= thz_akg('svg/d',$logo_options,'');
