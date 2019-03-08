@@ -19,7 +19,7 @@ $options = apply_filters('thz_filter_header_general', array(
 					'stacked' => array(
 						'attr' => array(
 							'data-enable' => 'tm_top_offset,tm_left_offset,tm_contained,.thz-heto-tab,.thz-sthe-tab,.thz-sehe-tab,header_contained,tm_subul_link_width,hstac,tm_anim,header_mode',
-							'data-disable' => 'lhs,lhb,hamx,minimx,minilogo,hemmx,hofmx,hamimx,hicmx,htmp',
+							'data-disable' => 'lhs,lhb,lh_branding,hamx,minimx,minilogo,hemmx,hofmx,hamimx,hicmx,htmp',
 							'data-check' =>'hstac'
 						),
 						'small' => thz_theme_file_uri( '/inc/thzframework/admin/images/header_stacked_small.png'),
@@ -28,7 +28,7 @@ $options = apply_filters('thz_filter_header_general', array(
 					'inline' => array(
 						'attr' => array(
 							'data-enable' => 'tm_top_offset,tm_left_offset,.thz-heto-tab,.thz-sthe-tab,.thz-sehe-tab,header_contained,tm_subul_link_width,htmp,tm_anim,header_mode',
-							'data-disable' => 'tm_contained,lhs,lhb,hamx,minimx,minilogo,hemmx,hofmx,hamimx,hicmx,hstac,hstab,hstas',
+							'data-disable' => 'tm_contained,lhs,lhb,lh_branding,hamx,minimx,minilogo,hemmx,hofmx,hamimx,hicmx,hstac,hstab,hstas',
 						),
 						
 						'small' => thz_theme_file_uri( '/inc/thzframework/admin/images/header_inline_small.png'),
@@ -37,7 +37,6 @@ $options = apply_filters('thz_filter_header_general', array(
 				)
 			)
 		),
-		'choices' => array()
 	),
 	
 	'header_mode' => array(
