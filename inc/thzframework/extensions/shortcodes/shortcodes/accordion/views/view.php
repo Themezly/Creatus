@@ -9,7 +9,7 @@ if(count($atts['accordions']) < 1){
 	return;
 }
 
-$id					= thz_akg('id',$atts);
+$id					= thz_akg('id',$atts); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $css_id 			= thz_akg('cmx/i',$atts);
 $id_out				= !empty($css_id) ? str_replace(' ','',$css_id): 'thz-accordion-'.$id; 
 $css_class 			= thz_akg('cmx/c',$atts);

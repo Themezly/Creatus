@@ -341,8 +341,8 @@ if ( ! is_admin() ) {
 	if ( is_tax( 'fw-portfolio-category' ) || is_tax( 'fw-portfolio-tag' ) || is_post_type_archive( $settings['post_type'] ) ) {
 
 
-		$taxonomy 				= $settings['taxonomy_name'];
-		$term     	 			= get_queried_object();
+		$taxonomy 				= $settings['taxonomy_name']; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+		$term     	 			= get_queried_object(); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 		$term_id  	  			= isset($term->term_id) ? get_queried_object_id() : 0;
 		$columns				= thz_get_theme_option('pgrid/columns',null);
 		$gutter					= esc_attr( thz_get_theme_option('pgrid/gutter',null) );

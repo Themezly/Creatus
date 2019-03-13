@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 $an				= thz_get_option('hea',array());
 $and			= thz_print_animation($an);
 $anc			= thz_print_animation($an,true);
-$mode 			= thz_get_option('header_mode','stacked');
+$mode 			= thz_get_option('header_mode','stacked'); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $sticky 		= thz_get_option('sthe/picked','inactive');
 $sticky_atype	= thz_get_option('sthe/active/type','hide');
 $sticky_type 	= 'sticky-'.$sticky_atype;

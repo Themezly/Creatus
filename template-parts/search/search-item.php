@@ -19,12 +19,12 @@ $post_classes = array(
 
 if($show_type =='show' ){
 	
-	$post_type 		= get_post_type();
+	$post_type 		= get_post_type(); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 	$type_mb		= thz_get_theme_option('search_spacings/type',null); 
 	$type_classes 	= 'thz-search-item-type thz-mb-'.thz_m_ton($type_mb);
 	
 	if($post_type =='fw-portfolio'){
-		$post_type ='project';	
+		$post_type ='project'; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 	}
 	
 }

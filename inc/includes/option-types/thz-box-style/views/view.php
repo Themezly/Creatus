@@ -784,20 +784,20 @@ if($number_of_options == 1){
 	</div>
 	<?php if (isset($option['preview']) && $option['preview'] !== false) : 
 		$bgdisabledclass = in_array('background',$option['disable']) ? ' bg-disabled' : '';
-		$preview = '<div class="thz-box-style-preview-holder'.$bgdisabledclass.'">';
-		$preview .='<div class="thz-box-style-preview-desc">';
-		$preview .='<span>';
-		$preview .=__('This is your rough preview. Click around the options to see it.','creatus');
-		$preview .='</span>';
-		$preview .='</div>';
-		$preview .='<div class="thz-box-style-preview"></div>';
-		$preview .='</div>';
+		$preview = '<div class="thz-box-style-preview-holder'.$bgdisabledclass.'">'; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+		$preview .='<div class="thz-box-style-preview-desc">';// phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+		$preview .='<span>'; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+		$preview .=__('This is your rough preview. Click around the options to see it.','creatus');// phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+		$preview .='</span>'; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+		$preview .='</div>'; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+		$preview .='<div class="thz-box-style-preview"></div>';// phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+		$preview .='</div>'; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 		echo fw()->backend->option_type( 'thz-separator' )->render(
 		'background',
 			array(
 				'type'  => 'thz-separator',
 				'value' => false,
-				'html'	=>$preview
+				'html'	=> $preview // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 			)
 		);
 	endif; ?>

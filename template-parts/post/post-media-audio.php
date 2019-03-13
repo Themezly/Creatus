@@ -41,10 +41,10 @@ if('only' == $audio_height || is_singular('post')){
 			<div class="thz-media-audio-holder">
 				<audio id="thz_media<?php echo get_the_ID() ?>" class="thz-media thz-audio thz-media-respond">
 					<?php if($audio_type == 'self'){ ?>
-					<?php foreach($audio as $audio_ext){ $type = wp_check_filetype( $audio_ext['url']); ?>
+					<?php foreach($audio as $audio_ext){ $type = wp_check_filetype( $audio_ext['url']);  // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited ?>
 					<source src="<?php echo esc_url ( $audio_ext['url'] ) ?>" type="<?php echo $type['type']  ?>" />
 					<?php }unset($audio);?>
-					<?php }else{ $type = wp_check_filetype( $audio ); ?>
+					<?php }else{ $type = wp_check_filetype( $audio ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited ?>
 					<source src="<?php echo esc_url ( $audio ) ?>" type="<?php echo $type['type']  ?>" />
 					<?php } ?>
 				</audio>

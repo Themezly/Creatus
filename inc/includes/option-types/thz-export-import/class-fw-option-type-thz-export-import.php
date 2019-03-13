@@ -179,7 +179,7 @@ class FW_Option_Type_ThzExportImport extends FW_Option_Type {
 				}
 
 	
-			} catch (Exception $e) {
+			} catch (Exception $e) { // phpcs:ignore Generic.CodeAnalysis.EmptyStatement.DetectedCatch
 			
 			}
 
@@ -242,7 +242,7 @@ class FW_Option_Type_ThzExportImport extends FW_Option_Type {
 			}
 
 
-		} catch (Exception $e) {
+		} catch (Exception $e) { // phpcs:ignore Generic.CodeAnalysis.EmptyStatement.DetectedCatch
 			
 		}
 
@@ -290,7 +290,7 @@ class FW_Option_Type_ThzExportImport extends FW_Option_Type {
 			}
 
 
-		} catch (Exception $e) {
+		} catch (Exception $e) { // phpcs:ignore Generic.CodeAnalysis.EmptyStatement.DetectedCatch
 			
 		}
 

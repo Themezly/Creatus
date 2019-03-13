@@ -22,8 +22,8 @@
 						
 						if(!empty($plugins_data)){
 						 foreach ( $plugins_data as $key => $plugin ):
-						
-							$path 			= ABSPATH . 'wp-content/plugins/'.$plugin['slug'].'/'.$plugin['slug'].'.php';
+							// phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+							$path 			= ABSPATH . 'wp-content/plugins/'.$plugin['slug'].'/'.$plugin['slug'].'.php'; 
 							$version 		= is_file( $path ) ? get_plugin_data( $path, false, false ) : false;
 							$version_html 	= '<span class="version-info">'.__( 'Not installed', 'creatus' ).'</span>';
 							

@@ -5,13 +5,13 @@
 /**
  * @var array $atts
  */
-$id 				= thz_akg('id',$atts);
+$id 				= thz_akg('id',$atts); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $css_id 			= thz_akg('cmx/i',$atts);
 $id_out				= !empty($css_id) ? str_replace(' ','',$css_id): 'thz-table-'.$id;
 $css_class 			= thz_akg('cmx/c',$atts);
 $css_class			= $css_class !='' ? $css_class.' ':'';
 $res_class			= _thz_responsive_classes(thz_akg('cmx',$atts));
-$type				= thz_akg('table/header_options/table_purpose',$atts);
+$type				= thz_akg('table/header_options/table_purpose',$atts); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $animate			= thz_akg('animate',$atts);
 $animation_data		= thz_print_animation($animate);
 $animation_class	= thz_print_animation($animate,true);

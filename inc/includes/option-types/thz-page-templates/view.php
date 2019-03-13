@@ -27,7 +27,7 @@
     	<?php 
 			if(!empty($templates)):
 			
-				foreach ($templates as $id => $template){ ?>
+				foreach ($templates as $id => $template){  // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited ?>
         
                     <li>
                         <a class="template-load" href="#" onclick="return false;" data-load-pagetmpl="<?php echo esc_attr($id) ?>">

@@ -5,7 +5,7 @@
  * @var array $atts
  */
  
-$id					= thz_akg('id',$atts);
+$id					= thz_akg('id',$atts); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $css_id 			= thz_akg('cmx/i',$atts);
 $id_out				= !empty($css_id) ? str_replace(' ','',$css_id): 'thz-icon-'.$id;
 $css_class 			= thz_akg('cmx/c',$atts);
@@ -14,7 +14,7 @@ $res_class			= _thz_responsive_classes(thz_akg('cmx',$atts));
 $icon				= thz_akg('metrics/icon',$atts);
 $iconimg			= thz_akg('iconimg',$atts);
 $noicon				= empty($icon) ? '?' : '';
-$type				= thz_akg('metrics/type',$atts);
+$type				= thz_akg('metrics/type',$atts); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $ict				= thz_akg('ict',$atts);
 $icontext			= !empty($ict) ? thz_akg('ict/0/tmx/p',$atts): 'none';
 $align				= ' thz-icon-align-'.thz_akg('metrics/align',$atts);
@@ -110,9 +110,9 @@ if($type == 'link'){
 	$link_type		= $icon_link['type']; 
 	$modal_class	= $link_type == 'magnific' ? ' thz-trigger-lightbox' :'';
 	$target			= $link_type == 'normal' && $icon_link['target'] =='_blank'? ' target="_blank"' :'';
-	$title			= $link_type == 'normal' && $icon_link['title'] !=='' ? ' title="'.esc_attr($icon_link['title']).'"' :'';
+	$title			= $link_type == 'normal' && $icon_link['title'] !=='' ? ' title="'.esc_attr($icon_link['title']).'"' :''; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 	$hash			= thz_contains($icon_link['magnific'],array('#','http')) ? '' :'#';
-	$link			= $link_type == 'normal' ? esc_url($icon_link['url']) : $hash.esc_attr($icon_link['magnific']);
+	$link			= $link_type == 'normal' ? esc_url($icon_link['url']) : $hash.esc_attr($icon_link['magnific']); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 	
 	$html .= '<a class="thz-icon-link'.$modal_class.'" href="'.$link.'"'.$title.$target.'>';
 	$html .= '<i class="'.esc_attr($icon).'">'.$noicon.'</i>';	

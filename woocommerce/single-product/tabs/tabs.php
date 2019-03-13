@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Each tab is an array containing title, callback and priority.
  * @see woocommerce_default_product_tabs()
  */
-$tabs 			= apply_filters( 'woocommerce_product_tabs', array() );
+$tabs 			= apply_filters( 'woocommerce_product_tabs', array() ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $isFirstLi 		= true;
 $isFirstCo 		= true;
 $tabs_count 	= count($tabs);
@@ -55,7 +55,7 @@ if ( ! empty( $tabs ) ) : ?>
                 <?php if( thz_has_builder() ){ ?>
                     <div class="thz-tabs-menu-container<?php thz_single_cmx('wootabs_mx') ?>">
                         <ul class="thz-tabs-menu">
-                            <?php foreach ( $tabs as $key => $tab ) : ?><li class="<?php echo $isFirstLi ? 'thz-active-tab' : 'thz-inactive-tab'; ?>">
+                            <?php foreach ( $tabs as $key => $tab ) :  // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited 	?><li class="<?php echo $isFirstLi ? 'thz-active-tab' : 'thz-inactive-tab'; ?>">
                                     <a class="thz-tab-button" href="#thz-tabs-woo-<?php echo esc_attr( $key ); ?>">
                                         <?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', esc_html( $tab['title'] ), $key ); ?>
                                     </a>
@@ -64,14 +64,14 @@ if ( ! empty( $tabs ) ) : ?>
                     </div> 
                 <?php }else { ?> 
                     <ul class="thz-tabs-menu">
-                        <?php foreach ( $tabs as $key => $tab ) : ?><li class="<?php echo $isFirstLi ? 'thz-active-tab' : 'thz-inactive-tab'; ?>">
+                        <?php foreach ( $tabs as $key => $tab ) : // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited ?><li class="<?php echo $isFirstLi ? 'thz-active-tab' : 'thz-inactive-tab'; ?>">
                                 <a class="thz-tab-button" href="#thz-tabs-woo-<?php echo esc_attr( $key ); ?>">
                                     <?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', esc_html( $tab['title'] ), $key ); ?>
                                 </a>
                             </li><?php $isFirstLi = false; endforeach; ?>
                     </ul>                 
                  <?php } ?>  
-                <?php foreach ( $tabs as $key => $tab ) : ?>
+                <?php foreach ( $tabs as $key => $tab ) :  // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited?>
                 <div id="thz-tabs-woo-<?php echo esc_attr( $key ); ?>" class="thz-tab-content<?php echo $isFirstCo ? ' thz-tabs-active-content' : ' thz-tabs-inactive-content'; ?>">			
                     <?php if( thz_has_builder() && 'woocommerce_product_description_tab' == $tab['callback'] ){ ?>
                         <?php call_user_func( $tab['callback'], $key, $tab ); ?>

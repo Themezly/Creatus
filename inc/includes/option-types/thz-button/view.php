@@ -301,7 +301,7 @@ if (!function_exists('thz_btn_effects')) {
 					<div class="btntypes">
 						<?php 
 					$typesArray = array('normal','3d' ,'outline','flat');
-					 foreach($typesArray as $type){
+					 foreach($typesArray as $type){ // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 						
 						$typeChecked ='';
 						
@@ -309,7 +309,7 @@ if (!function_exists('thz_btn_effects')) {
 							$typeChecked =' checked="checked"';
 						}
 						
-						$id = $oid.'buttonType'.$type;
+						$id = $oid.'buttonType'.$type; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 				
 						$label = ucfirst($type);
 				
@@ -764,7 +764,7 @@ if (!function_exists('thz_btn_effects')) {
 						$sizeChecked =' checked="checked"';
 					}
 					
-					$id = $oid.'buttonSizeClass'.$size;
+					$id = $oid.'buttonSizeClass'.$size; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 					$dataMetrics = ' data-metrics="'.to_spc ( $sizeMetrics ).'"';
 					
 					if($size =='custom'){

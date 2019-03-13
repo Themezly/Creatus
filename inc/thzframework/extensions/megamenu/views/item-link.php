@@ -13,10 +13,10 @@ $attributes['class'] = array();
 $megamenu 		= fw()->extensions->get('megamenu');
 $show_icon 		='';
 $child_icon 	='';
-$id 			= $item->ID;
+$id 			= $item->ID; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $item_type 		= fw_ext_mega_menu_get_db_item_option($id,'type');
 $thumb 			= false;
-$mode 			= false;
+$mode 			= false; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $widget 		= false;
 $button			= false;
 $separator		= false;
@@ -27,7 +27,7 @@ $donotlink		= '';
 
 if($item_type =='column'){
 	
-	$mode  			= fw_ext_mega_menu_get_db_item_option($id,'column/mode',null);
+	$mode  			= fw_ext_mega_menu_get_db_item_option($id,'column/mode',null); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 	$thumb 			= $mode !='thumb' ? false : fw_ext_mega_menu_get_db_item_option($id,'column/thumb',null);
 	$widget 		= fw_ext_mega_menu_get_db_item_option($id,'column/widget',null);
 	$parent_id 		= $item-> menu_item_parent;
@@ -128,7 +128,7 @@ $attributes['class'] = implode(' ',$attributes['class']);
 
 
 if($depth > 0){
-	$title = '<span class="item-title">'.$title.'</span>';
+	$title = '<span class="item-title">'.$title.'</span>'; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 }
 
 if( 
@@ -140,7 +140,7 @@ if(
 	
 {
 	
-	$title = '';
+	$title = ''; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 }
 
 if($item_type =='column' && $widget && $mode =='widget'){

@@ -19,7 +19,7 @@
 
 
 $cats= array();
-foreach ($allgroups['cats'] as $cat ){
+foreach ($allgroups['cats'] as $cat ){ // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 	
 	$cats['category_'.$cat->cat_ID] = $cat->name;
 }
@@ -41,15 +41,14 @@ foreach ($allgroups['cposts'] as $key => $cpt ){
 }
 
 
-$pages= array();
-foreach ($allgroups['pages'] as $page ){
+$pages= array(); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+foreach ($allgroups['pages'] as $page ){ // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 	
 	
-	$pages['pageid_'.$page] = get_the_title( $page );
+	$pages['pageid_'.$page] = get_the_title( $page ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 }
 
 
-//print_r($pages);
 ?>
 
 <div <?php echo fw_attr_to_html($div_attr) ?> >

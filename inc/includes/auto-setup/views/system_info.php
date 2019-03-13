@@ -294,7 +294,7 @@ $options = array(
 		<?php echo __( 'Please make sure all items below are marked with a green check <b>before</b> proceeding with the auto setup or saving the theme options.', 'creatus' ) ?>
         </p>
         <br/>
-    	<?php foreach ($options as $key => $tab ){ ?>
+    	<?php foreach ($options as $key => $tab ){ // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited ?>
         	<div class="thz-system-group">
             	<h3 class="thz-system-group-title"><?php echo $tab['title']; ?></h3>
             	<?php foreach ($tab['options'] as $o ){ ?>

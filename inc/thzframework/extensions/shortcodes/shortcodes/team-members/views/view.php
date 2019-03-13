@@ -2,7 +2,7 @@
 	die( 'Forbidden' );
 }
 
-$id 				= thz_akg('id',$atts);
+$id 				= thz_akg('id',$atts); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $css_id 			= thz_akg('cmx/i',$atts);
 $id_out				= !empty($css_id) ? str_replace(' ','',$css_id): 'thz-team-members-'.$id;
 $css_class 			= thz_akg('cmx/c',$atts);
@@ -130,7 +130,7 @@ if('slider' == $layout){
           $job			= thz_akg('job',$member,null);
           $desc			= thz_akg('desc',$member,null);	
 		  $click		= thz_akg('click',$member,'none');
-		  $link			= thz_akg('link',$member,null);
+		  $link			= thz_akg('link',$member,null); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 		  $link_output	= null;		
           $metroitem 	= '';
           $member_info 	= '';

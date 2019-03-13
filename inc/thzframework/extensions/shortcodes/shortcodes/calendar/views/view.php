@@ -8,13 +8,13 @@
  * @var $tag
  */
  
-$id 				= thz_akg('id',$atts);
+$id 				= thz_akg('id',$atts); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $css_id 			= thz_akg('cmx/i',$atts);
 $id_out				= !empty($css_id) ? str_replace(' ','',$css_id): 'thz-calendar-'.$id;
 $css_class 			= thz_akg('cmx/c',$atts);
 $css_class			= $css_class !='' ? $css_class.' ':'';
 $res_class			= _thz_responsive_classes(thz_akg('cmx',$atts));
-$type 				= thz_akg('type/picked',$atts); 
+$type 				= thz_akg('type/picked',$atts);  // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $predefined			= strpos($type, 'custom') !== false? 'custom':'predefined';
 $style_type			= ' thz-calendar-style-'.$predefined;
 $animate			= thz_akg('animate',$atts);

@@ -22,7 +22,7 @@ $an				= thz_get_option('hea',array());
 $and			= thz_print_animation($an);
 $anc			= thz_print_animation($an,true);
 $sticky 		= thz_get_option('sthe/picked','inactive');
-$mode 			= ' header-mode-'.thz_get_option('header_mode','stacked');
+$mode 			= ' header-mode-'.thz_get_option('header_mode','stacked'); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $sticky_atype	= thz_get_option('sthe/active/type','hide');
 $sticky_type 	= 'sticky-'.$sticky_atype;
 $sticky_class 	= $sticky == 'active' ? ' thz-sticky-header sticky-wait '.$sticky_type :'';

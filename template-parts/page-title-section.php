@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 $atts 					= thz_get_option('page_title_options','active');
-$id 					= thz_akg('id',$atts);
+$id 					= thz_akg('id',$atts); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $id_out					= 'thz-pagetitle-container-'.$id;
 $res_class				= _thz_responsive_classes(thz_akg('pre',$atts));
 $s_contained 			= thz_akg('section_contained/picked',$atts,'contained');

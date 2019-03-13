@@ -8,7 +8,7 @@ if(count($atts['tabs']) < 1){
 	return;
 }
 
-$id 				= thz_akg('id',$atts);
+$id 				= thz_akg('id',$atts); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $css_id 			= thz_akg('cmx/i',$atts);
 $id_out				= !empty($css_id) ? str_replace(' ','',$css_id): 'thz-tabs-'.$id;
 $css_class 			= thz_akg('cmx/c',$atts);
@@ -34,7 +34,7 @@ $c_classes			= $css_class.'thz-shc thz-shortcode-tabs thz-tabs-'.$tabs_layout.$a
 ?>
 <div id="<?php echo esc_attr($id_out); ?>" class="<?php echo thz_sanitize_class($c_classes); ?>"<?php echo thz_sanitize_data($animation_data.$cpx_data); ?>>
 	<ul class="thz-tabs-menu">
-		<?php foreach ($atts['tabs'] as $key => $tab) : ?><li class="tab-li-<?php echo $id.'-'.$key;?> <?php echo $key == 0 ? 'thz-active-tab' : 'thz-inactive-tab'; ?>">
+		<?php foreach ($atts['tabs'] as $key => $tab) :  // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited ?><li class="tab-li-<?php echo $id.'-'.$key;?> <?php echo $key == 0 ? 'thz-active-tab' : 'thz-inactive-tab'; ?>">
 			<a class="thz-tab-button" href="#<?php echo $tabs_mainc . '-' .$key; ?>">
 				<?php 
 					
@@ -57,7 +57,7 @@ $c_classes			= $css_class.'thz-shc thz-shortcode-tabs thz-tabs-'.$tabs_layout.$a
 			</a>
 		</li><?php endforeach;?>
 	</ul>
-	<?php foreach ( $atts['tabs'] as $key => $tab ) : 
+	<?php foreach ( $atts['tabs'] as $key => $tab ) : // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited 
 	
 			$ctype  			= thz_akg('ctype',$tab,'editor');
 			if('editor' == $ctype){

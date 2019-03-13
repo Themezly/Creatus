@@ -1,16 +1,16 @@
 <?php if ( ! defined( 'FW' ) ) {
 	die( 'Forbidden' );
 }
-$id 					= thz_akg('id',$atts);
+$id 					= thz_akg('id',$atts); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $css_id 				= thz_akg('cmx/i',$atts);
 $id_out					= !empty($css_id) ? str_replace(' ','',$css_id): 'thz-notification-'.$id;
 $css_class 				= thz_akg('cmx/c',$atts);
 $css_class				= $css_class !='' ? $css_class.' ':'';
 $res_class				= _thz_responsive_classes(thz_akg('cmx',$atts));
-$title 					= thz_akg('mx/title',$atts);
+$title 					= thz_akg('mx/title',$atts); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $notification 			= do_shortcode( thz_akg('notification',$atts) );
 $notification_style 	= thz_akg('style/picked',$atts);
-$tag					= thz_akg('mx/tag',$atts);
+$tag					= thz_akg('mx/tag',$atts); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $nfp					= $notification_style =='predefined' ? true : false;
 $notification_color 	= $nfp ? thz_akg('style/predefined/mx/c',$atts) :'custom';
 $nfbs					= thz_akg('style/predefined/mx/b',$atts);

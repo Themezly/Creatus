@@ -79,6 +79,7 @@ class FW_Option_Type_ThzContentLayout extends FW_Option_Type
 			unset($all_post_types[$unset]);
 		}
 		
+		// phpcs:disable WordPress.DB.PreparedSQL.NotPrepared
 		$posts = $wpdb->get_results(
 			"SELECT posts.ID, posts.post_title, posts.post_type " .
 			"FROM $wpdb->posts as posts " .
@@ -86,7 +87,7 @@ class FW_Option_Type_ThzContentLayout extends FW_Option_Type
 			"AND post_status IN ( 'publish', 'private' ) " .
 			"AND post_title LIKE  '%".$search_term."%' " .
 			"ORDER BY post_date DESC LIMIT 100"
-		);
+		);// phpcs:enable WordPress.DB.PreparedSQL.NotPrepared
 		
 		unset($all_post_types);
 

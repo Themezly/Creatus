@@ -8,7 +8,7 @@ $prefix = 'thz-theme-';
 $select_id = $prefix . fw_rand_md5();
 ksort($sections,SORT_NATURAL);
 ksort($sections_categories);
-$current_user = wp_get_current_user();
+$current_user = wp_get_current_user();// phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $avatar = get_avatar($current_user->ID, 60 ); 
 $avatar	= $avatar ? $avatar : '<span class="thzicon thzicon-creatus"></span>';
 ?>
@@ -34,7 +34,7 @@ $avatar	= $avatar ? $avatar : '<span class="thzicon thzicon-creatus"></span>';
                                 <span class="<?php echo $prefix; ?>items-count"><?php echo count($sections) ?></span>
                             </a>
                         </li>
-                        <?php foreach ($sections_categories as $cat_id => $cat_title): ?>
+                        <?php foreach ($sections_categories as $cat_id => $cat_title): // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited ?>
                             <li>
                                 <a href="#" data-val="<?php echo esc_attr($cat_id) ?>">
                                     <?php echo esc_html($cat_title) ?> 

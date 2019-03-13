@@ -411,7 +411,7 @@ function thz_get_attachment_id_from_url( $url ) {
         "SELECT post_id FROM $wpdb->postmeta WHERE meta_key = '_wp_attached_file' AND meta_value = %s",
         $path
     );
-    $post_id = $wpdb->get_var( $sql );
+    $post_id = $wpdb->get_var( $sql ); // phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared
  
     return (int) $post_id;
 

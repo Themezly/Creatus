@@ -16,11 +16,11 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
  
 $number	 		= (int) $instance['number'];
-$mode			= $instance['mode'];
-$posts			= isset($instance['posts']) ? array_keys( $instance['posts'] ) : array('post');
+$mode			= $instance['mode']; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+$posts			= isset($instance['posts']) ? array_keys( $instance['posts'] ) : array('post'); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $cats			= isset($instance['cats']) ? array_keys( $instance['cats'] ) : array();
-$order			= $instance['order'];
-$orderby		= $instance['orderby'];
+$order			= $instance['order']; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+$orderby		= $instance['orderby']; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $date			= isset($instance['metrics']['date']) ? true : false;
 $thumbnail  	= isset($instance['metrics']['thumbnail']) || 'thumbnails' == $mode ? true : false;
 $thumbnail_only = isset($instance['metrics']['thumbnail_only']) ? true : false;

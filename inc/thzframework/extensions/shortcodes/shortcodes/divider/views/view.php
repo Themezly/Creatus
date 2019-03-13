@@ -1,7 +1,7 @@
 <?php if ( ! defined( 'FW' ) ) {
 	die( 'Forbidden' );
 }
-$id					= thz_akg('id',$atts);
+$id					= thz_akg('id',$atts); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $css_id 			= thz_akg('cmx/i',$atts);
 $id_out				= !empty($css_id) ? str_replace(' ','',$css_id): 'thz-divider-'.$id;
 $css_class 			= thz_akg('cmx/c',$atts);
@@ -13,7 +13,7 @@ $animation_class	= thz_print_animation($animate,true);
 $cpx				= thz_akg('cpx',$atts);
 $cpx_data			= thz_print_cpx($cpx);
 $cpx_class			= thz_print_cpx($cpx,true);
-$type  				= thz_akg('divider_type',$atts);
+$type  				= thz_akg('divider_type',$atts); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $style				= thz_akg('style/picked',$atts); 
 $divider_poz		= thz_akg('style/'.$style.'/divider_position',$atts);
 $holder				= $type ==='horizontal' ? ' thz-divider-holder' :' thz-divider-spacer';

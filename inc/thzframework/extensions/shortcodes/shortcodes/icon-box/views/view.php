@@ -5,7 +5,7 @@
  * @var array $atts
  */
  
-$id					= thz_akg('id',$atts);
+$id					= thz_akg('id',$atts); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $css_id 			= thz_akg('cmx/i',$atts);
 $id_out				= !empty($css_id) ? str_replace(' ','',$css_id): 'thz-icon-box-'.$id;
 $css_class 			= thz_akg('cmx/c',$atts);
@@ -77,9 +77,9 @@ if($apply_link !== 'button'){
 	$link_type_op	= $iconbox_link['type']; 
 	$modal_class	= $link_type_op == 'magnific' ? ' thz-trigger-lightbox' :'';
 	$target			= $link_type_op == 'normal' && $iconbox_link['target'] =='_blank'? ' target="_blank"' :'';
-	$title			= $link_type_op == 'normal' && $iconbox_link['title'] !=='' ? ' title="'.esc_attr($iconbox_link['title']).'"' :'';
+	$title			= $link_type_op == 'normal' && $iconbox_link['title'] !=='' ? ' title="'.esc_attr($iconbox_link['title']).'"' :''; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 	$hash			= thz_contains($iconbox_link['magnific'],array('#','http')) ? '' :'#';
-	$link			= $link_type_op == 'normal' ? esc_url($iconbox_link['url']) : $hash.esc_attr($iconbox_link['magnific']) ;
+	$link			= $link_type_op == 'normal' ? esc_url($iconbox_link['url']) : $hash.esc_attr($iconbox_link['magnific']) ; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 	$overlink		= thz_akg('ovl_mx/m',$atts,'inactive');
 	$a_markup		= thz_akg('ovl_mx/a',$atts,'anchor');
 	
