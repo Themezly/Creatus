@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
  
 $before 		= get_option('creatus_before_hero_title',false);
-$title 			= get_option('creatus_hero_title',false);
+$title 			= get_option('creatus_hero_title',false); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $sub 			= get_option('creatus_hero_subtitle',false);
 $button_text 	= get_option('creatus_hero_button_text',false);
 $button_link 	= get_option('creatus_hero_button_link',false);
