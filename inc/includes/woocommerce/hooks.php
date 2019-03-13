@@ -192,9 +192,10 @@ if( !is_admin() ){
 			
 		}
 		
-		$thumb 				= wp_get_attachment_image_src($image_id,$image_size);  
+		$thumb 				= wp_get_attachment_image_src($image_id,$image_size); 
+		$product_image		= $thumb ? $thumb[0] : thz_img_placeholder();
 		$media_height 		= thz_get_option($prefix.'woopst/imgh/picked','auto'); 
-		$style 				='';
+		$style 				= '';
 		
 		if($media_height == 'custom'){
 			
@@ -316,7 +317,7 @@ if( !is_admin() ){
 		$view_cart .= '</a>';
 		
 		if ($media_height !='auto' ) { 
-			$style = ' style="background-image:url('.esc_url ( $thumb[0] ).');"';
+			$style = ' style="background-image:url('.esc_url ( $product_image ).');"';
 		}
 		
 		$html  = '<div class="thz-woo-item-media">';
@@ -325,7 +326,7 @@ if( !is_admin() ){
 		$html .= '<div class="'.thz_sanitize_class( $hover_classes ).'"'.$style.'>';
 		$html .= $item_badge;
 		if ($media_height == 'auto' ) { 
-			$html .='<img class="'.thz_sanitize_class( $iduration ).'" src="'.esc_url($thumb[0]).'" alt="'.get_the_title().'" />';
+			$html .='<img class="'.thz_sanitize_class( $iduration ).'" src="'.esc_url( $product_image ).'" alt="'.get_the_title().'" />';
 		}
 		$html .='<div class="thz-hover-mask '.thz_sanitize_class( $oduration ).'">';
 		$html .='<div class="thz-item-adding-icon">';

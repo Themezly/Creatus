@@ -469,6 +469,10 @@ function thz_img_placeholder($number = false){
 		$number = $range[$rand];
 	}
 	
+	if('product' === get_post_type() && function_exists('wc_placeholder_img_src')){
+		return wc_placeholder_img_src();
+	}
+	
 	return thz_theme_file_uri('/assets/images/placeholders/'.$number.'.jpg');	
 	
 }
