@@ -782,7 +782,7 @@ function _thz_ajax_action_get_links() {
 	}
 	
 	
-	
+	// phpcs:disable WordPress.DB.PreparedSQL.NotPrepared
 	$posts = $wpdb->get_results( "
 	
 		SELECT posts.ID, posts.post_title, posts.post_type 
@@ -791,7 +791,7 @@ function _thz_ajax_action_get_links() {
 		" . "AND post_status IN ( 'publish', 'private' ) 
 		" . "AND post_title LIKE  '%" . $search_term . "%' 
 		" . "ORDER BY post_date DESC LIMIT 100" 
-	);
+	);// phpcs:enable WordPress.DB.PreparedSQL.NotPrepared
 	
 	unset( $all_post_types );
 	
@@ -1021,6 +1021,7 @@ if ( ! function_exists( '_thz_ajax_action_posts_search' ) ){
 		
 	
 		global $wpdb;
+		// phpcs:disable WordPress.DB.PreparedSQL.NotPrepared
 		$posts = $wpdb->get_results( "
 		
 			SELECT posts.ID, posts.post_title, posts.post_type, posts.post_excerpt, posts.post_content 
@@ -1029,7 +1030,7 @@ if ( ! function_exists( '_thz_ajax_action_posts_search' ) ){
 			" . "AND post_status IN ( 'publish', 'private' ) 
 			" . "$search_sql
 			" . "ORDER BY post_date DESC LIMIT ".$results_limit."" 
-		);
+		);// phpcs:enable WordPress.DB.PreparedSQL.NotPrepared
 		
 		unset( $all_post_types );
 		
