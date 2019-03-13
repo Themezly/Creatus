@@ -11,15 +11,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * The template for displaying 404 pages (not found).
  */
-$etype = thz_get_theme_option('etype','theme');
+$thz_etype = thz_get_theme_option('etype','theme');
 
-if($etype == 'redirect'){
+if($thz_etype == 'redirect'){
 	
-	$epage = thz_get_theme_option('epage',array()); 
+	$thz_epage = thz_get_theme_option('epage',array()); 
 	
-	if(!empty($epage)){
-		$redirect_to_page = get_permalink($epage[0]);
-		wp_redirect($redirect_to_page,301);
+	if(!empty($thz_epage)){
+		$thz_redirect_to_page = get_permalink($thz_epage[0]);
+		wp_redirect($thz_redirect_to_page,301);
 	}
 }
 get_header();
