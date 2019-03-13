@@ -8,7 +8,7 @@ if(count($atts['testimonials']) < 1){
 	thz_notify('yellow thz-shc',$n_title,$n_msg);
 	return;
 }
-$id 				= thz_akg('id',$atts);
+$id 				= thz_akg('id',$atts); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $css_id 			= thz_akg('cmx/i',$atts);
 $id_out				= !empty($css_id) ? str_replace(' ','',$css_id): 'thz-testimonials-'.$id;
 $css_class 			= thz_akg('cmx/c',$atts);

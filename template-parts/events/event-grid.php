@@ -145,7 +145,7 @@ if($show_post_shares =='show'){
                                     <span class="thz-event-info-cell detail">
                                     <?php
                                     if(!empty($categories )){
-                                        foreach($categories as $cat){
+                                        foreach($categories as $cat){ // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
                                             $category_link = get_category_link( $cat->term_id );
                                             $cats_names[]= '<a href="'.esc_url( $category_link ).'" title="'.esc_attr( $cat->name ).'">'.esc_attr( $cat->name ).'</a>';
                                             

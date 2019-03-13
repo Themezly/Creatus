@@ -133,7 +133,7 @@ class FW_Option_Type_Thz_Customizer_Popup extends FW_Option_Type {
 		if (is_null($input_value)) {
 			$input_value = $option['value'];
 		} else {
-			if (is_array($input_value)) {
+			if (is_array($input_value)) {// phpcs:ignore Generic.CodeAnalysis.EmptyStatement.DetectedIf
 				// Don't decode if we have already an array
 			} else {
 				$input_value = json_decode($input_value, true);

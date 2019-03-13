@@ -44,7 +44,7 @@ $slider_classes		= 'thz-sliders-slick thz-slick-slider thz-slick-active thz-slic
 	<div id="thz-sf-<?php echo esc_attr($slider_id) ?>" class="<?php echo thz_sanitize_class($slider_classes) ?>"<?php echo thz_sanitize_data($slick_data) ?>>
 		<?php foreach(  $data['slides'] as $key => $slide  ) : 
 
-			$title 		= thz_akg('title',$slide);
+			$title 		= thz_akg('title',$slide); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 			$intro 		= thz_akg('desc',$slide);
 			$subloc 	= thz_akg('extra/subloc',$slide);
 			$sub 		= thz_akg('extra/sub',$slide);

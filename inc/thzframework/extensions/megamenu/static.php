@@ -11,7 +11,7 @@ if (!is_admin()) {
 		}
 				  
 		$add_css		= '';
-		$menu 			= wp_get_nav_menu_object( $locations[ $locname ] );
+		$menu 			= wp_get_nav_menu_object( $locations[ $locname ] );// phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 		$page_menu		= thz_get_post_option('page_menu',array());
 		$term_id		= $menu ? $menu->term_id : 0;
 		$current_menu	= !empty($page_menu) ? $page_menu[0] : $term_id;
@@ -25,7 +25,7 @@ if (!is_admin()) {
 		
 		  foreach ($menuitems as $menuitem){
 			  
-			  $id 		= $menuitem->ID;
+			  $id 		= $menuitem->ID;// phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 			  $item_type 	= fw_ext_mega_menu_get_db_item_option($id,'type');
 			  
 			  if($item_type == 'row'){
@@ -55,7 +55,7 @@ if (!is_admin()) {
 			  
 			  if($item_type == 'column'){
 				  
-				  $mode 			= fw_ext_mega_menu_get_db_item_option($id,'column/mode');
+				  $mode 			= fw_ext_mega_menu_get_db_item_option($id,'column/mode');// phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 				  $col_bs 		= thz_print_box_css( fw_ext_mega_menu_get_db_item_option($id,'column/bs'));
 				  
 				  if(!empty($col_bs)){

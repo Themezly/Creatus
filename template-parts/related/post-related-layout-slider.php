@@ -9,13 +9,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // No direct access
 }
 
-$tax 		= get_post_taxonomies();
-$tax 		= isset($tax[0]) ? $tax[0] : false;
+$tax 		= get_post_taxonomies(); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+$tax 		= isset($tax[0]) ? $tax[0] : false; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $prefix		= 'pr_';
 
 if($tax){
 
-	$post_type	= get_post_type();
+	$post_type	= get_post_type(); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 	if($post_type =='fw-portfolio'){
 		
 		$default_text 	= esc_html__( 'Related Projects', 'creatus');

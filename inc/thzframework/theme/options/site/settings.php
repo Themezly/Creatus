@@ -3,7 +3,7 @@
 $notice ='system-is-ok';
 $server_requirements 	= fw()->theme->manifest->get('server_requirements');
 $required_input_vars 	= $server_requirements['server']['php_max_input_vars'];
-$required_php_version 	= $server_requirements['server']['php_version'];
+$required_php_version 	= $server_requirements['server']['php_version']; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 
 if ( ( ini_get('max_input_vars') < $required_input_vars ) || ( version_compare(phpversion(),$required_php_version, '<') ) ) {
 	$notice ='system-display-notice';

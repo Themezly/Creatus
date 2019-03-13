@@ -47,7 +47,7 @@ wp_enqueue_script(
 	true
 );
 
-$locale = get_locale();
+$locale = get_locale(); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 wp_localize_script(
 	'fw-shortcode-calendar',
 	'fwShortcodeCalendarLocalize',
@@ -62,7 +62,7 @@ wp_localize_script(
 	'fw-shortcode-calendar',
 	'calendar_languages',
 	array(
-		$locale => array(
+		$locale => array( // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 			'error_noview'     => sprintf( esc_html__( 'Calendar: View %s not found', 'creatus' ), '{0}' ),
 			'error_dateformat' => sprintf( esc_html__( 'Calendar: Wrong date format %s. Should be either "now" or "yyyy-mm-dd"',
 					'creatus' ), '{0}' ),

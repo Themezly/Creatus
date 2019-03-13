@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @version 3.5.2
  */
 
-if ( ! $order = wc_get_order( $order_id ) ) {
+if ( ! $order = wc_get_order( $order_id ) ) { // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 	return;
 }
 $order_items           = $order->get_items( apply_filters( 'woocommerce_purchase_order_item_types', 'line_item' ) );

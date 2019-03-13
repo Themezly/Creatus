@@ -2,7 +2,7 @@
 /**
  * @var $atts
  */
-$id 				= thz_akg('id',$atts);
+$id 				= thz_akg('id',$atts); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $css_id 			= thz_akg('cmx/i',$atts);
 $id_out				= !empty($css_id) ? str_replace(' ','',$css_id): 'thz-sh-'.$id;
 $css_class 			= thz_akg('cmx/c',$atts);
@@ -10,7 +10,7 @@ $css_class			= $css_class !='' ? $css_class.' ':'';
 $instyle			= thz_akg('instyle',$atts);
 $instyle			= $instyle !='' ? $instyle.' ':'';
 $res_class			= _thz_responsive_classes(thz_akg('cmx',$atts));
-$tag				= thz_akg('tag',$atts);
+$tag				= thz_akg('tag',$atts); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $heading			= thz_akg('heading',$atts); 
 $heading_strip		= thz_akg('hm/s',$atts,'active');
 $style				= thz_akg('style',$atts);

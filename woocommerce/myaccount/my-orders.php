@@ -58,7 +58,7 @@ if ( $customer_orders ) : ?>
 
 		<tbody>
 			<?php foreach ( $customer_orders as $customer_order ) :
-				$order      = wc_get_order( $customer_order );
+				$order      = wc_get_order( $customer_order ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 				$item_count = $order->get_item_count();
 				?>
 				<tr class="order">
@@ -107,7 +107,7 @@ if ( $customer_orders ) : ?>
 									}
 
 									if ( $actions = apply_filters( 'woocommerce_my_account_my_orders_actions', $actions, $order ) ) {
-										foreach ( $actions as $key => $action ) {
+										foreach ( $actions as $key => $action ) { // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 											echo '<a href="' . esc_url( $action['url'] ) . '" class="button ' . sanitize_html_class( $key ) . '">' . esc_html( $action['name'] ) . '</a>';
 										}
 									}

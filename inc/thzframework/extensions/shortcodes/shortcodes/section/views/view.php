@@ -2,7 +2,7 @@
 	die( 'Forbidden' );
 }
 
-$id 					= thz_akg('id',$atts);
+$id 					= thz_akg('id',$atts); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $css_id 				= thz_akg('cmx/i',$atts);
 $id_out					= !empty($css_id) ? str_replace(' ','',$css_id): 'thz-section-holder-s'.$id;
 $css_class 				= thz_akg('cmx/c',$atts);
@@ -38,7 +38,7 @@ $full_rows				= $full_exclude == 'exclude' ? false : thz_full_rows();
 $fpex_class				= !$is_slide && thz_full_rows() && $full_exclude == 'exclude'  ? ' thz-fp-excluded':'';
 $fullheight				= thz_akg('fh',$atts);
 $contentalign			= $full_rows ? 'thz-va-middle' : thz_akg('fh/0/contentalign',$atts);
-$mode					= thz_akg('mode',$atts,'default');
+$mode					= thz_akg('mode',$atts,'default'); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $op_classes				= !empty($cp_o) ?' thz-parallax-over':'';
 $scroll_to				= thz_akg('n/s',$atts,'inactive');
 $brightness				= thz_akg('cmx/b',$atts,'none');

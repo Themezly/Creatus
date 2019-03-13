@@ -1,7 +1,7 @@
 <?php if ( ! defined( 'FW' ) ) {
 	die( 'Forbidden' );
 }
-$id					= thz_akg('id',$atts);
+$id					= thz_akg('id',$atts); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $css_id 			= thz_akg('cmx/i',$atts);
 $id_out				= !empty($css_id) ? str_replace(' ','',$css_id): 'thz-shortcode-list-'.$id;
 $css_class 			= thz_akg('cmx/c',$atts);
@@ -12,8 +12,8 @@ $res_class			= _thz_responsive_classes(thz_akg('cmx',$atts));
 $animate			= thz_akg('animate',$atts);
 $cpx				= thz_akg('cpx',$atts);
 $items				= thz_akg('items',$atts);
-$type				= thz_akg('type/picked',$atts,'default');
-$tag 				= 'ul';
+$type				= thz_akg('type/picked',$atts,'default'); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+$tag 				= 'ul'; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $icon_data 			= false;
 $custom_data		= array(
 	'animate' => $animate,
@@ -21,7 +21,7 @@ $custom_data		= array(
 );
 
 if($type =='ordered'){
-	$tag = 'ol';
+	$tag = 'ol'; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 }
 
 if($type =='icons'){

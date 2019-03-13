@@ -14,7 +14,7 @@ $show_filter 	= thz_get_theme_option('project_style/filter/picked');
 if ($show_filter !== 'show' ) {
 	return;	
 }
-$term     	 			= get_queried_object();
+$term     	 			= get_queried_object(); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $term_id  	  			= isset($term->term_id) ? get_queried_object_id() : 0;
 $categories   			= fw_ext_portfolio_get_listing_categories( $term_id );
 $cat_name				= get_cat_name($term_id);
@@ -24,9 +24,9 @@ $filter_all 			= thz_get_theme_option('project_style/filter/show/fm/at','All');
 if(isset($term->taxonomy) && $term->taxonomy == 'fw-portfolio-tag' ){
 	
 	$posts_per_page	= thz_get_theme_option('pgrid/items',9);
-	$paged 			= thz_paged();
-	$order			= thz_get_theme_option('projects_order/order');
-	$orderby		= thz_get_theme_option('projects_order/orderby');
+	$paged 			= thz_paged(); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+	$order			= thz_get_theme_option('projects_order/order'); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+	$orderby		= thz_get_theme_option('projects_order/orderby'); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 	
 	$tax_query 		= array();
 	if ( $term_id != '0' ) {

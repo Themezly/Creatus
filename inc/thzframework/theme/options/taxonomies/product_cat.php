@@ -11,7 +11,7 @@ unset( $cat_options['category_options_tab2']['options']['cat_image']);
 $woop_options = fw()->theme->get_options( 'woo/products');
 $woop_collected = array();
 fw_collect_options($woop_collected, $woop_options);
-foreach ($woop_collected as $id => $option) {
+foreach ($woop_collected as $id => $option) { // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 	$woop_collected[$id]['value'] = fw_get_db_settings_option($id, isset($option['value']) ? $option['value'] : null);
 }
 
@@ -19,7 +19,7 @@ foreach ($woop_collected as $id => $option) {
 $woom_options = fw()->theme->get_options( 'woo/miscellaneous');
 $woom_collected = array();
 fw_collect_options($woom_collected, $woom_options);
-foreach ($woom_collected as $id => $option) {
+foreach ($woom_collected as $id => $option) { // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 	$woom_collected[$id]['value'] = fw_get_db_settings_option($id, isset($option['value']) ? $option['value'] : null);
 }
 

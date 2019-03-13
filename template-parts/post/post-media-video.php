@@ -42,13 +42,13 @@ if($media_height == 'custom' || $media_height == 'metro'){
 		<div class="thz-ratio-in">
 		<?php if($video_type == 'embed'){ ?>
 			<?php thz_media_iframe_helper($video); ?>
-		<?php }elseif($video_type == 'link'){ $type = strpos($video, 'vimeo') !== false ? 'vimeo' : 'youtube'; ?>
+		<?php }elseif($video_type == 'link'){ $type = strpos($video, 'vimeo') !== false ? 'vimeo' : 'youtube'; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited ?>
 			<video id="thz_media<?php echo get_the_ID() ?>" class="thz-media thz-video-<?php echo $type ?> thz-media-respond">
 				<source src="<?php echo esc_url ( $video ) ?>" type="video/<?php echo $type ?>" />
 			</video>	
 		<?php }else{ ?>
 			<video id="thz_media<?php echo get_the_ID() ?>" class="thz-media thz-video-html5 thz-media-respond<?php echo thz_sanitize_class($vtag_class); ?>"<?php if( $poster ){ echo ' poster="'.esc_url($poster).'"';}?>>
-				<?php foreach($video as $video_ext){ $type = wp_check_filetype( $video_ext['url']); ?>
+				<?php foreach($video as $video_ext){ $type = wp_check_filetype( $video_ext['url']); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited ?>
 					<source src="<?php echo esc_url ( $video_ext['url'] ) ?>" type="<?php echo $type['type']  ?>" />
 				<?php } unset($video);?>
 			</video>			

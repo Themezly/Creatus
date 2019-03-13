@@ -4,7 +4,7 @@ if (!defined('FW')) {
 }
 global $post;
 
-$post_id = isset($post->ID) ? $post->ID : false;
+$post_id = isset($post->ID) ? $post->ID : false; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 
 $options = array(
 	'postcssbox' => array(

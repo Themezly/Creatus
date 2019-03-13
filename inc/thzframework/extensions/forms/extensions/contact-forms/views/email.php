@@ -25,7 +25,7 @@
 
 		switch ($item['type']) {
 			case 'checkboxes':
-				$title = ( isset( $item_options['label'] ) ) ? fw_htmlspecialchars($item_options['label']) : '';
+				$title = ( isset( $item_options['label'] ) ) ? fw_htmlspecialchars($item_options['label']) : ''; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 
 				if ( ! is_array( $form_value ) || empty( $form_value ) ) {
 					break;
@@ -34,13 +34,13 @@
 				$value = implode(', ', $form_value);
 				break;
 			case 'textarea':
-				$title = fw_htmlspecialchars($item_options['label']);
+				$title = fw_htmlspecialchars($item_options['label']); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 				$value = fw_htmlspecialchars($form_value);
 				break;
 			case 'recaptcha':
 				continue 2;
 			default:
-				$title = fw_htmlspecialchars($item_options['label']);
+				$title = fw_htmlspecialchars($item_options['label']); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 
 				if (is_array($form_value)) {
 					$value = fw_htmlspecialchars( print_r($form_value, true) );

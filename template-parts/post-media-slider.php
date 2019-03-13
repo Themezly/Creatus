@@ -89,7 +89,7 @@ if( $mediacount > 1 ){
 	echo $start_slick_wrap; ?>
 	<?php foreach($post_media as $media ) :
 	
-		$type 		= thz_akg('type',$media);
+		$type 		= thz_akg('type',$media); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 		$source 	= thz_akg('media',$media);
 		$mediaid 	= thz_akg('mediaid',$media); 
 		$qtitle 	= thz_akg('qtitle',$media,null);
@@ -199,7 +199,7 @@ if( $mediacount > 1 ){
 		<div class="<?php echo $ratio_class ?>">
 			<div class="thz-ratio-in">
 				<video id="thz_media<?php echo $mediaid ?>" width="640" height="360" class="<?php echo $media_class ?> thz-video-html5 thz-media-respond<?php echo thz_sanitize_class ( $has_poster ) ?>"<?php if( $poster ){ echo ' poster="'.esc_url($poster).'"';}?>>
-					<?php foreach($source as $video_ext){ $type = wp_check_filetype( $video_ext['url']); ?>
+					<?php foreach($source as $video_ext){ $type = wp_check_filetype( $video_ext['url']); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited ?>
 						<source src="<?php echo esc_url ( $video_ext['url'] ) ?>" type="<?php echo $type['type']  ?>" />
 					<?php } unset($video_ext);?>
 				</video>
@@ -211,7 +211,7 @@ if( $mediacount > 1 ){
 			<div class="thz-ratio-in">
 				<div class="thz-media-audio-holder">
 					<audio id="thz_media<?php echo $mediaid ?>" height="30px" class="<?php echo $media_class ?> thz-audio thz-media-respond">
-						<?php foreach($source as $audio_ext){ $type = wp_check_filetype( $audio_ext['url']); ?>
+						<?php foreach($source as $audio_ext){ $type = wp_check_filetype( $audio_ext['url']);  // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited?>
 							<source src="<?php echo esc_url ( $audio_ext['url'] ) ?>" type="<?php echo $type['type']  ?>" />
 						<?php } unset($audio_ext);?>
 					</audio>

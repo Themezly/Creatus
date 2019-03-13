@@ -13,7 +13,7 @@ if(empty($image)){
 	return;	
 }
 
-$id 				= thz_akg('id',$atts);
+$id 				= thz_akg('id',$atts); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $css_id 			= thz_akg('cmx/i',$atts);
 $id_out				= !empty($css_id) ? str_replace(' ','',$css_id): 'thz-media-image-'.$id;
 $css_class 			= thz_akg('cmx/c',$atts);
@@ -31,7 +31,7 @@ $click				= thz_akg('click',$atts,'none');
 $over_mode			= $click =='none' ? 'none' : thz_akg('over_mode',$atts,'thzhover');
 $mode_class			= ' thz-media-mode-'.$over_mode;
 $show_caption 		= thz_akg('caption/picked',$atts,'hide');
-$link				= thz_akg('link',$atts,null);
+$link				= thz_akg('link',$atts,null); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $link_output		= null;
 $show_media_icon	= $click =='none' ? 'hide' : thz_akg('mi/picked',$atts,'show'); 
 $animate			= thz_akg('animate',$atts);

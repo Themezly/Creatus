@@ -80,7 +80,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					: '';
 
 			if ( 'itemized' === get_option( 'woocommerce_tax_total_display' ) ) : ?>
-			<?php foreach ( WC()->cart->get_tax_totals() as $code => $tax ) : ?>
+			<?php foreach ( WC()->cart->get_tax_totals() as $code => $tax ) :  // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited ?>
 			<tr class="tax-rate tax-rate-<?php echo sanitize_title( $code ); ?>">
 				<th><?php echo esc_html( $tax->label ) . $estimated_text; ?></th>
 				<td data-title="<?php echo esc_html( $tax->label ); ?>"><?php echo wp_kses_post( $tax->formatted_amount ); ?></td>

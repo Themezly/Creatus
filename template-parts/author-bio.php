@@ -18,7 +18,7 @@ $author_link_text	= thz_get_option('bpau/show/alt',__( 'More posts by', 'creatus
 $author_id 			= get_the_author_meta('ID');
 $author_link		= get_author_posts_url($author_id );
 $description		= get_the_author_meta('description');
-$mode				= thz_get_option('bpau/show/as/mode','left');
+$mode				= thz_get_option('bpau/show/as/mode','left'); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 
 // heading
 $heading_classes 	='thz-author-bio-heading thz-mb-'.thz_m_ton($heading_space);

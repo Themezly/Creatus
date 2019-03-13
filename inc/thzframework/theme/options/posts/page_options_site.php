@@ -5,7 +5,7 @@ if (!defined('FW')){
 $site_settings = fw()->theme->get_options( 'site/settings');
 $s_collected = array();
 fw_collect_options($s_collected, $site_settings);
-foreach ($s_collected as $id => $option) {
+foreach ($s_collected as $id => $option) { // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
     $s_collected[$id]['value'] = fw_get_db_settings_option($id, isset($option['value']) ? $option['value'] : null);
 }
 unset($site_settings['contentlayouttab'],$site_settings['stylingtab']['options']['theme_palette']);
@@ -15,7 +15,7 @@ unset($site_settings['contentlayouttab'],$site_settings['stylingtab']['options']
 $preloader_settings = fw()->theme->get_options('additional/preloader');
 $preloader_collected = array();
 fw_collect_options($preloader_collected, $preloader_settings);
-foreach ($preloader_collected as $id => $option) {
+foreach ($preloader_collected as $id => $option) { // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
     $preloader_collected[$id]['value'] = fw_get_db_settings_option($id, isset($option['value']) ? $option['value'] : null);
 }
 
@@ -24,7 +24,7 @@ foreach ($preloader_collected as $id => $option) {
 $comments_settings = fw()->theme->get_options('additional/comments');
 $comments_collected = array();
 fw_collect_options($comments_collected, $comments_settings);
-foreach ($comments_collected as $id => $option) {
+foreach ($comments_collected as $id => $option) { // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
     $comments_collected[$id]['value'] = fw_get_db_settings_option($id, isset($option['value']) ? $option['value'] : null);
 }
 

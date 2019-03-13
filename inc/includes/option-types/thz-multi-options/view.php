@@ -22,7 +22,7 @@
 	<div class="thz-multi-options-group">
 		<?php foreach ($option['value'] as $key => $options_group){
 
-				$type = $option['thz_options'][$key]['type'];
+				$type = $option['thz_options'][$key]['type']; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 				$html ='';
 				$addbrake ='';
 				if(isset($option['breakafter'])){

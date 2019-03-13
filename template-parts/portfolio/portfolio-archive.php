@@ -11,9 +11,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header();
 global $thz_rowstarthook;
-$term     	 	= get_queried_object();
+$term     	 	= get_queried_object(); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $term_id  	  	= isset($term->term_id) ? get_queried_object_id() : 0;
-$paged 			= thz_paged();
+$paged 			= thz_paged(); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $cat_desc		= $term->description;
 $columns		= thz_get_theme_option('pgrid/columns',3);
 $posts_per_page	= thz_get_theme_option('pgrid/items',9);
@@ -25,8 +25,8 @@ $data_layout	= $media_height == 'auto' ? 'masonry' : $media_height;
 $gutter			= esc_attr( thz_get_theme_option('pgrid/gutter') );
 $display_mode	= thz_get_theme_option('project_style/display_mode/picked');
 $gutter_class	= $gutter == 0 ? ' thz-items-grid-nogutter' : '';
-$order			= thz_get_theme_option('projects_order/order');
-$orderby		= thz_get_theme_option('projects_order/orderby');
+$order			= thz_get_theme_option('projects_order/order'); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
+$orderby		= thz_get_theme_option('projects_order/orderby'); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 $no_response 	= $columns < 3 ? ' thz-grid-noresponse' :'';
 $mfp_classes	= ' '.thz_lightbox_classes();
 $tax_query 		= array();

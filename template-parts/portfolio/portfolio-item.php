@@ -48,7 +48,7 @@ $show_title 		= thz_get_theme_option('project_style/show_title/picked');
 $show_introtext		= thz_get_theme_option('project_style/show_introtext/picked'); 
 
 if($post_categories){
-	foreach($post_categories as $cat){
+	foreach($post_categories as $cat){ // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
 		
 		$cats_array[]= 'category_'.$cat->term_id;
 		$category_link = get_category_link( $cat->term_id );
