@@ -150,3 +150,12 @@ Source: https://necolas.github.io/normalize.css/
 Font Awesome icons, Copyright Dave Gandy
 License: SIL Open Font License, version 1.1.
 Source: http://fontawesome.io/
+
+Images
+License: Creative Commons CC0 
+Source: https://stocksnap.io
+https://stocksnap.io/photo/J2KJ6CNZTC
+https://stocksnap.io/photo/0PTTRQX5L1
+https://stocksnap.io/photo/NOFSYE1P0V
+https://stocksnap.io/photo/BBA96CDDCD
+https://stocksnap.io/photo/O9V8SGL6FD
