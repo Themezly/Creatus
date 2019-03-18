@@ -50,6 +50,10 @@ Have a bug or a request? Please open an issue [here](https://github.com/Themezly
   
 ## Credits
 
+jQuery Easing, Copyright 2008 George McGinley Smith
+Licenses: Open source under the 3-Clause BSD License
+Source: http://gsgd.co.uk/sandbox/jquery/easing/
+
 Isotope, Copyright 2015 Metafizzy
 License: MIT/GPLv3
 Source: http://isotope.metafizzy.co
@@ -57,6 +61,14 @@ Source: http://isotope.metafizzy.co
 jQuery hoverdir, Copyright 2012, Codrops
 License: MIT
 Source: jquery.hoverdir.js
+
+iScroll, Copyright 2008-2017 Matteo Spinelli
+License: MIT
+Source: https://github.com/cubiq/iscroll
+
+jQuery Scrollify, Copyright 2016, Luke Haas
+License: MIT
+Source: https://github.com/lukehaas/Scrollify
 
 JavaScript Cookie, Copyright 2006, 2015 Klaus Hartl & Fagner Brack
 License: MIT
