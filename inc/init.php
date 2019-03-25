@@ -80,6 +80,12 @@ class Thz_Theme_Includes {
 			$files    = array(
 				'class-thz-customizer.php'
 			);
+			
+			if( !thz_fw_active() && is_customize_preview() ){
+				
+				$files[] = 'customizer-defaults.php';
+			}
+			
 			foreach ( $files as $file ) {
 				require_once $abs_path . $file;
 			}
@@ -157,7 +163,6 @@ class Thz_Theme_Includes {
 			$path . 'class-thz-item-utility.php',
 			$path . 'classes-thz-menu-walkers.php',
 			$path . 'class-thz-doc.php',
-			$path . 'class-thz-demos.php',
 			$path . 'class-thz-dynamic-css.php',
 			$path . 'class-thz-generate-css.php',
 			$path . 'thz-assign-layout.php',
@@ -205,8 +210,6 @@ class Thz_Theme_Includes {
 	}
 
 	/**
-	 * @todo - is it a good idea to automatically load widgets in child theme? wouldn't it be better to have an action that allows hooking to it?
-	 *
 	 * @internal
 	 */
 	public static function _action_widgets_init() {

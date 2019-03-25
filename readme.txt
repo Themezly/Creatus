@@ -1,16 +1,16 @@
 === Creatus ===
 Contributors: Themezly
-Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-image-header, featured-images, post-formats, theme-options, translation-ready
+Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-image-header, featured-images, post-formats, theme-options, translation-ready, rtl-language-support
 Requires at least: 4.0
-Tested up to: 5.0.3
-Stable tag: 1.5.0
+Tested up to: 5.1.1
+Stable tag: 1.5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
 == Description ==
 
-Ultimate WordPress theme with comprehensive set of tools that will help you create any WordPress based website concept.
+Ultimate Multipurpose WordPress theme with comprehensive set of tools that will help you create any WordPress based website concept. Whatever the type of website you are looking to create, Creatus has it covered. With a wide assortment of ready-to-go full site demos, page templates or page blocks, from eCommerce and Portfolio to Blog and Agency, any concept is possible. Simply select and install the demo of your choice in just one-click, and then customize as appropriate.
 
 == Installation ==
 
@@ -27,7 +27,7 @@ More details here: http://www.gnu.org/licenses/gpl-2.0.html
 == Resources ==
 
 jQuery Easing, Copyright 2008 George McGinley Smith
-Licenses: BSD
+Licenses: Open source under the 3-Clause BSD License
 Source: http://gsgd.co.uk/sandbox/jquery/easing/
 
 Isotope, Copyright 2015 Metafizzy
@@ -162,3 +162,12 @@ Source: https://necolas.github.io/normalize.css/
 Font Awesome icons, Copyright Dave Gandy
 License: SIL Open Font License, version 1.1.
 Source: http://fontawesome.io/
+
+Images
+License: Creative Commons CC0 
+Source: https://stocksnap.io
+https://stocksnap.io/photo/J2KJ6CNZTC
+https://stocksnap.io/photo/0PTTRQX5L1
+https://stocksnap.io/photo/NOFSYE1P0V
+https://stocksnap.io/photo/BBA96CDDCD
+https://stocksnap.io/photo/O9V8SGL6FD

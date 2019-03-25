@@ -63,7 +63,8 @@
 	# Panels
 	# Thz Sliders Extension
 	# Thz Sections slider 
-	# Site offline 
+	# Site offline
+	# Customizer Hero 
 	# Clearings
 	
 
@@ -4061,6 +4062,32 @@ html.searchOpen:not(.canvasOpen) .thz-body-box {
 	opacity:0.8;
 }
 
+/* ============================================ 
+	# Customizer Hero
+ ============================================ */
+ 
+#thz-customizer-hero{
+	padding:14vw 0;
+	text-align:center;
+	background:#fafafa;
+}
+#thz-customizer-hero .thz-heading-before{
+	display:block;
+    font-weight: 600;
+    letter-spacing:1px;
+    color: #ccc;
+    text-transform: uppercase;
+    margin:0 0 15px;
+}
+#thz-customizer-hero .thz-heading-title{
+    font-size:58px;
+    text-align: center;
+	margin:0 auto;
+}
+#thz-customizer-hero .thz-heading-sub{
+    font-size:16px; 
+}
+  
 /* ============================================ 
 	# Clearings 
  ============================================ */

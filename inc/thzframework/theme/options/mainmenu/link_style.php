@@ -32,7 +32,7 @@ $options = array(
 	),
 	'tm_tl_border' => array(
 		'type' => 'thz-box-style',
-		'label' => 'Top level link border',
+		'label' => __('Top level link border', 'creatus'),
 		'attr' => array(
 			'data-tmborders' => 'tm_tl_border',
 			'data-changing' => 'border'

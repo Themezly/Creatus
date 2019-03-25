@@ -50,6 +50,17 @@ function thz_core(){
 	return defined('THZHELPERS');
 	
 }
+
+/**
+ * Check if Creatus Extended is active
+ * @internal
+ */
+function thz_creatus_extended(){
+	
+	return defined('CREATUSEXTENDED');
+	
+}
+
 /**
  * Check if page is using page builder
  * @internal
@@ -3170,7 +3181,17 @@ if ( ! function_exists( 'thz_pageblocks_positions_list' ) ) {
  * Load hero section template
  */
 function thz_hero_section( $location ) {
-	
+
+	if( !thz_fw_active() && 'under' == $location ){
+		if ( 
+		( 'page' == get_option( 'show_on_front' ) && is_front_page() && !is_home() ) || 
+		( 'posts' == get_option( 'show_on_front' ) && is_home() && is_front_page() )
+		){
+			get_template_part( 'template-parts/customizer-hero', 'section' );
+			return;
+		}
+	}
+		
 	$hero = thz_get_hero_options();
 
 	if ( empty( $hero ) ) {
@@ -3689,6 +3710,15 @@ function thz_page_info_check( $assigned_pages = array() ) {
  * @return bool
  */
 function thz_global_page_title() {
+	
+	if( !thz_fw_active() ){
+		if ( 
+		( 'page' == get_option( 'show_on_front' ) && is_front_page() && !is_home() ) || 
+		( 'posts' == get_option( 'show_on_front' ) && is_home() && is_front_page() )
+		){
+			return false;
+		}
+	}
 
 	$show_on           = thz_get_theme_option( 'pt_show_on', null );
 	$show_title        = thz_page_info_check( $show_on );
@@ -5275,6 +5305,17 @@ if ( ! function_exists( 'thz_print_branding' ) ) {
 			)
 		);
 
+		if( !thz_fw_active() ){
+			
+			$branding_link 	= get_option('creatus_branding_link',false);
+			$branding_text 	= get_option('creatus_branding_text',false);			
+			
+			if( $branding_link || $branding_text ){
+				
+				$branding = thz_current_year( '<span class="thz-copyright">Copyright &copy; {year} <a href="'.$branding_link.'" target="_blank">'.$branding_text.'</a>.</span>');
+			}
+		}
+		
 		$html = '<div class="thz-bradning-holder">' . wp_kses( $branding, $allowed_html ) . '</div>';
 
 		if ( $echo ) {

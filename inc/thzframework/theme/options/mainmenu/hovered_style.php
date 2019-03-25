@@ -32,7 +32,7 @@ $options = array(
 	),
 	'tm_link_hover_border' => array(
 		'type' => 'thz-box-style',
-		'label' => 'Top level hovered link border',
+		'label' => __('Top level hovered link border', 'creatus'),
 		'attr' => array(
 			'data-tmborders' => 'tm_link_hover_border',
 			'data-changing' => 'border'

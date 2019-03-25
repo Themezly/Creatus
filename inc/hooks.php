@@ -330,12 +330,11 @@ function _thz_get_tgmpa_plugins_list(){
 			'required'  => false,
 			'version'   => '1.0.0', 
 		),
-		'thz-core'=> array(
-			'name'               => 'Thz Core', // The plugin name.
-			'slug'               => 'thz-core', // The plugin slug (typically the folder name).
-			'source'             => esc_url('https://updates.themezly.io/plugins/thz-core.zip'), // The plugin source.
+		'creatus-extended'=> array(
+			'name'               => 'Creatus Extended', // The plugin name.
+			'slug'               => 'creatus-extended', // The plugin slug (typically the folder name).
 			'required'           => false, // If false, the plugin is only 'recommended' instead of required.
-			'version'            => '1.5.1', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
+			'version'            => '1.0.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
 		),
 		'assign-widgets'=> array(
 			'name'               => 'Assign Widgets', // The plugin name.
@@ -411,119 +410,6 @@ function _thz_get_demos_plugins_list () {
 		),
 	);
 }
-
-/**
- * List of full demos
- */
-function _thz_get_demos_list(){
-	
-	$ThzDemos = ThzDemos::getInstance();
-	return $ThzDemos->demos_list();
-
-}
-
-/**
- * @param FW_Ext_Backups_Demo[] $demos
- * @return FW_Ext_Backups_Demo[] 
- * http://manual.unyson.io/en/latest/extension/backups/#create-demos
- */
-function _thz_filter_theme_fw_ext_backups_demos($demos) {
-	
-	$demos_list  = _thz_get_demos_list();
-	
-	if(!$demos_list){
-		
-		return $demos;
-	}
-	
-	$download_url = apply_filters( '_thz_filter_demos_download_url', 'https://updates.themezly.io/demos/' );
-
-    foreach ($demos_list as $id => $data) {
-        $demo = new FW_Ext_Backups_Demo($id, 'piecemeal', array(
-            'url' => $download_url,
-            'file_id' => $id,
-        ));
-        $demo->set_title($data['title']);
-        $demo->set_screenshot($data['screenshot']);
-        $demo->set_preview_link($data['preview_link']);
-		
-		if( isset($data['extra'])){
-			$demo->set_extra($data['extra']);
-		}
-		
-        $demos[ $demo->get_id() ] = $demo;
-
-        unset($demo);
-    }
-
-    return $demos;
-}
-
-add_filter('fw:ext:backups-demo:demos', '_thz_filter_theme_fw_ext_backups_demos');
-
-
-/**
- * Disable demo image sizes restore
- * https://github.com/ThemeFuse/Unyson-Backups-Extension/issues/15
- * https://github.com/ThemeFuse/Unyson-Backups-Extension/issues/30
- */
-if ( ! function_exists( '_thz_filter_disable_demo_img_sizes_restore' ) ) {
-	function _thz_filter_disable_demo_img_sizes_restore( $do, FW_Ext_Backups_Task_Collection $collection ) {
-		
-		$demos_list = _thz_get_demos_list();
-		
-		if (
-			$collection->get_id() === 'demo-content-install'
-			&&
-			($task = $collection->get_task('demo:demo-download'))
-			&&
-			($task_args = $task->get_args())
-			&&
-			isset($task_args['demo_id'])
-			&&
-			isset($demos_list[$task_args['demo_id']]['sizes_removal'])
-			&&
-			$demos_list[$task_args['demo_id']]['sizes_removal'] === false
-		) {
-			$do = false;
-		}
-	
-		return $do;
-	}
-}
-add_filter('fw:ext:backups:add-restore-task:image-sizes-restore', '_thz_filter_disable_demo_img_sizes_restore', 10, 2);
-
-
-/**
- * Disable Unyson update 
- * if new update is bigger than max version
-*/
-
-function _thz_filter_disable_unyson_update( $updates ) {
-
-   $requirements = defined('FW') ? fw()->theme->manifest->get('requirements') : false;
-   
-   if($requirements && isset($updates->response) && isset($requirements['framework']['max_version'])){
-	   
-	   $response = $updates->response;
-	   
-	   if(isset($response['unyson/unyson.php']) ){
-	   	 
-		 $new_version = $response['unyson/unyson.php']->new_version;
-		 $max_version = $requirements['framework']['max_version'];
-		 
-		 if (version_compare($new_version, $max_version, ">")) {
-			 
-			unset( $updates->response['unyson/unyson.php'] );
-		 }
-		
-	   }
-   }
-   
-   return $updates;
-}
-
-add_filter( 'site_transient_update_plugins', '_thz_filter_disable_unyson_update' );
 
 
 /**
@@ -2084,20 +1970,6 @@ function _thz_filter_get_archives_link( $output ) {
 }; 
          
 add_filter( 'get_archives_link', '_thz_filter_get_archives_link', 10, 6 ); 
-
-
-
-/*
- * Load page builder templates
-*/
-function _thz_action_load_builder_templates() {
-	
-	require_once get_template_directory().'/inc/includes/builder-templates/init.php';
-	
-}
-
-add_action('fw_init', '_thz_action_load_builder_templates');
-
 
 
 /*

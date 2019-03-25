@@ -98,22 +98,6 @@
 				data: data,
 				dataType: 'json'
 			}).done(function (response) {
-				autoSetupProcess.checkResponse(response, autoSetupProcess.install_child_theme);
-			}).fail(autoSetupProcess.processFailed);
-		},
-		install_child_theme: function () {
-
-			autoSetupProcess.showInfo(auto_setup_data['steps']['install-child-theme']['message']);
-			var data = {
-				action: auto_setup_data['steps']['install-child-theme']['ajax_action'],
-				_ajax_nonce: auto_setup_data['steps']['install-child-theme']['nonce']
-			};
-			return $.ajax({
-				url: ajaxurl,
-				type: 'POST',
-				data: data,
-				dataType: 'json'
-			}).done(function (response) {
 				autoSetupProcess.checkResponse(response, autoSetupProcess.install_required_plugins);
 			}).fail(autoSetupProcess.processFailed);
 		},

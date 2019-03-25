@@ -10,7 +10,7 @@ if (!defined('FW')){
 		
 			'no_builder_text' => array(
 				'type' => 'thz-separator',
-				'label'=>'Grids generator',
+				'label'=> __('Grids generator', 'creatus'),
 				'value' => false,
 				'html' => esc_html__('<h2>This option requires Unyson Page Builder extension to be active. Please go to Unyson plugin and activate </h2>','creatus'),
 			),

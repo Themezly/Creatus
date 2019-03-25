@@ -51,7 +51,7 @@ Have a bug or a request? Please open an issue [here](https://github.com/Themezly
 ## Credits
 
 jQuery Easing, Copyright 2008 George McGinley Smith
-Licenses: BSD
+Licenses: Open source under the 3-Clause BSD License
 Source: http://gsgd.co.uk/sandbox/jquery/easing/
 
 Isotope, Copyright 2015 Metafizzy
@@ -186,3 +186,14 @@ Source: https://necolas.github.io/normalize.css/
 Font Awesome icons, Copyright Dave Gandy
 License: SIL Open Font License, version 1.1.
 Source: http://fontawesome.io/
+
+## Images
+
+License: Creative Commons CC0
+Source: https://stocksnap.io
+
+* https://stocksnap.io/photo/J2KJ6CNZTC
+* https://stocksnap.io/photo/0PTTRQX5L1
+* https://stocksnap.io/photo/NOFSYE1P0V
+* https://stocksnap.io/photo/BBA96CDDCD
+* https://stocksnap.io/photo/O9V8SGL6FD
