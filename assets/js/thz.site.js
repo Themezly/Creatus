@@ -23,9 +23,7 @@
 	if (html.classList.contains('thz-preloader-active')) {
 		html.classList.remove('thz-preloader-active');
 	}
-	
-   //var suppressErrorAlert = true;
-   //return suppressErrorAlert;
+
 };
 
 (function($, window, document, undefined) {
