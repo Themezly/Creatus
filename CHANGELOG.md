@@ -1,5 +1,14 @@
 <div class="thz-docs-codeblock" markdown="1">
 
+## Version: 1.5.5 (March 25th, 2019)
+
+#### Code improvement
+ - Added product wc_placeholder_img_src as placeholder image
+
+#### Bug fix
+ - Updated Bootstrap tooltips to 3.4.1 addressing sanitizing issue in previous versions
+
+ 
 ## Version: 1.5.4 (March 8th, 2019)
 
 #### Code improvement
