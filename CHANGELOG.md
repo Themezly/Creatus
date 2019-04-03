@@ -1,5 +1,10 @@
 <div class="thz-docs-codeblock" markdown="1">
 
+## Version: 1.5.6 (April 3rd, 2019)
+
+#### Code improvement
+ - Smooth scroll 1.4.9 passive listener fix
+
 ## Version: 1.5.5 (March 25th, 2019)
 
 #### Code improvement
