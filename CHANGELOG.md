@@ -1,5 +1,10 @@
 <div class="thz-docs-codeblock" markdown="1">
 
+## Version: 1.5.7 (April 17th, 2019)
+
+#### Code improvement
+ - Updated isotope plugins
+ 
 ## Version: 1.5.6 (April 3rd, 2019)
 
 #### Code improvement
