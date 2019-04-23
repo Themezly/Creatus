@@ -1,5 +1,9 @@
 <div class="thz-docs-codeblock" markdown="1">
+## Version: 1.5.8 (April 23rd, 2019)
 
+#### Code improvement
+ - WooCommerce 3.6.0 templates update
+ 
 ## Version: 1.5.7 (April 17th, 2019)
 
 #### Code improvement
