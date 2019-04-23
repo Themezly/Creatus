@@ -15,7 +15,6 @@ if( !is_admin() ){
 	 *	Dont clog the site with woocommerce stuff unless we are on it
 	 *  @internal
 	 */
-			
 	function _thz_action_clean_woo_head() {
 		
 		if ( class_exists( 'WooCommerce' ) ) {
@@ -664,3 +663,16 @@ function _thz_ajax_action_remove_from_cart() {
 
 add_action( 'wp_ajax_thz_ajax_action_remove_from_cart', '_thz_ajax_action_remove_from_cart' );
 add_action( 'wp_ajax_nopriv_thz_ajax_action_remove_from_cart', '_thz_ajax_action_remove_from_cart' );
+
+
+/**
+ * Add comments class to reviews
+ */
+function _thz_woo_reviews_add_comment_class ( $classes ){
+	
+	if( function_exists('is_product') && is_product() ){
+		$classes[] ='comment';
+	}
+    return $classes;
+}
+add_filter( 'comment_class', '_thz_woo_reviews_add_comment_class' );
