@@ -8,6 +8,9 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // No direct access
 }
+
+global $product;
+
 /**
  * The template for displaying product content in the single-product.php template
  *
@@ -21,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @see 	    http://docs.woothemes.com/document/template-structure/
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     3.4.0
+ * @version     3.6.0
  */
 $show_product_nav = thz_get_option('woonav_mx/v','show');
 $wooimgcol 	= thz_get_option('wooimgcol/w','thz-col-1-2');
@@ -58,7 +61,7 @@ if('thz-col-1-3' == $wooimgcol ) {
 	 }
 ?>
 <?php if (thz_woo_version( '2.7' )) {?>
-<div id="product-<?php the_ID(); ?>" <?php wc_product_class(); ?>>
+<div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 <?php }else{ ?>
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
 <?php } ?>

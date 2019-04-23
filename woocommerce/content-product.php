@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @see     http://docs.woothemes.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 3.4.0
+ * @version 3.6.0
  */
 
 global $product, $woocommerce_loop;
@@ -99,7 +99,7 @@ $item_in_classes  	= $gutter.$animation_class;
 $woo_item_classes  	= $in_cart;
 
 ?>
-<div <?php wc_product_class( $classes ); ?>>
+<div <?php wc_product_class( $classes, $product ); ?>>
 	<div class="thz-grid-item-in thz-mb-<?php echo thz_sanitize_class( $item_in_classes ) ?>"<?php echo thz_sanitize_data($animation_data); ?>>
 		<div class="thz-woo-item<?php echo thz_sanitize_class($woo_item_classes)?>">
 		<?php
