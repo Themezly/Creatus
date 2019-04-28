@@ -7628,3 +7628,16 @@ if ( ! function_exists( 'thz_customizer_page_options' ) ) {
 		return 0;
 	}
 }
+
+/**
+ * WP 5.2 body open shim
+*/
+if ( ! function_exists( 'thz_body_open' ) ) {
+    function thz_body_open() {
+		if ( function_exists( 'wp_body_open' ) ) {
+			wp_body_open();
+		} else {
+			do_action( 'wp_body_open' );
+		}
+    }
+}

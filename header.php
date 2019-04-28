@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php wp_head(); ?>
 <?php thz_print_codes('before_head',true); ?>
 </head>
-<body <?php body_class();thz_sdata('body');thz_body_data(); ?>><?php thz_preloader();thz_print_body_frame();thz_print_codes('after_body',true); ?>
+<body <?php body_class();thz_sdata('body');thz_body_data(); ?>><?php thz_body_open();thz_preloader();thz_print_body_frame();thz_print_codes('after_body',true); ?>
 	<div id="thz-body-box" class="thz-body-box">
     	<div id="thz-body-container" class="thz-body-container">
         	<?php thz_above_header('out'); ?>
