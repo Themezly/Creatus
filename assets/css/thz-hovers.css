@@ -49,7 +49,7 @@
 .thz-hover-on .thz-img-zoomin-rotate-left .thz-media-cpx-holder,
 .thz-img-zoomin-rotate-left:hover img,
 .thz-img-zoomin-rotate-left:hover:before,
-.thz-img-zoomin-rotate-left:hover:before .thz-media-cpx-holder  {
+.thz-img-zoomin-rotate-left:hover .thz-media-cpx-holder  {
 	-webkit-transform: scale(1.2) rotate(-5deg) translateZ(0);
 	transform: scale(1.2) rotate(-5deg) translateZ(0);
 	will-change: transform;
