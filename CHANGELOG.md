@@ -1,4 +1,10 @@
 <div class="thz-docs-codeblock" markdown="1">
+
+## Version: 1.5.9 (July 30th, 2019)
+
+#### Code improvement
+ - Fixed Icon boxes animation bug
+ 
 ## Version: 1.5.8 (April 23rd, 2019)
 
 #### Code improvement
