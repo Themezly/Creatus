@@ -373,46 +373,6 @@ function _thz_get_tgmpa_plugins_list(){
 
 
 /**
- * List of plugins used in specific demo
- */
-function _thz_get_demos_plugins_list () {
-	return array(
-
-		'creatus'    => array(
-			array(
-				'name' => 'WooCommerce',
-				'slug' => 'woocommerce',
-			),
-
-		),
-						
-		'clean'    => array(
-			array(
-				'name' => 'WooCommerce',
-				'slug' => 'woocommerce',
-			),
-
-		),
-		
-		'shopsy'    => array(
-			array(
-				'name' => 'WooCommerce',
-				'slug' => 'woocommerce',
-			),
-
-		),
-
-		'bruno'    => array(
-			array(
-				'name' => 'WooCommerce',
-				'slug' => 'woocommerce',
-			),
-
-		),
-	);
-}
-
-/**
  * List of full demos
  */
 function _thz_get_demos_list(){
@@ -421,6 +381,67 @@ function _thz_get_demos_list(){
 	return $ThzDemos->demos_list();
 
 }
+
+/**
+ * List of plugins used in specific demo
+ */
+function _thz_get_demos_plugins_list () {
+	
+	$demos = _thz_get_demos_list();
+	$demos_plugins = array();
+	
+	foreach( $demos as $id => $demo ){
+		
+		if(isset($demo['plugins'])){
+			
+			$demos_plugins[$id] = $demo['plugins'];
+			
+		}
+		
+	}
+	
+	if( empty($demos_plugins) ){
+		
+		return array(
+	
+			'creatus'    => array(
+				array(
+					'name' => 'WooCommerce',
+					'slug' => 'woocommerce',
+				),
+	
+			),
+							
+			'clean'    => array(
+				array(
+					'name' => 'WooCommerce',
+					'slug' => 'woocommerce',
+				),
+	
+			),
+			
+			'shopsy'    => array(
+				array(
+					'name' => 'WooCommerce',
+					'slug' => 'woocommerce',
+				),
+	
+			),
+	
+			'bruno'    => array(
+				array(
+					'name' => 'WooCommerce',
+					'slug' => 'woocommerce',
+				),
+	
+			),
+		);
+		
+	}else{
+		return $demos_plugins;
+	}
+}
+
 
 /**
  * @param FW_Ext_Backups_Demo[] $demos
