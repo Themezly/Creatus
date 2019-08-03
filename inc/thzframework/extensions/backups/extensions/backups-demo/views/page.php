@@ -14,8 +14,12 @@ if ($backups->is_disabled()) {
 	$confirm = esc_html__('IMPORTANT: Installing this demo content will delete the content you currently have on your website. However, we create a backup of your current content in (Tools > Backup). You can restore the backup from there at any time in the future.',	'creatus');
 }
 
-$ThzDemos 		= ThzDemos::getInstance();
-$can_refresh 	= $ThzDemos->can_refresh();
+$ThzDemos 			= ThzDemos::getInstance();
+$can_refresh 		= $ThzDemos->can_refresh();
+$page_builder 		= filter_input( INPUT_GET, "thz_page_builder", FILTER_SANITIZE_STRING );
+$current_builder 	= !$page_builder || 'unyson' == $page_builder ? 'unyson' : $page_builder;
+$active_elementor 	= 'elementor' == $current_builder ? 'page_builders active-builder' :'page_builders inactive-builder';
+$active_unyson 		= 'unyson' == $current_builder ? 'page_builders active-builder' :'page_builders inactive-builder';
 
 ?>
 <script type="text/javascript">
@@ -87,8 +91,25 @@ $can_refresh 	= $ThzDemos->can_refresh();
 </div>
 
 <p></p>
+<div class="thz-select-builder">
+	<h3><?php esc_html_e('Select your page builder', 'creatus'); ?>:</h3>
+    <a class="<?php echo $active_unyson; ?>" href="<?php echo self_admin_url( 'tools.php?page=fw-backups-demo-content');?>"><?php esc_html_e('Unyson', 'creatus'); ?></a>
+    <a class="<?php echo $active_elementor; ?>" href="<?php echo esc_url( add_query_arg( 'thz_page_builder', 'elementor') )?>"><?php esc_html_e('Elementor', 'creatus'); ?></a>
+</div>
 <div class="theme-browser rendered" id="fw-ext-backups-demo-list">
-<?php foreach ($demos as $demo): $extra = $demo->get_extra(); ?>
+<?php foreach ($demos as $demo): 
+
+		$extra = $demo->get_extra(); 
+		
+		if(!$page_builder && thz_contains($demo->get_id(),'-')){
+			continue;
+		}
+		
+		if($page_builder && !thz_contains($demo->get_id(),$page_builder)){
+			continue;
+		}
+
+?>
 	<div class="theme fw-ext-backups-demo-item" id="demo-<?php echo esc_attr($demo->get_id()) ?>">
 		<div class="theme-screenshot">
 			<img src="<?php echo esc_attr($demo->get_screenshot()); ?>" alt="Screenshot" />
@@ -105,7 +126,7 @@ $can_refresh 	= $ThzDemos->can_refresh();
                 <?php esc_html_e('Go Pro', 'creatus') ?>
              </a>
             <?php else: ?>
-			<a class="button button-primary"
+			<a class="button button-primary demo-install"
 			   href="#" onclick="return false;"
 			   data-confirm="<?php echo esc_attr($confirm); ?>"
 			   data-install="<?php echo esc_attr($demo->get_id()) ?>"><?php esc_html_e('Install', 'creatus'); ?></a>            

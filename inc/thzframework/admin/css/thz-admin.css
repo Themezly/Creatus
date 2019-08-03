@@ -1667,3 +1667,38 @@ body.thz-admin-settings-form.fw-resetting #fw-loading{
 .thz-refresh-demos-list.refreshing{
 	opacity:0.5;
 }
+.thz-select-builder{
+	display:block;
+	clear:both;
+	margin:0 0 40px 0;
+	padding:0 0 15px 0;
+}
+.thz-select-builder > h3{
+	margin: 0 15px 0 0;
+	float: left;
+}
+.thz-select-builder > h3 span{
+	text-transform:capitalize;
+	margin:0 0 0 10px;
+	color: #29d089;
+}
+.thz-select-builder .page_builders{
+	padding: 10px 15px;
+	text-decoration: none;
+	font-weight: 500;
+	border-radius: 4px;
+	margin: 0 10px 0 0;
+}
+.thz-select-builder .active-builder,
+.thz-select-builder .active-builder:hover,
+.thz-select-builder .active-builder:focus,
+.thz-select-builder .inactive-builder:hover,
+.thz-select-builder .inactive-builder:focus{
+	background: #29d089;
+	color: #fff;
+	box-shadow:none;
+}
+.thz-select-builder .inactive-builder{
+	background: #ececec;
+	color:#c0c0c0;
+}
