@@ -558,6 +558,9 @@
 .woocommerce-error {
 	color: #ff4542;
 }
+.woocommerce-notices-wrapper + *{
+	margin-top:0;
+}
 /* Product list widget */
 .product_list_widget {
 	list-style: none;
