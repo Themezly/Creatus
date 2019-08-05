@@ -3040,6 +3040,7 @@ if ( ! function_exists( 'thz_print_page_blocks' ) ) {
 	function thz_print_page_blocks( $page_blocks = array(), $class = false, $echo = true ) {
 
 		$html = false;
+		$custom = function_exists('thz_print_custom_page_blocks');
 
 		if ( thz_fw_loaded() && fw_ext( 'page-builder' ) && ! empty( $page_blocks ) ) {
 
@@ -3050,7 +3051,7 @@ if ( ! function_exists( 'thz_print_page_blocks' ) ) {
 
 					if ( thz_page_block_visible( $pb_id ) ) {
 
-						$pb_content = do_shortcode( fw_ext_page_builder_get_post_content( $pb_id ) );
+						$pb_content = $custom ? thz_print_custom_page_blocks( $pb_id ) : do_shortcode( fw_ext_page_builder_get_post_content( $pb_id ) );
 
 						if ( $pb_content ) {
 
