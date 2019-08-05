@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 	<div class="thz-wrapper-inner thz-pageblock-wrapper">
                     	<?php thz_site_header('main'); ?>
 						<?php 
-                            if(thz_has_builder()){
+                            if( thz_check_page_block_view() || thz_has_builder() ){
                                 
                                 while ( have_posts() ) {
                                    the_post();

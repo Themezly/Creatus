@@ -66,6 +66,14 @@ function thz_has_builder( $pageid = false ) {
 		return thz_get_post_option( 'page-builder/builder_active', false );
 	}
 
+/**
+ * Check page block view
+ * @internal
+ */
+function thz_check_page_block_view(){
+	
+	return apply_filters('thz_filter_check_page_block_view',false);
+	
 }
 
 /**
