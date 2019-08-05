@@ -56,15 +56,19 @@ function thz_core(){
  */
 
 function thz_has_builder( $pageid = false ) {
-
+	
 	if ( $pageid ) {
 
-		return fw_get_db_post_option( $pageid, 'page-builder/builder_active', false );
+		$has_builder = fw_get_db_post_option( $pageid, 'page-builder/builder_active', false );
 
 	} else {
 
-		return thz_get_post_option( 'page-builder/builder_active', false );
+		$has_builder = thz_get_post_option( 'page-builder/builder_active', false );
 	}
+	
+	return apply_filters('thz_filter_has_builder',$has_builder,$pageid);
+
+}
 
 /**
  * Check page block view
