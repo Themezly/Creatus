@@ -107,7 +107,7 @@ $totals = $order->get_order_item_totals(); // phpcs:ignore WordPress.WP.GlobalVa
 
 			<?php do_action( 'woocommerce_pay_order_after_submit' ); ?>
 
-			<?php wp_nonce_field( 'woocommerce-pay-nonce' ); ?>
+			<?php wp_nonce_field( 'woocommerce-pay', 'woocommerce-pay-nonce' ); ?>
 		</div>
 	</div>
 </form>
