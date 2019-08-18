@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @see 	https://docs.woothemes.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 3.2.0
+ * @version 3.7.0
  */
 
 do_action( 'woocommerce_before_account_orders', $has_orders ); ?>

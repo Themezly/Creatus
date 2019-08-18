@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @see 	    http://docs.woothemes.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 3.0.0
+ * @version 3.7.0
  */
 
 if ( ! apply_filters( 'woocommerce_order_item_visible', true, $item ) ) {
@@ -45,11 +45,11 @@ if ( ! apply_filters( 'woocommerce_order_item_visible', true, $item ) ) {
 		?>
 	</td>
 	<td class="product-total">
-		<?php echo $order->get_formatted_line_subtotal( $item ); ?>
+		<?php echo $order->get_formatted_line_subtotal( $item ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped  ?>
 	</td>
 </tr>
 <?php if ( $show_purchase_note && $purchase_note ) : ?>
 <tr class="product-purchase-note">
-	<td colspan="3"><?php echo wpautop( do_shortcode( wp_kses_post( $purchase_note ) ) ); ?></td>
+	<td colspan="3"><?php echo wpautop( do_shortcode( wp_kses_post( $purchase_note ) ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></td>
 </tr>
 <?php endif; ?>

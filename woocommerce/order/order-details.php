@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @see 	https://docs.woothemes.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 3.5.2
+ * @version 3.7.0
  */
 
 if ( ! $order = wc_get_order( $order_id ) ) { // phpcs:ignore WordPress.WP.GlobalVariablesOverride.OverrideProhibited
@@ -38,12 +38,12 @@ if ( $show_downloads ) {
 	wc_get_template( 'order/order-downloads.php', array( 'downloads' => $downloads, 'show_title' => true ) );
 }
 ?>
-<h2><?php _e( 'Order Details', 'creatus' ); ?></h2>
+<h2><?php esc_html_e( 'Order Details', 'creatus' ); ?></h2>
 <table class="thz-woo-table thz-table thz-table-bordered shop_table order_details">
 	<thead>
 		<tr>
-			<th class="product-name"><?php _e( 'Product', 'creatus' ); ?></th>
-			<th class="product-total"><?php _e( 'Total', 'creatus' ); ?></th>
+			<th class="product-name"><?php esc_html_e( 'Product', 'creatus' ); ?></th>
+			<th class="product-total"><?php esc_html_e( 'Total', 'creatus' ); ?></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -68,16 +68,16 @@ if ( $show_downloads ) {
         foreach ( $order->get_order_item_totals() as $key => $total ) {
             ?>
             <tr>
-                <th scope="row"><?php echo $total['label']; ?></th>
-                <td><?php echo $total['value']; ?></td>
+                <th scope="row"><?php echo esc_html( $total['label'] ); ?></th>
+                <td><?php echo ( 'payment_method' === $key ) ? esc_html( $total['value'] ) : wp_kses_post( $total['value'] ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></td>
             </tr>
             <?php
         }
     ?>
     <?php if ( $order->get_customer_note() ) : ?>
         <tr>
-            <th><?php _e( 'Note:', 'creatus' ); ?></th>
-            <td><?php echo wptexturize( $order->get_customer_note() ); ?></td>
+            <th><?php esc_html_e( 'Note:', 'creatus' ); ?></th>
+            <td><?php echo wp_kses_post( nl2br( wptexturize( $order->get_customer_note() ) ) ); ?></td>
         </tr>
     <?php endif; ?>
 	</tfoot>

@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @see     http://docs.woothemes.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 3.5.0
+ * @version 3.7.0
  */
 
 wc_print_notices();
@@ -114,13 +114,17 @@ do_action( 'woocommerce_before_cart' ); ?>
 								echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key );
 							?>
 						<?php
-								echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
-									'<a href="%s" class="remove" title="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
-									esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
-									__( 'Remove this item', 'creatus' ),
-									esc_attr( $product_id ),
-									esc_attr( $_product->get_sku() )
-								), $cart_item_key );
+								echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+									'woocommerce_cart_item_remove_link',
+									sprintf(
+										'<a href="%s" class="remove" aria-label="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
+										esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
+										esc_html__( 'Remove this item', 'creatus' ),
+										esc_attr( $product_id ),
+										esc_attr( $_product->get_sku() )
+									),
+									$cart_item_key
+								);
 							?>
 					</td>
 				</tr>

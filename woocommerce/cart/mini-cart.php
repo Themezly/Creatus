@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @see     http://docs.woothemes.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 3.5.0
+ * @version 3.7.0
  */
 $vc_icon 	= thz_get_option('wooicons/vc','thzicon thzicon-bag');
 $ch_icon 	= thz_get_option('wooicons/ch','fa fa-check-square-o');
@@ -54,14 +54,18 @@ $ch_icon 	= $ch_icon !='' ? '<i class="'.esc_attr($ch_icon).'"></i> ' : null;
 					?>
 					<li class="woocommerce-mini-cart-item <?php echo esc_attr( apply_filters( 'woocommerce_mini_cart_item_class', 'mini_cart_item', $cart_item, $cart_item_key ) ); ?>">
 						<?php
-						echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
-							'<a href="%s" class="remove" aria-label="%s" data-product_id="%s" data-cart_item_key="%s" data-product_sku="%s">&times;</a>',
-							esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
-							__( 'Remove this item', 'creatus' ),
-							esc_attr( $product_id ),
-							esc_attr( $cart_item_key ),
-							esc_attr( $_product->get_sku() )
-						), $cart_item_key );
+						echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+							'woocommerce_cart_item_remove_link',
+							sprintf(
+								'<a href="%s" class="remove remove_from_cart_button" aria-label="%s" data-product_id="%s" data-cart_item_key="%s" data-product_sku="%s">&times;</a>',
+								esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
+								esc_html__( 'Remove this item', 'creatus' ),
+								esc_attr( $product_id ),
+								esc_attr( $cart_item_key ),
+								esc_attr( $_product->get_sku() )
+							),
+							$cart_item_key
+						);
 						?>
 						<?php if ( ! $_product->is_visible() ) : ?>
 							<?php echo str_replace( array( 'http:', 'https:' ), '', $thumbnail ) . $product_name . '&nbsp;'; ?>
