@@ -1,5 +1,13 @@
 <div class="thz-docs-codeblock" markdown="1">
 
+## Version: 1.5.10 (August 18th, 2019)
+
+#### Code improvement
+ - Added demo install switch based on page builder
+ - Added custom pageblocks ability
+ - WooCommerce 3.7.0 templates update
+ - Get demo plugins data from API
+
 ## Version: 1.5.9 (July 30th, 2019)
 
 #### Code improvement
