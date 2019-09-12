@@ -2175,7 +2175,7 @@
 							$elindex = 1;
 						}
 						
-						if($element.parents('.thz-items-grid').length == 0 && $element.parents('.thz-anim-auto-delay').length == 0) {
+						if($element.parents('.thz-items-grid,.thzel-items-grid').length == 0 && $element.parents('.thz-anim-auto-delay').length == 0) {
 							
 							$elindex = 1;
 						}
