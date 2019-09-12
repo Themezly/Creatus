@@ -222,7 +222,6 @@ html.thz-lateral-header:not(.header_offcanvas) .thz-body-container,
 html.thz-lateral-header:not(.header_offcanvas) .thz-wrapper {
     display: table;
     width: 100%;
-    height: 100%;
 }
 #thz-wrapper .header-lateral {
     display: table-cell;
