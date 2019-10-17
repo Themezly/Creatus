@@ -586,7 +586,7 @@ html:not(.canvasOpen) #header_holder.header-mini {
 }
 .header_offcanvas .thz-offcanvas-menu.off-to-overlay .header-lateral-in {
     width: 300px;
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     margin: 0 auto;
