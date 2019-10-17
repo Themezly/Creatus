@@ -59,8 +59,6 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 			</tbody>
 		</table>
 
-		<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
-
 		<div class="single_variation_wrap">
 			<?php
 				/**
