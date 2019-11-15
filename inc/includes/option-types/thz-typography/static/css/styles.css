@@ -2,7 +2,7 @@
  * Prefix (namespace) all css rules with ".fw-option-type-{$option_type}"
  * This guarantees that there will be no conflicts with other styles.
  */
-.fw-backend-option-type-thz-typography {
+ .fw-backend-option-type-thz-typography {
 	display: block;
 }
 .thz-typography-group {
@@ -97,8 +97,9 @@
 .thz-typography-group select,
 .thz-typography-group input{
 	margin:0;
-	height:28px;
-	line-height:28px;
+	height: 31px;
+	line-height: 30px;
+	padding: 0px 24px 3px 8px;
 }
 
 @media screen and (max-width: 782px){
@@ -146,7 +147,7 @@
 	font-family: dashicons;
 	position: absolute;
 	z-index: 1000;
-	top: 17px;
+	top: 12px;
 	right: 20px;
 	font-size: 20px;
 	color: #afaeae;

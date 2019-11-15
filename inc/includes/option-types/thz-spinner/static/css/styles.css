@@ -2,7 +2,7 @@
  * Prefix (namespace) all css rules with ".fw-option-type-{$option_type}"
  * This guarantees that there will be no conflicts with other styles.
  */
-.fw-backend-option-type-thz-spinners {
+ .fw-backend-option-type-thz-spinners {
 	display: block;
 }
 .thz-spinner {
@@ -22,6 +22,9 @@
 	line-height: 28px;
 	padding: 0px 5px;
 	margin: 0;
+	min-height: 28px;
+    border-radius: unset;
+    border-color: #ccc;
 }
 .thz-spinner a {
 	position: absolute;
@@ -64,11 +67,11 @@
 	margin: 0px 0 0 -2px;
 }
 select.add-on.thz-spinner-units {
-	max-width: 40px!important;
+	min-width: 48px!important;
 	width: auto!important;
-	padding: 0 0 1px 0;
+	padding: 0px 0 1px 6px;
 	height: 28px;
-	line-height: 28px;
+	line-height: 25px;
 	margin: 0px 0px 0 -2px;
 	font-size: 12px;
 }

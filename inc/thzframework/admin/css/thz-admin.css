@@ -1702,3 +1702,21 @@ body.thz-admin-settings-form.fw-resetting #fw-loading{
 	background: #ececec;
 	color:#c0c0c0;
 }
+
+.fw-backend-option .fw-backend-option-input input[type="text"], 
+.fw-backend-option .fw-backend-option-input input[type="password"], 
+.fw-backend-option .fw-backend-option-input select, 
+.fw-backend-option .fw-backend-option-input textarea {
+    width: 100%;
+    max-width: 100%;
+    border-radius: initial;
+    border-color: #ccc;
+}
+
+.fw-modal .media-frame select {
+    line-height: 28px;
+    height: 28px;
+    padding: 2px;
+    margin: 1px;
+    padding-top: 0!important;
+}

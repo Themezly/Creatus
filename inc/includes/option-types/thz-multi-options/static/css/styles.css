@@ -53,6 +53,9 @@
 	height: 28px;
 	line-height: 28px;
 	margin: 0;
+    border-radius: unset;
+    border-color: #ccc;
+    padding: 0px 24px 3px 8px;
 }
 
 
