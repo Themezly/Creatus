@@ -1,5 +1,16 @@
 <div class="thz-docs-codeblock" markdown="1">
 
+## Version: 1.5.11 (November 14th, 2019)
+
+#### Code improvement
+ - Fixed skin class extend warning
+ - Fixed missing category posts options
+ - WooCommerce 3.8.0 templates update
+ - Fixed WP 5.3 UX changes affected options style
+ - Removed lateral header height to fix table heigh issues on load
+ - Added animate support for thzel items
+ - Fixed Chrome 76 and up absolute position issue
+
 ## Version: 1.5.10 (August 18th, 2019)
 
 #### Code improvement
