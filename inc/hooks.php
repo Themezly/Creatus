@@ -2860,7 +2860,7 @@ if (!function_exists('_thz_action_fw_options_for_any_taxonomy')){
 		
 		if ($taxonomy == 'category') {
 			
-			$cap_options = fw()->theme->get_options( 'blog_posts_settings');
+			$cap_options = fw()->theme->get_options( 'blog/settings');
 			$cap_collected = array();
 			fw_collect_options($cap_collected, $cap_options);
 			foreach ($cap_collected as $id => $option) {
