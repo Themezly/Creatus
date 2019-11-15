@@ -1294,7 +1294,7 @@ if ( ! class_exists( 'WP_Upgrader' ) ) {
 
 class Thz_Auto_Install_Upgrader_Skin extends WP_Upgrader_Skin {
 
-	public function feedback( $string ) {
+	public function feedback( $string, ...$args) {
 		return;
 	}
 }
