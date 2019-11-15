@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @see     http://docs.woothemes.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 3.7.0
+ * @version 3.8.0
  */
 
 wc_print_notices();
@@ -109,7 +109,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 								echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item );
 							?>
 					</td>
-					<td class="product-subtotal" data-title="<?php _e( 'Total', 'creatus' ); ?>">
+					<td class="product-subtotal" data-title="<?php _e( 'Subtotal', 'creatus' ); ?>">
 						<?php
 								echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key );
 							?>
