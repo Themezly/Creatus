@@ -356,7 +356,7 @@ if('slider' == $media_layout){
             	<div class="thz-media-item-media">
                     <div class="thz-media-item-ratio<?php echo thz_sanitize_class($img_ratio) ?>">
                         <div class="thz-ratio-in">
-                                <div class="<?php echo thz_sanitize_class($hover_out) ?>"<?php echo thz_sanitize_data($style) ?>>																					 								<?php 
+                                <div class="<?php echo thz_sanitize_class($hover_out) ?>"<?php echo $style; ?>>																					 								<?php 
 								
                                 	if($print_mpx){
 										echo $print_mpx;
