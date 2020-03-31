@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @see 	    http://docs.woothemes.com/document/template-structure/
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     3.0.0
+ * @version     3.9.0
  */
 
 if(!thz_woo_version( '2.7' )){
@@ -63,7 +63,7 @@ if(!thz_woo_version( '2.7' )){
                             <?php
                                 $post_object = get_post( thz_woo_get_id( $related_product ) );
             
-                                setup_postdata( $GLOBALS['post'] =& $post_object );  // phpcs:ignore WPThemeReview.WordPress.WP.GlobalVariablesOverride - This line is from WooCommerce plugin template override. Not changed by the theme.
+                                setup_postdata( $GLOBALS['post'] =& $post_object );  // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
             
                                 wc_get_template_part( 'content', 'product_rel' ); ?>
                                 </div>

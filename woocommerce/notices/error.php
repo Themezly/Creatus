@@ -13,23 +13,23 @@
  * @see 	    https://docs.woocommerce.com/document/template-structure/
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     3.5.0
+ * @version     3.9.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-if ( ! $messages ) {
+if ( ! $notices ) {
 	return;
 }
 
 ?>
 <?php if (is_product()){?><div class="thz-column thz-col-1 thz-site-width"><?php }?>
-<div class="woocommerce-message woocommerce-error" role="alert">
+<div class="woocommerce-message woocommerce-error"<?php echo wc_get_notice_data_attr( $notice ); ?> role="alert">
     <ul>
-        <?php foreach ( $messages as $message ) : ?>
-            <li><?php echo wc_kses_notice( $message ); ?></li>
+        <?php foreach ( $notices as $notice ) : ?>
+            <li><?php echo wc_kses_notice( $notice['notice'] ); ?></li>
         <?php endforeach; ?>
     </ul>
 </div>

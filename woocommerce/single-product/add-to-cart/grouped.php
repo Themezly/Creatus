@@ -13,7 +13,7 @@
  * @see         https://docs.woocommerce.com/document/template-structure/
  * @author      WooThemes
  * @package     WooCommerce/Templates
- * @version     3.4.0
+ * @version     4.0.0
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -38,7 +38,8 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 			foreach ( $grouped_products as $grouped_product_child ) {
 				$post_object        = get_post( $grouped_product_child->get_id() );
 				$quantites_required = $quantites_required || ( $grouped_product_child->is_purchasable() && ! $grouped_product_child->has_options() );
-				$post               = $post_object; // WPCS: override ok.
+				$post               = $post_object; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
+
 				setup_postdata( $post );
 
 				echo '<tr id="product-' . esc_attr( get_the_ID() ) . '" class="woocommerce-grouped-product-list-item ' . esc_attr( implode( ' ', get_post_class() ) ) . '">';
@@ -90,7 +91,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
 				echo '</tr>';
 			}
-			$post = $previous_post; // WPCS: override ok.
+			$post = $previous_post; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 			setup_postdata( $post );
 			?>
 		</tbody>
