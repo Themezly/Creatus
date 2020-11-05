@@ -4596,7 +4596,7 @@
                 var $duration = $(this).attr('data-anchor-duration');
                 var $before = $(this).attr('data-anchor-before');
                 var $after = $(this).attr('data-anchor-after');
-                var $element = $("[href*=#" + $id + "]");
+                var $element = $("[href*=\\#" + $id + "]");
 
                 if ($element.length > 0) {
                     $element.addClass('thz-scroll');
